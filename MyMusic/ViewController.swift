@@ -20,6 +20,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         table.dataSource = self
     }
     
+    
     func configureSongs(){
         songs.append(Song(name: "Windows",
                           albumName: "10 Day",
@@ -108,8 +109,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         present(vc,animated: true)
         
     }
-
-
 }
 
 struct Song{

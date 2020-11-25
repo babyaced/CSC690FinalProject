@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eml-PO-5iU">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="533"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="Pqp-jE-aLR" detailTextLabel="SAz-cQ-vvt" style="IBUITableViewCellStyleSubtitle" id="7aC-Zk-1xf">
@@ -46,14 +46,29 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNH-Lg-csu">
+                                <rect key="frame" x="0.0" y="577" width="375" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="y7g-g2-GaF"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="Rbd-sb-u6H" kind="embed" identifier="ToMiniPlayer" id="WA2-8n-UPo"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eml-PO-5iU" secondAttribute="bottom" id="Fyv-r8-FSa"/>
+                            <constraint firstItem="CNH-Lg-csu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="CAt-fA-8fQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eml-PO-5iU" secondAttribute="bottom" constant="90" id="Fyv-r8-FSa"/>
                             <constraint firstItem="eml-PO-5iU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GgF-h7-WPR"/>
+                            <constraint firstItem="eml-PO-5iU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Jdr-cy-z7t"/>
+                            <constraint firstItem="eml-PO-5iU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M7H-t8-81h"/>
                             <constraint firstItem="eml-PO-5iU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RgR-CT-rw4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eml-PO-5iU" secondAttribute="trailing" id="gNc-Ux-eSX"/>
+                            <constraint firstItem="CNH-Lg-csu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lZU-n5-50F"/>
+                            <constraint firstItem="CNH-Lg-csu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rbU-FY-qY6"/>
+                            <constraint firstItem="eml-PO-5iU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="waU-Bf-YYR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Songs" id="E5K-lx-rDW"/>
@@ -63,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="713.04347826086962" y="32.8125"/>
+            <point key="canvasLocation" x="712.79999999999995" y="31.934032983508249"/>
         </scene>
         <!--Player View Controller-->
         <scene sceneID="GWM-0k-TPf">
@@ -95,10 +110,11 @@
             </objects>
             <point key="canvasLocation" x="1641" y="33"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="tRm-yY-jzk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9gj-uq-Npr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="NlW-Ae-ZwK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="XnB-EH-Fav">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
@@ -106,12 +122,52 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Su9-eE-7NX"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NrA-A5-wd8"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOg-QE-fbz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-197.10144927536234" y="32.8125"/>
+        </scene>
+        <!--Mini Player View Controller-->
+        <scene sceneID="w7Z-D8-Zyv">
+            <objects>
+                <viewController id="Rbd-sb-u6H" customClass="MiniPlayerViewController" customModule="MyMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sa4-Ig-tch">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdP-IR-7tC">
+                                <rect key="frame" x="16" y="20" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSQ-UD-QRn">
+                                <rect key="frame" x="16" y="49" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fSQ-UD-QRn" firstAttribute="leading" secondItem="Sa4-Ig-tch" secondAttribute="leadingMargin" id="7bl-8G-hJF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fSQ-UD-QRn" secondAttribute="trailing" id="Ejn-x6-3nb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FdP-IR-7tC" secondAttribute="trailing" id="Ufr-Ek-KvG"/>
+                            <constraint firstItem="FdP-IR-7tC" firstAttribute="leading" secondItem="Sa4-Ig-tch" secondAttribute="leadingMargin" id="naq-6N-gTg"/>
+                            <constraint firstItem="FdP-IR-7tC" firstAttribute="top" secondItem="Sa4-Ig-tch" secondAttribute="topMargin" constant="20" id="t9z-W2-O4I"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="fSQ-UD-QRn" secondAttribute="bottom" constant="20" id="vuS-vm-8Ph"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="artistName" destination="fSQ-UD-QRn" id="hB1-eY-ifL"/>
+                        <outlet property="songName" destination="FdP-IR-7tC" id="bOm-xL-vRY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9oa-GH-ccs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="497"/>
         </scene>
     </scenes>
     <resources>
