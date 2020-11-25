@@ -9,6 +9,8 @@ import Foundation
 
 class SongCollection{
     
+    static let shared = SongCollection()
+    
     struct Song{
         let name: String
         let albumName: String
@@ -18,7 +20,9 @@ class SongCollection{
     }
     
     var songs = [Song]()
-    init(){
+    var position: Int
+    private init(){
+        position = 0
         songs.append(Song(name: "Windows",
                           albumName: "10 Day",
                           artistName: "Chance the Rapper",

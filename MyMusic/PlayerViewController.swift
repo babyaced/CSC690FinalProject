@@ -11,7 +11,6 @@ import UIKit
 class PlayerViewController: UIViewController {
     
     public var position: Int = 0
-    let songCollection = SongCollection()
     
     @IBOutlet var holder: UIView!
     
@@ -62,7 +61,7 @@ class PlayerViewController: UIViewController {
     
     func configure(){
         //set up player
-        let song = songCollection.songs[position]
+        let song = SongCollection.shared.songs[SongCollection.shared.position]
         
         let urlString = Bundle.main.path(forResource: song.trackName, ofType: "mp3")
         
@@ -171,8 +170,8 @@ class PlayerViewController: UIViewController {
     }
     
     @objc func didTapBackButton(_ slider: UISlider){
-        if position > 0{
-            position = position - 1
+        if SongCollection.shared.position > 0{
+            SongCollection.shared.position = SongCollection.shared.position - 1
             player?.stop()
             for subview in holder.subviews{
                 subview.removeFromSuperview()
@@ -182,8 +181,8 @@ class PlayerViewController: UIViewController {
     }
     
     @objc func didTapNextButton(_ slider: UISlider){
-        if position < (songCollection.songs.count - 1){
-            position = position + 1
+        if position < (SongCollection.shared.songs.count - 1){
+            SongCollection.shared.position = SongCollection.shared.position + 1
             player?.stop()
             for subview in holder.subviews{
                 subview.removeFromSuperview()

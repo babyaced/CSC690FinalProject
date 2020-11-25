@@ -11,7 +11,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet var table: UITableView!
     
-    let songCollection = SongCollection()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +22,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //Table
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return songCollection.songs.count
+        return SongCollection.shared.songs.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let song = songCollection.songs[indexPath.row]
+        let song = SongCollection.shared.songs[indexPath.row]
         //configure
         cell.textLabel?.text = song.name
         cell.detailTextLabel?.text = song.albumName
@@ -47,7 +46,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.deselectRow(at: indexPath, animated: true)
         
         //present the player
-        let position = indexPath.row
+        SongCollection.shared.position = indexPath.row
         
         //songs
         guard let vc = storyboard?.instantiateViewController(identifier: "player") as? PlayerViewController else {
@@ -55,7 +54,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         //vc.songs = songCollection.songs
-        vc.position = position
+        //vc.position = position
         
         present(vc,animated: true)
     }
