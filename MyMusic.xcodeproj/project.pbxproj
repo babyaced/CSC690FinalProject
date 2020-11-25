@@ -15,6 +15,10 @@
 		D3EE3234256DC74300926074 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3EE3232256DC74300926074 /* LaunchScreen.storyboard */; };
 		D3EE323F256DC74300926074 /* MyMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE323E256DC74300926074 /* MyMusicTests.swift */; };
 		D3EE324A256DC74400926074 /* MyMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3249256DC74400926074 /* MyMusicUITests.swift */; };
+		D3EE325C256DC7F100926074 /* song2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3EE325B256DC7F100926074 /* song2.mp3 */; };
+		D3EE3261256DC80100926074 /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3EE3260256DC80100926074 /* song1.mp3 */; };
+		D3EE3266256DC81000926074 /* song3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3EE3265256DC81000926074 /* song3.mp3 */; };
+		D3EE3274256DCF6400926074 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3273256DCF6400926074 /* PlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		D3EE3245256DC74300926074 /* MyMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EE3249256DC74400926074 /* MyMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusicUITests.swift; sourceTree = "<group>"; };
 		D3EE324B256DC74400926074 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3EE325B256DC7F100926074 /* song2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song2.mp3; sourceTree = "<group>"; };
+		D3EE3260256DC80100926074 /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song1.mp3; sourceTree = "<group>"; };
+		D3EE3265256DC81000926074 /* song3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song3.mp3; sourceTree = "<group>"; };
+		D3EE3273256DCF6400926074 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 		D3EE3226256DC74000926074 /* MyMusic */ = {
 			isa = PBXGroup;
 			children = (
+				D3EE3260256DC80100926074 /* song1.mp3 */,
+				D3EE325B256DC7F100926074 /* song2.mp3 */,
+				D3EE3265256DC81000926074 /* song3.mp3 */,
+				D3EE325A256DC7D900926074 /* Audio */,
 				D3EE3227256DC74000926074 /* AppDelegate.swift */,
 				D3EE3229256DC74000926074 /* SceneDelegate.swift */,
 				D3EE322B256DC74000926074 /* ViewController.swift */,
@@ -106,6 +118,7 @@
 				D3EE3230256DC74300926074 /* Assets.xcassets */,
 				D3EE3232256DC74300926074 /* LaunchScreen.storyboard */,
 				D3EE3235256DC74300926074 /* Info.plist */,
+				D3EE3273256DCF6400926074 /* PlayerViewController.swift */,
 			);
 			path = MyMusic;
 			sourceTree = "<group>";
@@ -126,6 +139,13 @@
 				D3EE324B256DC74400926074 /* Info.plist */,
 			);
 			path = MyMusicUITests;
+			sourceTree = "<group>";
+		};
+		D3EE325A256DC7D900926074 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +253,9 @@
 			files = (
 				D3EE3234256DC74300926074 /* LaunchScreen.storyboard in Resources */,
 				D3EE3231256DC74300926074 /* Assets.xcassets in Resources */,
+				D3EE3261256DC80100926074 /* song1.mp3 in Resources */,
+				D3EE3266256DC81000926074 /* song3.mp3 in Resources */,
+				D3EE325C256DC7F100926074 /* song2.mp3 in Resources */,
 				D3EE322F256DC74000926074 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3EE322C256DC74000926074 /* ViewController.swift in Sources */,
+				D3EE3274256DCF6400926074 /* PlayerViewController.swift in Sources */,
 				D3EE3228256DC74000926074 /* AppDelegate.swift in Sources */,
 				D3EE322A256DC74000926074 /* SceneDelegate.swift in Sources */,
 			);
@@ -366,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
