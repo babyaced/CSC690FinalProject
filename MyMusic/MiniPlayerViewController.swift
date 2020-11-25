@@ -15,7 +15,7 @@ class MiniPlayerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.songName.text = "Windows"
-        self.artistName.text = "Chance the Rapper"
+        self.songName.text = SongCollection.shared.songs[SongCollection.shared.position].name
+        self.artistName.text = SongCollection.shared.songs[SongCollection.shared.position].artistName
     }
 }
