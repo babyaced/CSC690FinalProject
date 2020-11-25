@@ -11,7 +11,7 @@ import UIKit
 class PlayerViewController: UIViewController {
     
     public var position: Int = 0
-    public var songs: [Song] = []
+    let songCollection = SongCollection()
     
     @IBOutlet var holder: UIView!
     
@@ -62,7 +62,7 @@ class PlayerViewController: UIViewController {
     
     func configure(){
         //set up player
-        let song = songs[position]
+        let song = songCollection.songs[position]
         
         let urlString = Bundle.main.path(forResource: song.trackName, ofType: "mp3")
         
@@ -182,7 +182,7 @@ class PlayerViewController: UIViewController {
     }
     
     @objc func didTapNextButton(_ slider: UISlider){
-        if position < (songs.count - 1){
+        if position < (songCollection.songs.count - 1){
             position = position + 1
             player?.stop()
             for subview in holder.subviews{
@@ -231,8 +231,8 @@ class PlayerViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        if let player = player{
-            player.stop()
-        }
+        //if let player = player{
+         //   player.stop()
+        //}
     }
 }

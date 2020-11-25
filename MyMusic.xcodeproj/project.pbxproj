@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D3499304256EE61800FE14BA /* MiniPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3499303256EE61800FE14BA /* MiniPlayerViewController.swift */; };
+		D349930A256EEE0B00FE14BA /* SongCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3499309256EEE0B00FE14BA /* SongCollection.swift */; };
 		D3EE3228256DC74000926074 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3227256DC74000926074 /* AppDelegate.swift */; };
 		D3EE322A256DC74000926074 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3229256DC74000926074 /* SceneDelegate.swift */; };
 		D3EE322C256DC74000926074 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE322B256DC74000926074 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		D3499303256EE61800FE14BA /* MiniPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerViewController.swift; sourceTree = "<group>"; };
+		D3499309256EEE0B00FE14BA /* SongCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCollection.swift; sourceTree = "<group>"; };
 		D3EE3224256DC74000926074 /* MyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EE3227256DC74000926074 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3EE3229256DC74000926074 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				D3EE3235256DC74300926074 /* Info.plist */,
 				D3EE3273256DCF6400926074 /* PlayerViewController.swift */,
 				D3499303256EE61800FE14BA /* MiniPlayerViewController.swift */,
+				D3499309256EEE0B00FE14BA /* SongCollection.swift */,
 			);
 			path = MyMusic;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				D3EE3274256DCF6400926074 /* PlayerViewController.swift in Sources */,
 				D3EE3228256DC74000926074 /* AppDelegate.swift in Sources */,
 				D3499304256EE61800FE14BA /* MiniPlayerViewController.swift in Sources */,
+				D349930A256EEE0B00FE14BA /* SongCollection.swift in Sources */,
 				D3EE322A256DC74000926074 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
