@@ -111,47 +111,111 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe0-Gf-tZn">
-                                <rect key="frame" x="15" y="15" width="345" height="24"/>
+                                <rect key="frame" x="15" y="15" width="349" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tf8-MH-0Yi">
-                                <rect key="frame" x="15" y="54" width="345" height="18"/>
+                                <rect key="frame" x="15" y="54" width="349" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nbq-kF-ipB">
-                                <rect key="frame" x="0.0" y="87" width="375" height="375"/>
+                                <rect key="frame" x="0.0" y="87" width="379" height="379"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Nbq-kF-ipB" secondAttribute="height" multiplier="1:1" id="Btx-OS-wKO"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkJ-FQ-swR">
+                                <rect key="frame" x="15" y="481" width="349" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KKQ-Hb-pgV">
+                                <rect key="frame" x="13" y="622" width="353" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfa-Cn-4b1">
+                                <rect key="frame" x="318" y="524" width="46" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Mp8-Cv-eb5"/>
+                                    <constraint firstAttribute="width" constant="53" id="qDx-pO-YcP"/>
+                                </constraints>
+                                <state key="normal" title="Button" backgroundImage="forward.end.fill" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="fullPlayerNextTrack:" destination="d0b-1C-pvw" eventType="touchUpInside" id="Fbp-xh-BCa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YjY-aE-n2B">
+                                <rect key="frame" x="158" y="524" width="70" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="EaO-E1-rIV"/>
+                                    <constraint firstAttribute="height" constant="43" id="Q4D-tv-C4s"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <state key="normal" title="Button" backgroundImage="playpause.fill" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="fullPlayerPlayPause:" destination="d0b-1C-pvw" eventType="touchUpInside" id="nU4-AQ-KnU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaQ-HX-65f">
+                                <rect key="frame" x="15" y="524" width="53" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="SzH-4c-TNr"/>
+                                    <constraint firstAttribute="height" constant="43" id="bEN-Gp-sBP"/>
+                                </constraints>
+                                <state key="normal" title="Button" backgroundImage="backward.end.fill" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="fullPlayerPreviousTrack:" destination="d0b-1C-pvw" eventType="touchUpInside" id="O2q-bn-bQt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Wy-pS-GmJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="KKQ-Hb-pgV" firstAttribute="leading" secondItem="7Wy-pS-GmJ" secondAttribute="leading" constant="15" id="2t3-P6-0W3"/>
+                            <constraint firstItem="7Wy-pS-GmJ" firstAttribute="trailing" secondItem="nfa-Cn-4b1" secondAttribute="trailing" constant="15" id="6Z7-ZP-iFc"/>
                             <constraint firstItem="Nbq-kF-ipB" firstAttribute="top" secondItem="tf8-MH-0Yi" secondAttribute="bottom" constant="15" id="86E-tF-6hk"/>
                             <constraint firstItem="7Wy-pS-GmJ" firstAttribute="trailing" secondItem="Nbq-kF-ipB" secondAttribute="trailing" id="EoP-PU-d9i"/>
+                            <constraint firstItem="EkJ-FQ-swR" firstAttribute="top" secondItem="Nbq-kF-ipB" secondAttribute="bottom" constant="15" id="JI4-12-avl"/>
+                            <constraint firstItem="IaQ-HX-65f" firstAttribute="top" secondItem="EkJ-FQ-swR" secondAttribute="bottom" constant="20" id="KLO-7C-M23"/>
+                            <constraint firstItem="EkJ-FQ-swR" firstAttribute="leading" secondItem="7Wy-pS-GmJ" secondAttribute="leading" constant="15" id="R8w-Ab-xJe"/>
                             <constraint firstItem="7Wy-pS-GmJ" firstAttribute="trailing" secondItem="Oe0-Gf-tZn" secondAttribute="trailing" constant="15" id="RJM-dS-U2J"/>
+                            <constraint firstItem="YjY-aE-n2B" firstAttribute="leading" secondItem="IaQ-HX-65f" secondAttribute="trailing" constant="90" id="X1B-l0-c6M"/>
                             <constraint firstItem="Oe0-Gf-tZn" firstAttribute="top" secondItem="7Wy-pS-GmJ" secondAttribute="top" constant="15" id="XYx-un-wYn"/>
+                            <constraint firstItem="IaQ-HX-65f" firstAttribute="leading" secondItem="7Wy-pS-GmJ" secondAttribute="leading" constant="15" id="YBG-MD-qVw"/>
                             <constraint firstItem="tf8-MH-0Yi" firstAttribute="top" secondItem="Oe0-Gf-tZn" secondAttribute="bottom" constant="15" id="ZPm-Bq-EXt"/>
                             <constraint firstItem="7Wy-pS-GmJ" firstAttribute="trailing" secondItem="tf8-MH-0Yi" secondAttribute="trailing" constant="15" id="aNy-jO-PCJ"/>
+                            <constraint firstItem="nfa-Cn-4b1" firstAttribute="top" secondItem="EkJ-FQ-swR" secondAttribute="bottom" constant="20" id="auu-Yk-0z2"/>
                             <constraint firstItem="Oe0-Gf-tZn" firstAttribute="leading" secondItem="7Wy-pS-GmJ" secondAttribute="leading" constant="15" id="doF-8X-iVy"/>
                             <constraint firstItem="tf8-MH-0Yi" firstAttribute="leading" secondItem="7Wy-pS-GmJ" secondAttribute="leading" constant="15" id="lYN-dK-0Pu"/>
+                            <constraint firstItem="IaQ-HX-65f" firstAttribute="leading" secondItem="7Wy-pS-GmJ" secondAttribute="leading" constant="15" id="oPP-gJ-iJp"/>
+                            <constraint firstItem="7Wy-pS-GmJ" firstAttribute="bottom" secondItem="KKQ-Hb-pgV" secondAttribute="bottom" constant="15" id="pBm-wC-gB1"/>
                             <constraint firstItem="Nbq-kF-ipB" firstAttribute="leading" secondItem="7Wy-pS-GmJ" secondAttribute="leading" id="tRd-Nr-zdv"/>
+                            <constraint firstItem="7Wy-pS-GmJ" firstAttribute="trailing" secondItem="KKQ-Hb-pgV" secondAttribute="trailing" constant="15" id="uPb-li-4Gy"/>
+                            <constraint firstItem="nfa-Cn-4b1" firstAttribute="leading" secondItem="YjY-aE-n2B" secondAttribute="trailing" constant="90" id="vPm-kX-1JM"/>
+                            <constraint firstItem="YjY-aE-n2B" firstAttribute="top" secondItem="EkJ-FQ-swR" secondAttribute="bottom" constant="20" id="viY-Zc-Ptb"/>
+                            <constraint firstItem="7Wy-pS-GmJ" firstAttribute="trailing" secondItem="EkJ-FQ-swR" secondAttribute="trailing" constant="15" id="zKq-fK-WXf"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="fullPlayerAlbumArt" destination="Nbq-kF-ipB" id="Uuz-DS-Mcq"/>
+                        <outlet property="fullPlayerAlbumName" destination="EkJ-FQ-swR" id="Hpn-up-BvC"/>
                         <outlet property="fullPlayerArtistLabel" destination="tf8-MH-0Yi" id="JAS-ew-7oh"/>
                         <outlet property="fullPlayerSongLabel" destination="Oe0-Gf-tZn" id="cdj-qO-aOs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Jh-wk-WUX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1444" y="32"/>
+            <point key="canvasLocation" x="1444" y="31.934032983508249"/>
         </scene>
         <!--Item-->
         <scene sceneID="tRm-yY-jzk">
@@ -174,8 +238,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backward.end.fill" catalog="system" width="128" height="102"/>
+        <image name="forward.end.fill" catalog="system" width="128" height="102"/>
+        <image name="playpause.fill" catalog="system" width="128" height="70"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
