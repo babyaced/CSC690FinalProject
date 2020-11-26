@@ -38,6 +38,7 @@ class SongPlayer{
             
             player.volume = 0.5
             player.play()
+            
            
         }
         catch{

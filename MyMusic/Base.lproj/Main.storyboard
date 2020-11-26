@@ -136,6 +136,9 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KKQ-Hb-pgV">
                                 <rect key="frame" x="13" y="622" width="353" height="31"/>
+                                <connections>
+                                    <action selector="fullPlayerScrub:" destination="d0b-1C-pvw" eventType="valueChanged" id="csb-He-uB3"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfa-Cn-4b1">
                                 <rect key="frame" x="318" y="524" width="46" height="39"/>
@@ -210,6 +213,7 @@
                         <outlet property="fullPlayerAlbumArt" destination="Nbq-kF-ipB" id="Uuz-DS-Mcq"/>
                         <outlet property="fullPlayerAlbumName" destination="EkJ-FQ-swR" id="Hpn-up-BvC"/>
                         <outlet property="fullPlayerArtistLabel" destination="tf8-MH-0Yi" id="JAS-ew-7oh"/>
+                        <outlet property="fullPlayerScrubber" destination="KKQ-Hb-pgV" id="4pL-mj-TG0"/>
                         <outlet property="fullPlayerSongLabel" destination="Oe0-Gf-tZn" id="cdj-qO-aOs"/>
                     </connections>
                 </viewController>

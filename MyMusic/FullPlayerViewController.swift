@@ -8,6 +8,8 @@
 import AVFoundation
 import UIKit
 
+let scrubNotificationKey = "dsimpson.sfsu.edu.scrub"
+
 protocol UpdateMiniPlayerDelegate{
     func changedSong()
 }
@@ -20,14 +22,17 @@ class FullPlayerViewController: UIViewController {
     @IBOutlet var fullPlayerAlbumName: UILabel!
     @IBOutlet var fullPlayerYearOfRelease: UILabel!
     
+    @IBOutlet var fullPlayerScrubber: UISlider!
+    
     var updateMiniPlayerDelegate : UpdateMiniPlayerDelegate!
     
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //createObservers()
         fullPlayerSetup()
+        var playbackTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateScrubber), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view.
     }
     
@@ -54,6 +59,9 @@ class FullPlayerViewController: UIViewController {
             fullPlayerAlbumName.text = song.albumName!
         }
         
+        if let duration = SongPlayer.shared.player?.duration{
+            fullPlayerScrubber.maximumValue = Float(SongPlayer.shared.player?.duration ?? 0)
+        }
         
     }
     
@@ -88,4 +96,14 @@ class FullPlayerViewController: UIViewController {
         }
     }
     
+    @IBAction func fullPlayerScrub(_ sender: Any) {
+        SongPlayer.shared.player?.stop()
+        SongPlayer.shared.player?.currentTime = TimeInterval(fullPlayerScrubber.value)
+        SongPlayer.shared.player?.play()
+        
+    }
+    @objc
+    func updateScrubber(){
+        fullPlayerScrubber.value = Float(SongPlayer.shared.player?.currentTime ?? 0)
+    }
 }
