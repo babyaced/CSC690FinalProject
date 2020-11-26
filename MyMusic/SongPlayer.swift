@@ -7,13 +7,14 @@
 import AVFoundation
 import Foundation
 
-class SongPlayer{
+class SongPlayer : NSObject, AVAudioPlayerDelegate{
     
     static let shared = SongPlayer()
     
     var player: AVAudioPlayer?
     
     func playSong(){
+        self.player?.delegate = nil
         let song = SongCollection.shared.songs[SongCollection.shared.position]
             
         let urlString = Bundle.main.path(forResource: song.trackName, ofType: "mp3")
@@ -37,12 +38,16 @@ class SongPlayer{
             }
             
             player.volume = 0.5
+            player.delegate = self
             player.play()
-            
-           
         }
         catch{
             print("error occurred")
         }
+    }
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool){
+        SongCollection.shared.position += 1
+        playSong()
     }
 }
