@@ -59,7 +59,7 @@ class FullPlayerViewController: UIViewController {
             fullPlayerAlbumName.text = song.albumName!
         }
         
-        if let duration = SongPlayer.shared.player?.duration{
+        if let player = SongPlayer.shared.player{
             fullPlayerScrubber.maximumValue = Float(SongPlayer.shared.player?.duration ?? 0)
         }
         

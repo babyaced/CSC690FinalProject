@@ -16,6 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("mini player loaded")
         table.delegate = self
         table.dataSource = self
         setupMiniPlayer()
@@ -100,33 +101,39 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @objc
     func miniPlayerSwipeRight(_ gesture: UISwipeGestureRecognizer){
-        if SongCollection.shared.position > 0{
-            SongCollection.shared.position = SongCollection.shared.position - 1
-            SongPlayer.shared.player?.stop()
-            miniPlayerSongLabel.text = SongCollection.shared.songs[SongCollection.shared.position].name
-            miniPlayerArtistLabel.text = SongCollection.shared.songs[SongCollection.shared.position].artistName
-            SongPlayer.shared.playSong()
+        if SongCollection.shared.position != -1{
+            if SongCollection.shared.position > 0{
+                SongCollection.shared.position = SongCollection.shared.position - 1
+                SongPlayer.shared.player?.stop()
+                miniPlayerSongLabel.text = SongCollection.shared.songs[SongCollection.shared.position].name
+                miniPlayerArtistLabel.text = SongCollection.shared.songs[SongCollection.shared.position].artistName
+                SongPlayer.shared.playSong()
+            }
         }
     }
     
     @objc
     func miniPlayerSwipeLeft(_ gesture: UISwipeGestureRecognizer){
-        if SongCollection.shared.position < (SongCollection.shared.songs.count - 1){
-            SongCollection.shared.position = SongCollection.shared.position + 1
-            SongPlayer.shared.player?.stop()
-            miniPlayerSongLabel.text = SongCollection.shared.songs[SongCollection.shared.position].name
-            miniPlayerArtistLabel.text = SongCollection.shared.songs[SongCollection.shared.position].artistName
-            SongPlayer.shared.playSong()
+        if SongCollection.shared.position != -1{
+            if SongCollection.shared.position < (SongCollection.shared.songs.count - 1){
+                SongCollection.shared.position = SongCollection.shared.position + 1
+                SongPlayer.shared.player?.stop()
+                miniPlayerSongLabel.text = SongCollection.shared.songs[SongCollection.shared.position].name
+                miniPlayerArtistLabel.text = SongCollection.shared.songs[SongCollection.shared.position].artistName
+                SongPlayer.shared.playSong()
+            }
         }
     }
     
     @objc
     func miniPlayerSwipeUp(_ gesture: UISwipeGestureRecognizer){
-        guard let vc = storyboard?.instantiateViewController(identifier: "Full Player") as? FullPlayerViewController else {
-            return
+        if SongCollection.shared.position != -1{
+            guard let vc = storyboard?.instantiateViewController(identifier: "Full Player") as? FullPlayerViewController else {
+                return
+            }
+            vc.updateMiniPlayerDelegate = self
+            present(vc, animated: true)
         }
-        vc.updateMiniPlayerDelegate = self
-        present(vc, animated: true)
     }
 }
 

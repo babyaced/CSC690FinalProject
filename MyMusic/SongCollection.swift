@@ -22,7 +22,7 @@ class SongCollection{
     var songs = [Song]()
     var position: Int
     private init(){
-        position = 0
+        position = -1
         songs.append(Song(name: "Windows",
                           albumName: "10 Day",
                           artistName: "Chance the Rapper",
