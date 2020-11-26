@@ -54,58 +54,33 @@ class FullPlayerViewController: UIViewController {
     @IBAction func fullPlayerPreviousTrack(_ sender: Any) {
         if SongCollection.shared.position > 0{
             SongCollection.shared.position = SongCollection.shared.position - 1
-            player?.stop()
+            SongPlayer.shared.player?.stop()
             fullPlayerSetup()
-            playSong()
+            SongPlayer.shared.playSong()
         }
     }
     
     @IBAction func fullPlayerPlayPause(_ sender: Any) {
-        if player?.isPlaying == true {
+        if SongPlayer.shared.player?.isPlaying == true {
             //pause
-            player?.pause()
+            SongPlayer.shared.player?.pause()
         }
         else{
             //play
-            player?.play()
+            SongPlayer.shared.player?.play()
         }
     }
     
     @IBAction func fullPlayerNextTrack(_ sender: Any) {
         if SongCollection.shared.position < (SongCollection.shared.songs.count - 1){
             SongCollection.shared.position = SongCollection.shared.position + 1
-            player?.stop()
+            SongPlayer.shared.player?.stop()
             fullPlayerSetup()
-            playSong()
+            SongPlayer.shared.playSong()
         }
     }
     
-    func playSong(){
-        let song = SongCollection.shared.songs[SongCollection.shared.position]
-            
-        let urlString = Bundle.main.path(forResource: song.trackName, ofType: "mp3")
-        
-        do{
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default, options: [AVAudioSession.CategoryOptions.duckOthers])
-            try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
-                
-            guard let urlString = urlString else{
-                print("urlString is nil")
-                return
-            }
-                
-            player = try AVAudioPlayer(contentsOf: URL(string: urlString)!)
-                
-            guard let player = player else{
-                print("player is nil")
-                return
-            }
-            player.volume = 0.5
-            player.play()
-           
-        }
-        catch{
-            print("error occurred")
-        }
+    override func viewDidDisappear(_ animated: Bool) {
+        print("modal dismissed")
     }
 }

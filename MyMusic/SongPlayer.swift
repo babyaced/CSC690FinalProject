@@ -4,15 +4,14 @@
 //
 //  Created by Daniel Simpson on 11/25/20.
 //
-/*import AVFoundation
+import AVFoundation
 import Foundation
 
 class SongPlayer{
-    var player: AVAudioPlayer?
     
-    private init(){
-        
-    }
+    static let shared = SongPlayer()
+    
+    var player: AVAudioPlayer?
     
     func playSong(){
         let song = SongCollection.shared.songs[SongCollection.shared.position]
@@ -20,6 +19,7 @@ class SongPlayer{
         let urlString = Bundle.main.path(forResource: song.trackName, ofType: "mp3")
         
         //change song and artist name in mini player
+        
         do{
             try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default, options: [AVAudioSession.CategoryOptions.duckOthers])
             try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
@@ -35,6 +35,7 @@ class SongPlayer{
                 print("player is nil")
                 return
             }
+            
             player.volume = 0.5
             player.play()
            
@@ -43,4 +44,4 @@ class SongPlayer{
             print("error occurred")
         }
     }
-}*/
+}

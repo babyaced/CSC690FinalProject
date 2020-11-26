@@ -8,8 +8,6 @@
 import AVFoundation
 import UIKit
 
-var player: AVAudioPlayer?
-
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var table: UITableView!
@@ -82,54 +80,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //present the player
         SongCollection.shared.position = indexPath.row
-        
-        playSong()
-    }
-    
-    func playSong(){
         let song = SongCollection.shared.songs[SongCollection.shared.position]
-            
-        let urlString = Bundle.main.path(forResource: song.trackName, ofType: "mp3")
-        
-        //change song and artist name in mini player
         miniPlayerSongLabel.text = song.name
         miniPlayerArtistLabel.text = song.artistName
-        
-        do{
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default, options: [AVAudioSession.CategoryOptions.duckOthers])
-            try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
-                
-            guard let urlString = urlString else{
-                print("urlString is nil")
-                return
-            }
-                
-            player = try AVAudioPlayer(contentsOf: URL(string: urlString)!)
-                
-            guard let player = player else{
-                print("player is nil")
-                return
-            }
-            player.volume = 0.5
-            player.play()
-           
-        }
-        catch{
-            print("error occurred")
-        }
+        SongPlayer.shared.playSong()
     }
     
     
     
     @objc
     func miniPlayerTap(_ gesture: UITapGestureRecognizer){
-        if player?.isPlaying == true {
+        if SongPlayer.shared.player?.isPlaying == true {
             //pause
-            player?.pause()
+            SongPlayer.shared.player?.pause()
         }
         else{
             //play
-            player?.play()
+            SongPlayer.shared.player?.play()
         }
     }
     
@@ -137,8 +104,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func miniPlayerSwipeRight(_ gesture: UISwipeGestureRecognizer){
         if SongCollection.shared.position > 0{
             SongCollection.shared.position = SongCollection.shared.position - 1
-            player?.stop()
-            playSong()  
+            SongPlayer.shared.player?.stop()
+            miniPlayerSongLabel.text = SongCollection.shared.songs[SongCollection.shared.position].name
+            miniPlayerArtistLabel.text = SongCollection.shared.songs[SongCollection.shared.position].artistName
+            SongPlayer.shared.playSong()
         }
     }
     
@@ -146,8 +115,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func miniPlayerSwipeLeft(_ gesture: UISwipeGestureRecognizer){
         if SongCollection.shared.position < (SongCollection.shared.songs.count - 1){
             SongCollection.shared.position = SongCollection.shared.position + 1
-            player?.stop()
-            playSong()
+            SongPlayer.shared.player?.stop()
+            miniPlayerSongLabel.text = SongCollection.shared.songs[SongCollection.shared.position].name
+            miniPlayerArtistLabel.text = SongCollection.shared.songs[SongCollection.shared.position].artistName
+            SongPlayer.shared.playSong()
         }
     }
     
@@ -156,7 +127,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         guard let vc = storyboard?.instantiateViewController(identifier: "Full Player") as? FullPlayerViewController else {
             return
         }
-        
         present(vc, animated: true)
     }
 }

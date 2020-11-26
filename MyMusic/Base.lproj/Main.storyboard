@@ -94,7 +94,7 @@
                     <connections>
                         <outlet property="miniPlayerArtistLabel" destination="Hv0-BR-Deu" id="99X-4M-DzF"/>
                         <outlet property="miniPlayerSongLabel" destination="x5U-8G-HvK" id="iY1-YH-2aL"/>
-                        <outlet property="miniPlayerView" destination="id3-hO-0TE" id="dQR-Hp-xbQ"/>
+                        <outlet property="miniPlayerView" destination="id3-hO-0TE" id="YZS-cW-KOU"/>
                         <outlet property="table" destination="eml-PO-5iU" id="pTJ-zF-39n"/>
                     </connections>
                 </viewController>
