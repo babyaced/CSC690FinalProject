@@ -45,15 +45,19 @@ class FullPlayerViewController: UIViewController {
         let song = SongCollection.shared.songs[SongCollection.shared.position]
         if fullPlayerSongLabel != nil{
             fullPlayerSongLabel!.text = song.name!
+            fullPlayerSongLabel.textColor = song.colors?.primary
         }
         if fullPlayerArtistLabel != nil{
             fullPlayerArtistLabel!.text = song.artistName!
+            fullPlayerArtistLabel.textColor = song.colors?.secondary
         }
         if fullPlayerAlbumArt != nil{
             fullPlayerAlbumArt!.image = UIImage(named:song.imageName!)
+            self.view.backgroundColor = song.colors?.background
         }
         if fullPlayerAlbumName != nil{
             fullPlayerAlbumName.text = song.albumName!
+            fullPlayerAlbumName.textColor = song.colors?.secondary
         }
         if let player = SongPlayer.shared.player{
             fullPlayerScrubber.maximumValue = Float(SongPlayer.shared.player?.duration ?? 0)

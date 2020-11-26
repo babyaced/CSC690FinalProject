@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B1915288DA13528647F7337 /* Pods_MyMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6155E6CFBC8410C32A871674 /* Pods_MyMusic.framework */; };
 		D349930A256EEE0B00FE14BA /* SongCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3499309256EEE0B00FE14BA /* SongCollection.swift */; };
 		D3499395256F3C1200FE14BA /* FullPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3499394256F3C1200FE14BA /* FullPlayerViewController.swift */; };
 		D3D11963256F5E210071F1C6 /* SongPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D11962256F5E210071F1C6 /* SongPlayer.swift */; };
@@ -41,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BFCEC84A25AA755F8A27B34 /* Pods-MyMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMusic.debug.xcconfig"; path = "Target Support Files/Pods-MyMusic/Pods-MyMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		6155E6CFBC8410C32A871674 /* Pods_MyMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F512FD159070C6E27905E63 /* Pods-MyMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMusic.release.xcconfig"; path = "Target Support Files/Pods-MyMusic/Pods-MyMusic.release.xcconfig"; sourceTree = "<group>"; };
 		D3499309256EEE0B00FE14BA /* SongCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCollection.swift; sourceTree = "<group>"; };
 		D3499394256F3C1200FE14BA /* FullPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPlayerViewController.swift; sourceTree = "<group>"; };
 		D3D11962256F5E210071F1C6 /* SongPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayer.swift; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B1915288DA13528647F7337 /* Pods_MyMusic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +93,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E9ACF241851E98FFF590915 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6155E6CFBC8410C32A871674 /* Pods_MyMusic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55EEB52910D813054C722715 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BFCEC84A25AA755F8A27B34 /* Pods-MyMusic.debug.xcconfig */,
+				9F512FD159070C6E27905E63 /* Pods-MyMusic.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D3EE321B256DC74000926074 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +118,8 @@
 				D3EE323D256DC74300926074 /* MyMusicTests */,
 				D3EE3248256DC74400926074 /* MyMusicUITests */,
 				D3EE3225256DC74000926074 /* Products */,
+				55EEB52910D813054C722715 /* Pods */,
+				4E9ACF241851E98FFF590915 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3EE324E256DC74400926074 /* Build configuration list for PBXNativeTarget "MyMusic" */;
 			buildPhases = (
+				A989E85B272D1E05C9D012C4 /* [CP] Check Pods Manifest.lock */,
 				D3EE3220256DC74000926074 /* Sources */,
 				D3EE3221256DC74000926074 /* Frameworks */,
 				D3EE3222256DC74000926074 /* Resources */,
+				07A37B896BB252F836D5D49C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,6 +308,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07A37B896BB252F836D5D49C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMusic/Pods-MyMusic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyMusic/Pods-MyMusic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyMusic/Pods-MyMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A989E85B272D1E05C9D012C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyMusic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D3EE3220256DC74000926074 /* Sources */ = {
@@ -465,6 +534,7 @@
 		};
 		D3EE324F256DC74400926074 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BFCEC84A25AA755F8A27B34 /* Pods-MyMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -485,6 +555,7 @@
 		};
 		D3EE3250256DC74400926074 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F512FD159070C6E27905E63 /* Pods-MyMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

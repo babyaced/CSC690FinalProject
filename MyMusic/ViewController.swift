@@ -5,6 +5,7 @@
 //  Created by Daniel Simpson on 11/24/20.
 //
 import UIKit
+import UIImageColors
 
 let updatePlayerViewsKey = "dsimpson.sfsu.edu.updatePlayerViewsKey"
 
@@ -71,11 +72,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let song = SongCollection.shared.songs[indexPath.row]
+        
         //configure
         cell.textLabel?.text = song.name
+        //cell.textLabel?.textColor = colors?.primary
         cell.detailTextLabel?.text = song.albumName
+        //cell.detailTextLabel?.textColor = colors?.secondary
         cell.accessoryType = .disclosureIndicator
         cell.imageView?.image = UIImage(named: song.imageName!)
+        //cell.backgroundColor = colors?.background
         cell.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 18)
         cell.detailTextLabel?.font = UIFont(name: "Helvetica", size: 17)
         return cell
@@ -90,9 +95,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //present the player
         SongCollection.shared.position = indexPath.row
-        let song = SongCollection.shared.songs[SongCollection.shared.position]
-        miniPlayerSongLabel.text = song.name
-        miniPlayerArtistLabel.text = song.artistName
+        updateMiniPlayerView()
         SongPlayer.shared.playSong()
     }
     
@@ -149,15 +152,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @objc
     func updateMiniPlayerView(){
-        miniPlayerSongLabel.text = SongCollection.shared.songs[SongCollection.shared.position].name
-        miniPlayerArtistLabel.text = SongCollection.shared.songs[SongCollection.shared.position].artistName
+        let song = SongCollection.shared.songs[SongCollection.shared.position]
+        miniPlayerView.backgroundColor = song.colors?.background
+        miniPlayerSongLabel.text = song.name
+        miniPlayerArtistLabel.text = song.artistName
+        miniPlayerSongLabel.textColor = song.colors?.primary
+        miniPlayerArtistLabel.textColor = song.colors?.secondary
     }
 }
 
 extension ViewController: UpdateMiniPlayerDelegate{
     func changedSong(){
-        miniPlayerSongLabel.text = SongCollection.shared.songs[SongCollection.shared.position].name
-        miniPlayerArtistLabel.text = SongCollection.shared.songs[SongCollection.shared.position].artistName
+        updateMiniPlayerView()
     }
 }
     
