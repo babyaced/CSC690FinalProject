@@ -14,7 +14,7 @@ class PlayerViewController: UIViewController {
     
     @IBOutlet var holder: UIView!
     
-    var player: AVAudioPlayer?
+    //var player: AVAudioPlayer?
 
     
     //User Interface Elements
@@ -64,38 +64,14 @@ class PlayerViewController: UIViewController {
         //set up player
         let song = SongCollection.shared.songs[SongCollection.shared.position]
         
-        let urlString = Bundle.main.path(forResource: song.trackName, ofType: "mp3")
-        
-        do{
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default, options: [AVAudioSession.CategoryOptions.duckOthers])
-            try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
-            
-            guard let urlString = urlString else{
-                print("urlString is nil")
-                return
-            }
-            
-            player = try AVAudioPlayer(contentsOf: URL(string: urlString)!)
-            
-            guard let player = player else{
-                print("player is nil")
-                return
-            }
-            player.volume = 0.5
-            player.play()
-        }
-        catch{
-            print("error occurred")
-        }
-        
         //set up user interface elements
         
         //ablum cover
-        /*albumImageView.frame = CGRect(x: 10,
+        albumImageView.frame = CGRect(x: 10,
                                       y: 10,
                                       width: holder.frame.size.width-20,
                                       height: holder.frame.size.width-20)
-        albumImageView.image = UIImage(named: song.imageName)
+        albumImageView.image = UIImage(named: song.imageName!)
         holder.addSubview(albumImageView)
         
         //Labels: Song, album, artist
@@ -167,7 +143,6 @@ class PlayerViewController: UIViewController {
         slider.value = 0.5
         slider.addTarget(self,action: #selector(didSlideSlider(_:)), for: .valueChanged)
         holder.addSubview(slider)
-        
     }
     
     @objc func didTapBackButton(_ slider: UISlider){

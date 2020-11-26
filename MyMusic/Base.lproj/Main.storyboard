@@ -49,13 +49,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="id3-hO-0TE">
                                 <rect key="frame" x="0.0" y="577" width="375" height="90"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5U-8G-HvK">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Song Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5U-8G-HvK">
                                         <rect key="frame" x="15" y="15" width="345" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hv0-BR-Deu">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Artist Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hv0-BR-Deu">
                                         <rect key="frame" x="15" y="57" width="345" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="textColor"/>
@@ -69,6 +69,7 @@
                                     <constraint firstItem="Hv0-BR-Deu" firstAttribute="leading" secondItem="id3-hO-0TE" secondAttribute="leading" constant="15" id="87W-we-fyk"/>
                                     <constraint firstItem="x5U-8G-HvK" firstAttribute="top" secondItem="id3-hO-0TE" secondAttribute="top" constant="15" id="Asy-Lk-ihz"/>
                                     <constraint firstAttribute="trailing" secondItem="x5U-8G-HvK" secondAttribute="trailing" constant="15" id="QEz-V9-77T"/>
+                                    <constraint firstItem="Hv0-BR-Deu" firstAttribute="top" secondItem="x5U-8G-HvK" secondAttribute="bottom" constant="15" id="RF9-dl-wYm"/>
                                     <constraint firstAttribute="trailing" secondItem="Hv0-BR-Deu" secondAttribute="trailing" constant="15" id="waj-6d-ro8"/>
                                     <constraint firstAttribute="height" constant="90" id="zAt-dz-G64"/>
                                 </constraints>
@@ -99,37 +100,58 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="712.79999999999995" y="31.934032983508249"/>
+            <point key="canvasLocation" x="554" y="32"/>
         </scene>
-        <!--Player View Controller-->
-        <scene sceneID="GWM-0k-TPf">
+        <!--Full Player View Controller-->
+        <scene sceneID="xDt-ga-jJE">
             <objects>
-                <viewController storyboardIdentifier="player" id="HvN-gr-6UZ" customClass="PlayerViewController" customModule="MyMusic" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="w2n-Wk-phx">
+                <viewController storyboardIdentifier="Full Player" title="Full Player View Controller" id="d0b-1C-pvw" customClass="FullPlayerViewController" customModule="MyMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="29v-LP-HEA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQg-Jh-MMN">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe0-Gf-tZn">
+                                <rect key="frame" x="15" y="15" width="345" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tf8-MH-0Yi">
+                                <rect key="frame" x="15" y="54" width="345" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nbq-kF-ipB">
+                                <rect key="frame" x="0.0" y="87" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Nbq-kF-ipB" secondAttribute="height" multiplier="1:1" id="Btx-OS-wKO"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="0LW-6F-LEr"/>
+                        <viewLayoutGuide key="safeArea" id="7Wy-pS-GmJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DQg-Jh-MMN" firstAttribute="top" secondItem="0LW-6F-LEr" secondAttribute="top" id="5UC-py-qfj"/>
-                            <constraint firstItem="DQg-Jh-MMN" firstAttribute="leading" secondItem="0LW-6F-LEr" secondAttribute="leading" id="OYF-cu-Voa"/>
-                            <constraint firstItem="0LW-6F-LEr" firstAttribute="bottom" secondItem="DQg-Jh-MMN" secondAttribute="bottom" id="jl5-EB-aoM"/>
-                            <constraint firstItem="0LW-6F-LEr" firstAttribute="trailing" secondItem="DQg-Jh-MMN" secondAttribute="trailing" id="vvc-2T-RO1"/>
+                            <constraint firstItem="Nbq-kF-ipB" firstAttribute="top" secondItem="tf8-MH-0Yi" secondAttribute="bottom" constant="15" id="86E-tF-6hk"/>
+                            <constraint firstItem="7Wy-pS-GmJ" firstAttribute="trailing" secondItem="Nbq-kF-ipB" secondAttribute="trailing" id="EoP-PU-d9i"/>
+                            <constraint firstItem="7Wy-pS-GmJ" firstAttribute="trailing" secondItem="Oe0-Gf-tZn" secondAttribute="trailing" constant="15" id="RJM-dS-U2J"/>
+                            <constraint firstItem="Oe0-Gf-tZn" firstAttribute="top" secondItem="7Wy-pS-GmJ" secondAttribute="top" constant="15" id="XYx-un-wYn"/>
+                            <constraint firstItem="tf8-MH-0Yi" firstAttribute="top" secondItem="Oe0-Gf-tZn" secondAttribute="bottom" constant="15" id="ZPm-Bq-EXt"/>
+                            <constraint firstItem="7Wy-pS-GmJ" firstAttribute="trailing" secondItem="tf8-MH-0Yi" secondAttribute="trailing" constant="15" id="aNy-jO-PCJ"/>
+                            <constraint firstItem="Oe0-Gf-tZn" firstAttribute="leading" secondItem="7Wy-pS-GmJ" secondAttribute="leading" constant="15" id="doF-8X-iVy"/>
+                            <constraint firstItem="tf8-MH-0Yi" firstAttribute="leading" secondItem="7Wy-pS-GmJ" secondAttribute="leading" constant="15" id="lYN-dK-0Pu"/>
+                            <constraint firstItem="Nbq-kF-ipB" firstAttribute="leading" secondItem="7Wy-pS-GmJ" secondAttribute="leading" id="tRd-Nr-zdv"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="holder" destination="DQg-Jh-MMN" id="uz0-Xa-OTJ"/>
+                        <outlet property="fullPlayerAlbumArt" destination="Nbq-kF-ipB" id="Uuz-DS-Mcq"/>
+                        <outlet property="fullPlayerArtistLabel" destination="tf8-MH-0Yi" id="JAS-ew-7oh"/>
+                        <outlet property="fullPlayerSongLabel" destination="Oe0-Gf-tZn" id="cdj-qO-aOs"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H3O-65-kY4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Jh-wk-WUX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1641" y="33"/>
+            <point key="canvasLocation" x="1444" y="32"/>
         </scene>
         <!--Item-->
         <scene sceneID="tRm-yY-jzk">

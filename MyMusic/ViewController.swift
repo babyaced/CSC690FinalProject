@@ -8,6 +8,8 @@
 import AVFoundation
 import UIKit
 
+var player: AVAudioPlayer?
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var table: UITableView!
@@ -15,8 +17,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var miniPlayerView: UIView!
     @IBOutlet weak var miniPlayerSongLabel: UILabel!
     @IBOutlet weak var miniPlayerArtistLabel: UILabel!
-    
-    var player: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +67,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = song.name
         cell.detailTextLabel?.text = song.albumName
         cell.accessoryType = .disclosureIndicator
-        cell.imageView?.image = UIImage(named: song.imageName)
+        cell.imageView?.image = UIImage(named: song.imageName!)
         cell.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 18)
         cell.detailTextLabel?.font = UIFont(name: "Helvetica", size: 17)
         return cell
@@ -153,9 +153,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @objc
     func miniPlayerSwipeUp(_ gesture: UISwipeGestureRecognizer){
-        print("swipe up")
+        guard let vc = storyboard?.instantiateViewController(identifier: "Full Player") as? FullPlayerViewController else {
+            return
+        }
+        
+        present(vc, animated: true)
     }
-
 }
     
 

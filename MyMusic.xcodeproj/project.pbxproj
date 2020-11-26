@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D349930A256EEE0B00FE14BA /* SongCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3499309256EEE0B00FE14BA /* SongCollection.swift */; };
+		D3499395256F3C1200FE14BA /* FullPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3499394256F3C1200FE14BA /* FullPlayerViewController.swift */; };
 		D3EE3228256DC74000926074 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3227256DC74000926074 /* AppDelegate.swift */; };
 		D3EE322A256DC74000926074 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3229256DC74000926074 /* SceneDelegate.swift */; };
 		D3EE322C256DC74000926074 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE322B256DC74000926074 /* ViewController.swift */; };
@@ -19,7 +20,6 @@
 		D3EE325C256DC7F100926074 /* song2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3EE325B256DC7F100926074 /* song2.mp3 */; };
 		D3EE3261256DC80100926074 /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3EE3260256DC80100926074 /* song1.mp3 */; };
 		D3EE3266256DC81000926074 /* song3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3EE3265256DC81000926074 /* song3.mp3 */; };
-		D3EE3274256DCF6400926074 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3273256DCF6400926074 /* PlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		D3499309256EEE0B00FE14BA /* SongCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCollection.swift; sourceTree = "<group>"; };
+		D3499394256F3C1200FE14BA /* FullPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPlayerViewController.swift; sourceTree = "<group>"; };
 		D3EE3224256DC74000926074 /* MyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EE3227256DC74000926074 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3EE3229256DC74000926074 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		D3EE325B256DC7F100926074 /* song2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song2.mp3; sourceTree = "<group>"; };
 		D3EE3260256DC80100926074 /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song1.mp3; sourceTree = "<group>"; };
 		D3EE3265256DC81000926074 /* song3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song3.mp3; sourceTree = "<group>"; };
-		D3EE3273256DCF6400926074 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +109,7 @@
 		D3EE3226256DC74000926074 /* MyMusic */ = {
 			isa = PBXGroup;
 			children = (
+				D3499394256F3C1200FE14BA /* FullPlayerViewController.swift */,
 				D3EE3260256DC80100926074 /* song1.mp3 */,
 				D3EE325B256DC7F100926074 /* song2.mp3 */,
 				D3EE3265256DC81000926074 /* song3.mp3 */,
@@ -120,7 +121,6 @@
 				D3EE3230256DC74300926074 /* Assets.xcassets */,
 				D3EE3232256DC74300926074 /* LaunchScreen.storyboard */,
 				D3EE3235256DC74300926074 /* Info.plist */,
-				D3EE3273256DCF6400926074 /* PlayerViewController.swift */,
 				D3499309256EEE0B00FE14BA /* SongCollection.swift */,
 			);
 			path = MyMusic;
@@ -284,8 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3499395256F3C1200FE14BA /* FullPlayerViewController.swift in Sources */,
 				D3EE322C256DC74000926074 /* ViewController.swift in Sources */,
-				D3EE3274256DCF6400926074 /* PlayerViewController.swift in Sources */,
 				D3EE3228256DC74000926074 /* AppDelegate.swift in Sources */,
 				D349930A256EEE0B00FE14BA /* SongCollection.swift in Sources */,
 				D3EE322A256DC74000926074 /* SceneDelegate.swift in Sources */,

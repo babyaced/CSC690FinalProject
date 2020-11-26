@@ -12,11 +12,11 @@ class SongCollection{
     static let shared = SongCollection()
     
     struct Song{
-        let name: String
-        let albumName: String
-        let artistName: String
-        let imageName: String
-        let trackName: String
+        let name : String?
+        let albumName : String?
+        let artistName : String?
+        let imageName : String?
+        let trackName : String?
     }
     
     var songs = [Song]()
