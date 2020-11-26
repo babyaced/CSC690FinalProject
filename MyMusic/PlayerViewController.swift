@@ -10,11 +10,12 @@ import UIKit
 
 class PlayerViewController: UIViewController {
     
-    public var position: Int = 0
+    //public var position: Int = 0
     
     @IBOutlet var holder: UIView!
     
     var player: AVAudioPlayer?
+
     
     //User Interface Elements
     
@@ -90,7 +91,7 @@ class PlayerViewController: UIViewController {
         //set up user interface elements
         
         //ablum cover
-        albumImageView.frame = CGRect(x: 10,
+        /*albumImageView.frame = CGRect(x: 10,
                                       y: 10,
                                       width: holder.frame.size.width-20,
                                       height: holder.frame.size.width-20)
@@ -181,7 +182,7 @@ class PlayerViewController: UIViewController {
     }
     
     @objc func didTapNextButton(_ slider: UISlider){
-        if position < (SongCollection.shared.songs.count - 1){
+        if SongCollection.shared.position < (SongCollection.shared.songs.count - 1){
             SongCollection.shared.position = SongCollection.shared.position + 1
             player?.stop()
             for subview in holder.subviews{
@@ -232,6 +233,6 @@ class PlayerViewController: UIViewController {
         super.viewWillDisappear(animated)
         //if let player = player{
          //   player.stop()
-        //}
+        //}*/
     }
 }

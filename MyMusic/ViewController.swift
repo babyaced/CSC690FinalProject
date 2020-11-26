@@ -5,17 +5,52 @@
 //  Created by Daniel Simpson on 11/24/20.
 //
 
+import AVFoundation
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var table: UITableView!
     
-
+    @IBOutlet weak var miniPlayerView: UIView!
+    @IBOutlet weak var miniPlayerSongLabel: UILabel!
+    @IBOutlet weak var miniPlayerArtistLabel: UILabel!
+    
+    var player: AVAudioPlayer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
+        setupMiniPlayer()
+    }
+    
+    func setupMiniPlayer(){
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(miniPlayerTap))
+        tapRecognizer.numberOfTapsRequired = 1
+        tapRecognizer.numberOfTouchesRequired = 1
+        
+        let swipeLeftRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(miniPlayerSwipeLeft))
+        swipeLeftRecognizer.direction = .left
+        swipeLeftRecognizer.numberOfTouchesRequired = 1
+        
+        let swipeRightRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(miniPlayerSwipeRight))
+        swipeRightRecognizer.direction = .right
+        swipeRightRecognizer.numberOfTouchesRequired = 1
+        
+        let swipeUpRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(miniPlayerSwipeUp))
+        swipeUpRecognizer.direction = .up
+        swipeUpRecognizer.numberOfTouchesRequired = 1
+        
+        miniPlayerView.addGestureRecognizer(tapRecognizer)
+        
+        miniPlayerView.addGestureRecognizer(swipeLeftRecognizer)
+        
+        miniPlayerView.addGestureRecognizer(swipeRightRecognizer)
+        
+        miniPlayerView.addGestureRecognizer(swipeUpRecognizer)
+        
+        miniPlayerView.isUserInteractionEnabled = true
     }
         
     
@@ -48,17 +83,82 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //present the player
         SongCollection.shared.position = indexPath.row
         
-        //songs
-        guard let vc = storyboard?.instantiateViewController(identifier: "player") as? PlayerViewController else {
-            return
-        }
-        
-        //vc.songs = songCollection.songs
-        //vc.position = position
-        
-        present(vc,animated: true)
+        playSong()
     }
+    
+    func playSong(){
+        let song = SongCollection.shared.songs[SongCollection.shared.position]
+            
+        let urlString = Bundle.main.path(forResource: song.trackName, ofType: "mp3")
+        
+        //change song and artist name in mini player
+        miniPlayerSongLabel.text = song.name
+        miniPlayerArtistLabel.text = song.artistName
+        
+        do{
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default, options: [AVAudioSession.CategoryOptions.duckOthers])
+            try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
+                
+            guard let urlString = urlString else{
+                print("urlString is nil")
+                return
+            }
+                
+            player = try AVAudioPlayer(contentsOf: URL(string: urlString)!)
+                
+            guard let player = player else{
+                print("player is nil")
+                return
+            }
+            player.volume = 0.5
+            player.play()
+           
+        }
+        catch{
+            print("error occurred")
+        }
+    }
+    
+    
+    
+    @objc
+    func miniPlayerTap(_ gesture: UITapGestureRecognizer){
+        if player?.isPlaying == true {
+            //pause
+            player?.pause()
+        }
+        else{
+            //play
+            player?.play()
+        }
+    }
+    
+    @objc
+    func miniPlayerSwipeRight(_ gesture: UISwipeGestureRecognizer){
+        if SongCollection.shared.position > 0{
+            SongCollection.shared.position = SongCollection.shared.position - 1
+            player?.stop()
+            playSong()  
+        }
+    }
+    
+    @objc
+    func miniPlayerSwipeLeft(_ gesture: UISwipeGestureRecognizer){
+        if SongCollection.shared.position < (SongCollection.shared.songs.count - 1){
+            SongCollection.shared.position = SongCollection.shared.position + 1
+            player?.stop()
+            playSong()
+        }
+    }
+    
+    @objc
+    func miniPlayerSwipeUp(_ gesture: UISwipeGestureRecognizer){
+        print("swipe up")
+    }
+
 }
+    
+
 
 
 
