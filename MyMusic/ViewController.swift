@@ -4,8 +4,6 @@
 //
 //  Created by Daniel Simpson on 11/24/20.
 //
-
-import AVFoundation
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -127,7 +125,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         guard let vc = storyboard?.instantiateViewController(identifier: "Full Player") as? FullPlayerViewController else {
             return
         }
+        vc.updateMiniPlayerDelegate = self
         present(vc, animated: true)
+    }
+}
+
+extension ViewController: UpdateMiniPlayerDelegate{
+    func changedSong(){
+        miniPlayerSongLabel.text = SongCollection.shared.songs[SongCollection.shared.position].name
+        miniPlayerArtistLabel.text = SongCollection.shared.songs[SongCollection.shared.position].artistName
     }
 }
     

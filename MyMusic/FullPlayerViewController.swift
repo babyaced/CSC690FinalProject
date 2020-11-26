@@ -8,6 +8,10 @@
 import AVFoundation
 import UIKit
 
+protocol UpdateMiniPlayerDelegate{
+    func changedSong()
+}
+
 class FullPlayerViewController: UIViewController {
     
     @IBOutlet var fullPlayerSongLabel: UILabel!
@@ -15,6 +19,8 @@ class FullPlayerViewController: UIViewController {
     @IBOutlet var fullPlayerAlbumArt: UIImageView!
     @IBOutlet var fullPlayerAlbumName: UILabel!
     @IBOutlet var fullPlayerYearOfRelease: UILabel!
+    
+    var updateMiniPlayerDelegate : UpdateMiniPlayerDelegate!
     
 
     
@@ -56,6 +62,7 @@ class FullPlayerViewController: UIViewController {
             SongCollection.shared.position = SongCollection.shared.position - 1
             SongPlayer.shared.player?.stop()
             fullPlayerSetup()
+            updateMiniPlayerDelegate.changedSong()
             SongPlayer.shared.playSong()
         }
     }
@@ -76,11 +83,9 @@ class FullPlayerViewController: UIViewController {
             SongCollection.shared.position = SongCollection.shared.position + 1
             SongPlayer.shared.player?.stop()
             fullPlayerSetup()
+            updateMiniPlayerDelegate.changedSong()
             SongPlayer.shared.playSong()
         }
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        print("modal dismissed")
-    }
 }
