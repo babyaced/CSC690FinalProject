@@ -6,6 +6,8 @@
 //
 import UIKit
 
+let updatePlayerViewsKey = "dsimpson.sfsu.edu.updatePlayerViewsKey"
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var table: UITableView!
@@ -20,6 +22,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         table.delegate = self
         table.dataSource = self
         setupMiniPlayer()
+        createObservers()
+    }
+    
+    deinit{
+        NotificationCenter.default.removeObserver(self)
     }
     
     func setupMiniPlayer(){
@@ -48,6 +55,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         miniPlayerView.addGestureRecognizer(swipeUpRecognizer)
         
         miniPlayerView.isUserInteractionEnabled = true
+    }
+    
+    func createObservers(){
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.updateMiniPlayerView), name: Notification.Name(rawValue: "dsimpson.sfsu.edu.updatePlayerViewsKey"), object: nil)
     }
         
     
@@ -134,6 +145,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             vc.updateMiniPlayerDelegate = self
             present(vc, animated: true)
         }
+    }
+    
+    @objc
+    func updateMiniPlayerView(){
+        miniPlayerSongLabel.text = SongCollection.shared.songs[SongCollection.shared.position].name
+        miniPlayerArtistLabel.text = SongCollection.shared.songs[SongCollection.shared.position].artistName
     }
 }
 

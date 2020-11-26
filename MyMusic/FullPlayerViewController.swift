@@ -30,39 +30,38 @@ class FullPlayerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //createObservers()
+        
+        createObservers()
         fullPlayerSetup()
         var playbackTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateScrubber), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view.
     }
     
+    deinit{
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     func fullPlayerSetup(){
         let song = SongCollection.shared.songs[SongCollection.shared.position]
-        print(song)
-        //print(fullPlayerSongLabel.text)
-        
         if fullPlayerSongLabel != nil{
             fullPlayerSongLabel!.text = song.name!
         }
-        
-        
         if fullPlayerArtistLabel != nil{
             fullPlayerArtistLabel!.text = song.artistName!
         }
-        
-       
         if fullPlayerAlbumArt != nil{
             fullPlayerAlbumArt!.image = UIImage(named:song.imageName!)
         }
-        
         if fullPlayerAlbumName != nil{
             fullPlayerAlbumName.text = song.albumName!
         }
-        
         if let player = SongPlayer.shared.player{
             fullPlayerScrubber.maximumValue = Float(SongPlayer.shared.player?.duration ?? 0)
         }
-        
+    }
+    
+    func createObservers(){
+        NotificationCenter.default.addObserver(self, selector: #selector(FullPlayerViewController.updateFullPlayerView), name: Notification.Name(rawValue: "dsimpson.sfsu.edu.updatePlayerViewsKey"), object: nil)
     }
     
     @IBAction func fullPlayerPreviousTrack(_ sender: Any) {
@@ -106,4 +105,11 @@ class FullPlayerViewController: UIViewController {
     func updateScrubber(){
         fullPlayerScrubber.value = Float(SongPlayer.shared.player?.currentTime ?? 0)
     }
+    
+    @objc
+    func updateFullPlayerView()
+    {
+        fullPlayerSetup()
+    }
+    
 }

@@ -48,6 +48,7 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool){
         SongCollection.shared.position += 1
+        NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsKey), object: nil)
         playSong()
     }
 }
