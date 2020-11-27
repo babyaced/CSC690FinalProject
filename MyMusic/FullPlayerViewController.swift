@@ -8,8 +8,6 @@
 import AVFoundation
 import UIKit
 
-let scrubNotificationKey = "dsimpson.sfsu.edu.scrub"
-
 protocol UpdateMiniPlayerDelegate{
     func changedSong()
 }
@@ -26,16 +24,17 @@ class FullPlayerViewController: UIViewController {
     @IBOutlet var timeRemainingLabel: UILabel!
     @IBOutlet var timeElapsedLabel: UILabel!
     
-    var updateMiniPlayerDelegate : UpdateMiniPlayerDelegate!
-    
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         createObservers()
         fullPlayerSetup()
-        updateFullPlayerView()
+        if(SongPlayer.shared.isPlaying()){
+            updateFullPlayerViewtoPlayingView()
+        }else{
+            updateFullPlayerViewtoPausedView()
+        }
         var playbackTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateScrubber), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view.
     }
@@ -68,7 +67,8 @@ class FullPlayerViewController: UIViewController {
     }
     
     func createObservers(){
-        NotificationCenter.default.addObserver(self, selector: #selector(FullPlayerViewController.updateFullPlayerView), name: Notification.Name(rawValue: "dsimpson.sfsu.edu.updatePlayerViewsKey"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(FullPlayerViewController.updateFullPlayerViewtoPlayingView), name: Notification.Name(rawValue: "dsimpson.sfsu.edu.updatePlayerViewsToPlayingStatesKey"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(FullPlayerViewController.updateFullPlayerViewtoPausedView), name: Notification.Name(rawValue: "dsimpson.sfsu.edu.updatePlayerViewsToPausedStatesKey"), object: nil)
     }
     
     @IBAction func fullPlayerScrub(_ sender: Any) {
@@ -82,7 +82,7 @@ class FullPlayerViewController: UIViewController {
     }
     
     @objc
-    func updateFullPlayerView()
+    func updateFullPlayerViewtoPlayingView()
     {
         let song = SongCollection.shared.songs[SongCollection.shared.position]
         if fullPlayerSongLabel != nil{
@@ -108,6 +108,44 @@ class FullPlayerViewController: UIViewController {
         timeRemainingLabel.textColor = song.colors?.secondary
         
         fullPlayerScrubber.tintColor = song.colors?.secondary
+    }
+    
+    @objc
+    func updateFullPlayerViewtoPausedView()
+    {
+        let textColor: UIColor
+        if traitCollection.userInterfaceStyle == .light{
+             textColor = UIColor.darkText
+        }
+        else{
+            textColor = UIColor.lightText
+        }
+        let song = SongCollection.shared.songs[SongCollection.shared.position]
+        if fullPlayerSongLabel != nil{
+            fullPlayerSongLabel!.text = song.name!
+            fullPlayerSongLabel.textColor = textColor
+        }
+        if fullPlayerArtistLabel != nil{
+            fullPlayerArtistLabel!.text = song.artistName!
+            fullPlayerArtistLabel.textColor = textColor
+        }
+        if fullPlayerAlbumArt != nil{
+            fullPlayerAlbumArt!.image = UIImage(named:song.imageName!)
+            self.view.backgroundColor = UIColor.systemBackground
+        }
+        if fullPlayerAlbumName != nil{
+            fullPlayerAlbumName.text = song.albumName!
+            fullPlayerAlbumName.textColor = textColor
+        }
+        if let player = SongPlayer.shared.player{
+            fullPlayerScrubber.maximumValue = Float(SongPlayer.shared.player?.duration ?? 0)
+        }
+        
+        
+        timeElapsedLabel.textColor = textColor
+        timeRemainingLabel.textColor = textColor
+        
+        fullPlayerScrubber.tintColor = textColor
     }
     
     func convertSecondsToTime(seconds: Int) -> String{

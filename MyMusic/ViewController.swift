@@ -7,7 +7,8 @@
 import UIKit
 import UIImageColors
 
-let updatePlayerViewsKey = "dsimpson.sfsu.edu.updatePlayerViewsKey"
+let updatePlayerViewsToPlayingStatesKey = "dsimpson.sfsu.edu.updatePlayerViewsToPlayingStatesKey"
+let updatePlayerViewsToPausedStatesKey = "dsimpson.sfsu.edu.updatePlayerViewsToPausedStatesKey"
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -59,7 +60,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func createObservers(){
-        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.updateMiniPlayerView), name: Notification.Name(rawValue: "dsimpson.sfsu.edu.updatePlayerViewsKey"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.updateMiniPlayerViewToPlayingView), name: Notification.Name(rawValue: "dsimpson.sfsu.edu.updatePlayerViewsToPlayingStatesKey"), object: nil)
+        NotificationCenter.default.addObserver(self, selector:  #selector(ViewController.updateMiniPlayerViewToPausedView), name: Notification.Name(rawValue: "dsimpson.sfsu.edu.updatePlayerViewsToPausedStatesKey"), object: nil)
     }
         
     
@@ -94,7 +96,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         //present the player
         SongCollection.shared.position = indexPath.row
-        updateMiniPlayerView()
+        updateMiniPlayerViewToPlayingView()
         SongPlayer.shared.startSong()
     }
     
@@ -102,7 +104,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @objc
     func miniPlayerTap(_ gesture: UITapGestureRecognizer){
-        if SongPlayer.shared.player?.isPlaying == true {
+        if SongPlayer.shared.isPlaying() == true {
             //pause
             SongPlayer.shared.pauseSong()
         }
@@ -133,7 +135,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     @objc
-    func updateMiniPlayerView(){
+    func updateMiniPlayerViewToPlayingView(){
         let song = SongCollection.shared.songs[SongCollection.shared.position]
         miniPlayerView.backgroundColor = song.colors?.background
         miniPlayerSongLabel.text = song.name
@@ -141,13 +143,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         miniPlayerSongLabel.textColor = song.colors?.primary
         miniPlayerArtistLabel.textColor = song.colors?.secondary
     }
-}
-
-/*extension ViewController: UpdateMiniPlayerDelegate{
-    func changedSong(){
-        updateMiniPlayerView()
+    
+    @objc
+    func updateMiniPlayerViewToPausedView(){
+        let textColor : UIColor
+        let song = SongCollection.shared.songs[SongCollection.shared.position]
+        miniPlayerView.backgroundColor = UIColor.systemBackground
+        miniPlayerSongLabel.text = song.name
+        miniPlayerArtistLabel.text = song.artistName
+        
+        if traitCollection.userInterfaceStyle == .light{
+            textColor = UIColor.darkText
+        }
+        else{
+            textColor = UIColor.lightText
+        }
+        miniPlayerSongLabel.textColor = textColor
+        miniPlayerArtistLabel.textColor = textColor
     }
-}*/
+}
     
 
 

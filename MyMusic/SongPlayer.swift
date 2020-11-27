@@ -38,6 +38,7 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
             }
             
             player.delegate = self
+            NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPlayingStatesKey), object: nil)
             player.play()
         }
         catch{
@@ -50,6 +51,7 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
             print("player is nil")
             return
         }
+        NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPlayingStatesKey), object: nil)
         player.play()
     }
     
@@ -58,6 +60,7 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
             print("player is nil")
             return
         }
+        NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPausedStatesKey), object: nil)
         player.pause()
     }
     
@@ -99,7 +102,7 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
         if SongCollection.shared.position != -1{
             if SongCollection.shared.position > 0{
                 SongCollection.shared.position -= 1
-                NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsKey), object: nil)
+                NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPlayingStatesKey), object: nil)
                 startSong()
             }
         }
@@ -110,7 +113,7 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
         if SongCollection.shared.position != -1{
             if SongCollection.shared.position < (SongCollection.shared.songs.count - 1){
                 SongCollection.shared.position += 1
-                NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsKey), object: nil)
+                NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPlayingStatesKey), object: nil)
                startSong()
             }
         }
