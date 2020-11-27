@@ -96,7 +96,9 @@ class FullPlayerViewController: UIViewController {
         }
         if fullPlayerAlbumArt != nil{
             fullPlayerAlbumArt!.image = UIImage(named:song.imageName!)
-            self.view.backgroundColor = song.colors?.background
+            UIView.animate(withDuration: 0.5, animations: {
+                self.view.backgroundColor =  song.colors?.background
+            })
         }
         if fullPlayerAlbumName != nil{
             fullPlayerAlbumName.text = song.albumName!
@@ -136,7 +138,9 @@ class FullPlayerViewController: UIViewController {
         }
         if fullPlayerAlbumArt != nil{
             fullPlayerAlbumArt!.image = UIImage(named:song.imageName!)
-            self.view.backgroundColor = UIColor.systemBackground
+            UIView.animate(withDuration: 0.5, animations: {
+                self.view.backgroundColor =  UIColor.systemBackground
+            })
         }
         if fullPlayerAlbumName != nil{
             fullPlayerAlbumName.text = song.albumName!

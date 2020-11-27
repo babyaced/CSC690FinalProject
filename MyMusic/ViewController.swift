@@ -137,7 +137,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @objc
     func updateMiniPlayerViewToPlayingView(){
         let song = SongCollection.shared.songs[SongCollection.shared.position]
-        miniPlayerView.backgroundColor = song.colors?.background
+        UIView.animate(withDuration: 0.5, animations: {
+            self.miniPlayerView.backgroundColor =  song.colors?.background
+        })
         miniPlayerSongLabel.text = song.name
         miniPlayerSongLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
         miniPlayerArtistLabel.text = song.artistName
@@ -150,7 +152,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func updateMiniPlayerViewToPausedView(){
         let textColor : UIColor
         let song = SongCollection.shared.songs[SongCollection.shared.position]
-        miniPlayerView.backgroundColor = UIColor.systemBackground
+        
+        UIView.animate(withDuration: 0.5, animations: {
+            self.miniPlayerView.backgroundColor = UIColor.systemBackground
+        })
         miniPlayerSongLabel.text = song.name
         miniPlayerSongLabel.font = UIFont.systemFont(ofSize: 20.0)
         miniPlayerArtistLabel.font = UIFont.systemFont(ofSize: 15.0)
