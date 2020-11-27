@@ -78,7 +78,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //cell.textLabel?.textColor = colors?.primary
         cell.detailTextLabel?.text = song.albumName
         //cell.detailTextLabel?.textColor = colors?.secondary
-        cell.accessoryType = .disclosureIndicator
         cell.imageView?.image = UIImage(named: song.imageName!)
         //cell.backgroundColor = colors?.background
         cell.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 18)

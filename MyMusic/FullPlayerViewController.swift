@@ -67,6 +67,8 @@ class FullPlayerViewController: UIViewController {
         timeElapsedLabel.textColor = song.colors?.secondary
         timeRemainingLabel.textColor = song.colors?.secondary
         
+        fullPlayerScrubber.tintColor = song.colors?.secondary
+        
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(fullPlayerTap))
         tapRecognizer.numberOfTapsRequired = 1
         tapRecognizer.numberOfTouchesRequired = 1
