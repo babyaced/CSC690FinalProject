@@ -64,6 +64,8 @@ class FullPlayerViewController: UIViewController {
         if let player = SongPlayer.shared.player{
             fullPlayerScrubber.maximumValue = Float(SongPlayer.shared.player?.duration ?? 0)
         }
+        timeElapsedLabel.textColor = song.colors?.secondary
+        timeRemainingLabel.textColor = song.colors?.secondary
     }
     
     func createObservers(){
