@@ -35,6 +35,7 @@ class FullPlayerViewController: UIViewController {
         
         createObservers()
         fullPlayerSetup()
+        updateFullPlayerView()
         var playbackTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateScrubber), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view.
     }
@@ -44,31 +45,6 @@ class FullPlayerViewController: UIViewController {
     }
     
     func fullPlayerSetup(){
-        let song = SongCollection.shared.songs[SongCollection.shared.position]
-        if fullPlayerSongLabel != nil{
-            fullPlayerSongLabel!.text = song.name!
-            fullPlayerSongLabel.textColor = song.colors?.primary
-        }
-        if fullPlayerArtistLabel != nil{
-            fullPlayerArtistLabel!.text = song.artistName!
-            fullPlayerArtistLabel.textColor = song.colors?.secondary
-        }
-        if fullPlayerAlbumArt != nil{
-            fullPlayerAlbumArt!.image = UIImage(named:song.imageName!)
-            self.view.backgroundColor = song.colors?.background
-        }
-        if fullPlayerAlbumName != nil{
-            fullPlayerAlbumName.text = song.albumName!
-            fullPlayerAlbumName.textColor = song.colors?.secondary
-        }
-        if let player = SongPlayer.shared.player{
-            fullPlayerScrubber.maximumValue = Float(SongPlayer.shared.player?.duration ?? 0)
-        }
-        timeElapsedLabel.textColor = song.colors?.secondary
-        timeRemainingLabel.textColor = song.colors?.secondary
-        
-        fullPlayerScrubber.tintColor = song.colors?.secondary
-        
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(fullPlayerTap))
         tapRecognizer.numberOfTapsRequired = 1
         tapRecognizer.numberOfTouchesRequired = 1
@@ -96,23 +72,42 @@ class FullPlayerViewController: UIViewController {
     }
     
     @IBAction func fullPlayerScrub(_ sender: Any) {
-        SongPlayer.shared.player?.stop()
-        SongPlayer.shared.player?.currentTime = TimeInterval(fullPlayerScrubber.value)
-        SongPlayer.shared.player?.play()
-        
+        SongPlayer.shared.scrubSong(time: TimeInterval(fullPlayerScrubber.value))
     }
     @objc
     func updateScrubber(){
-        fullPlayerScrubber.value = Float(SongPlayer.shared.player?.currentTime ?? 0)
+        fullPlayerScrubber.value = Float(SongPlayer.shared.getPlaybackTime())
         timeElapsedLabel.text = convertSecondsToTime(seconds: (Int(Float(SongPlayer.shared.player?.currentTime ?? 0))))
         timeRemainingLabel.text = "-" + convertSecondsToTime(seconds:(Int(fullPlayerScrubber.maximumValue - (Float(SongPlayer.shared.player?.currentTime ?? 0)))))
-        
     }
     
     @objc
     func updateFullPlayerView()
     {
-        fullPlayerSetup()
+        let song = SongCollection.shared.songs[SongCollection.shared.position]
+        if fullPlayerSongLabel != nil{
+            fullPlayerSongLabel!.text = song.name!
+            fullPlayerSongLabel.textColor = song.colors?.primary
+        }
+        if fullPlayerArtistLabel != nil{
+            fullPlayerArtistLabel!.text = song.artistName!
+            fullPlayerArtistLabel.textColor = song.colors?.secondary
+        }
+        if fullPlayerAlbumArt != nil{
+            fullPlayerAlbumArt!.image = UIImage(named:song.imageName!)
+            self.view.backgroundColor = song.colors?.background
+        }
+        if fullPlayerAlbumName != nil{
+            fullPlayerAlbumName.text = song.albumName!
+            fullPlayerAlbumName.textColor = song.colors?.secondary
+        }
+        if let player = SongPlayer.shared.player{
+            fullPlayerScrubber.maximumValue = Float(SongPlayer.shared.player?.duration ?? 0)
+        }
+        timeElapsedLabel.textColor = song.colors?.secondary
+        timeRemainingLabel.textColor = song.colors?.secondary
+        
+        fullPlayerScrubber.tintColor = song.colors?.secondary
     }
     
     func convertSecondsToTime(seconds: Int) -> String{
@@ -123,39 +118,21 @@ class FullPlayerViewController: UIViewController {
     
     @objc
     func fullPlayerTap(_ gesture: UITapGestureRecognizer){
-        if SongPlayer.shared.player?.isPlaying == true {
-            //pause
-            SongPlayer.shared.player?.pause()
+        if SongPlayer.shared.isPlaying() == true {
+            SongPlayer.shared.pauseSong()
         }
         else{
-            //play
-            SongPlayer.shared.player?.play()
+            SongPlayer.shared.playSong()
         }
     }
     
     @objc
     func fullPlayerSwipeRight(_ gesture: UISwipeGestureRecognizer){
-        if SongCollection.shared.position != -1{
-            if SongCollection.shared.position > 0{
-                SongCollection.shared.position = SongCollection.shared.position - 1
-                SongPlayer.shared.player?.stop()
-                fullPlayerSetup()
-                updateMiniPlayerDelegate.changedSong()
-                SongPlayer.shared.playSong()
-            }
-        }
+        SongPlayer.shared.prevSong()
     }
     
     @objc
     func fullPlayerSwipeLeft(_ gesture: UISwipeGestureRecognizer){
-        if SongCollection.shared.position != -1{
-            if SongCollection.shared.position < (SongCollection.shared.songs.count - 1){
-                SongCollection.shared.position = SongCollection.shared.position + 1
-                SongPlayer.shared.player?.stop()
-                fullPlayerSetup()
-                updateMiniPlayerDelegate.changedSong()
-                SongPlayer.shared.playSong()
-            }
-        }
+        SongPlayer.shared.nextSong()
     }
 }

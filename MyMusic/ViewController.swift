@@ -95,7 +95,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //present the player
         SongCollection.shared.position = indexPath.row
         updateMiniPlayerView()
-        SongPlayer.shared.playSong()
+        SongPlayer.shared.startSong()
     }
     
     
@@ -104,36 +104,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func miniPlayerTap(_ gesture: UITapGestureRecognizer){
         if SongPlayer.shared.player?.isPlaying == true {
             //pause
-            SongPlayer.shared.player?.pause()
+            SongPlayer.shared.pauseSong()
         }
         else{
             //play
-            SongPlayer.shared.player?.play()
+            SongPlayer.shared.playSong()
         }
     }
     
     @objc
     func miniPlayerSwipeRight(_ gesture: UISwipeGestureRecognizer){
-        if SongCollection.shared.position != -1{
-            if SongCollection.shared.position > 0{
-                SongCollection.shared.position = SongCollection.shared.position - 1
-                SongPlayer.shared.player?.stop()
-                updateMiniPlayerView()
-                SongPlayer.shared.playSong()
-            }
-        }
+        SongPlayer.shared.prevSong()
     }
     
     @objc
     func miniPlayerSwipeLeft(_ gesture: UISwipeGestureRecognizer){
-        if SongCollection.shared.position != -1{
-            if SongCollection.shared.position < (SongCollection.shared.songs.count - 1){
-                SongCollection.shared.position = SongCollection.shared.position + 1
-                SongPlayer.shared.player?.stop()
-                updateMiniPlayerView()
-                SongPlayer.shared.playSong()
-            }
-        }
+        SongPlayer.shared.nextSong()
     }
     
     @objc
@@ -142,7 +128,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             guard let vc = storyboard?.instantiateViewController(identifier: "Full Player") as? FullPlayerViewController else {
                 return
             }
-            vc.updateMiniPlayerDelegate = self
             present(vc, animated: true)
         }
     }
@@ -158,11 +143,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 }
 
-extension ViewController: UpdateMiniPlayerDelegate{
+/*extension ViewController: UpdateMiniPlayerDelegate{
     func changedSong(){
         updateMiniPlayerView()
     }
-}
+}*/
     
 
 

@@ -13,7 +13,7 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
     
     var player: AVAudioPlayer?
     
-    func playSong(){
+    func startSong(){
         self.player?.delegate = nil
         let song = SongCollection.shared.songs[SongCollection.shared.position]
             
@@ -37,7 +37,6 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
                 return
             }
             
-            player.volume = 0.5
             player.delegate = self
             player.play()
         }
@@ -46,9 +45,78 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
         }
     }
     
-    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool){
-        SongCollection.shared.position += 1
-        NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsKey), object: nil)
+    func playSong(){
+        guard let player = player else{
+            print("player is nil")
+            return
+        }
+        player.play()
+    }
+    
+    func pauseSong(){
+        guard let player = player else{
+            print("player is nil")
+            return
+        }
+        player.pause()
+    }
+    
+    func stopSong(){
+        guard let player = player else{
+            print("player is nil")
+            return
+        }
+        player.stop()
+    }
+    
+    func scrubSong(time: TimeInterval){
+        guard let player = player else{
+            print("player is nil")
+            return
+        }
+        stopSong()
+        player.currentTime = time
         playSong()
+    }
+    
+    func getPlaybackTime() -> TimeInterval{
+        guard let player = player else{
+            print("player is nil")
+            return 0
+        }
+        return player.currentTime
+    }
+    
+    func isPlaying() ->Bool{
+        guard let player = player else{
+            print("player is nil")
+            return false
+        }
+        return player.isPlaying
+    }
+    
+    func prevSong(){
+        if SongCollection.shared.position != -1{
+            if SongCollection.shared.position > 0{
+                SongCollection.shared.position -= 1
+                NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsKey), object: nil)
+                startSong()
+            }
+        }
+        
+    }
+    
+    func nextSong(){
+        if SongCollection.shared.position != -1{
+            if SongCollection.shared.position < (SongCollection.shared.songs.count - 1){
+                SongCollection.shared.position += 1
+                NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsKey), object: nil)
+               startSong()
+            }
+        }
+    }
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool){
+        nextSong()
     }
 }
