@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record-player" translatesAutoresizingMaskIntoConstraints="NO" id="6A2-hR-nmh">
-                                <rect key="frame" x="82" y="323" width="250" height="250"/>
+                                <rect key="frame" x="50" y="194" width="314" height="518"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6A2-hR-nmh" secondAttribute="trailing" constant="82" id="0AE-ra-Tyu"/>
-                            <constraint firstItem="6A2-hR-nmh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="279" id="T9G-ze-WMD"/>
-                            <constraint firstItem="6A2-hR-nmh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="dtl-g3-sgD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6A2-hR-nmh" secondAttribute="bottom" constant="289" id="mUO-dI-pzj"/>
+                            <constraint firstItem="6A2-hR-nmh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="0ab-uf-FXm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6A2-hR-nmh" secondAttribute="bottom" constant="150" id="e3A-r8-Fne"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6A2-hR-nmh" secondAttribute="trailing" constant="50" id="oYt-g1-FhD"/>
+                            <constraint firstItem="6A2-hR-nmh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="quw-1A-Ahr"/>
                         </constraints>
                     </view>
                 </viewController>

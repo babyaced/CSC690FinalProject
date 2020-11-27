@@ -23,6 +23,8 @@ class FullPlayerViewController: UIViewController {
     @IBOutlet var fullPlayerYearOfRelease: UILabel!
     
     @IBOutlet var fullPlayerScrubber: UISlider!
+    @IBOutlet var timeRemainingLabel: UILabel!
+    @IBOutlet var timeElapsedLabel: UILabel!
     
     var updateMiniPlayerDelegate : UpdateMiniPlayerDelegate!
     
@@ -108,12 +110,21 @@ class FullPlayerViewController: UIViewController {
     @objc
     func updateScrubber(){
         fullPlayerScrubber.value = Float(SongPlayer.shared.player?.currentTime ?? 0)
+        timeElapsedLabel.text = convertSecondsToTime(seconds: (Int(Float(SongPlayer.shared.player?.currentTime ?? 0))))
+        timeRemainingLabel.text = "-" + convertSecondsToTime(seconds:(Int(fullPlayerScrubber.maximumValue - (Float(SongPlayer.shared.player?.currentTime ?? 0)))))
+        
     }
     
     @objc
     func updateFullPlayerView()
     {
         fullPlayerSetup()
+    }
+    
+    func convertSecondsToTime(seconds: Int) -> String{
+        let minutes = seconds / 60
+        let seconds = seconds % 60
+        return String(format:"%02i:%02i", minutes, seconds)
     }
     
 }

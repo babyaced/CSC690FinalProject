@@ -180,15 +180,36 @@
                                     <action selector="fullPlayerPreviousTrack:" destination="d0b-1C-pvw" eventType="touchUpInside" id="O2q-bn-bQt"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Elapsed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfy-8Y-3OT">
+                                <rect key="frame" x="15" y="597" width="76" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="X9h-vz-SqI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time remaining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPT-WN-Tgm">
+                                <rect key="frame" x="269" y="597.5" width="95" height="14.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="95" id="z7H-CP-Izv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Wy-pS-GmJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="7Wy-pS-GmJ" firstAttribute="trailing" secondItem="MPT-WN-Tgm" secondAttribute="trailing" constant="15" id="1Yg-D3-Tpj"/>
                             <constraint firstItem="KKQ-Hb-pgV" firstAttribute="leading" secondItem="7Wy-pS-GmJ" secondAttribute="leading" constant="15" id="2t3-P6-0W3"/>
                             <constraint firstItem="7Wy-pS-GmJ" firstAttribute="trailing" secondItem="nfa-Cn-4b1" secondAttribute="trailing" constant="15" id="6Z7-ZP-iFc"/>
                             <constraint firstItem="Nbq-kF-ipB" firstAttribute="top" secondItem="tf8-MH-0Yi" secondAttribute="bottom" constant="15" id="86E-tF-6hk"/>
-                            <constraint firstItem="7Wy-pS-GmJ" firstAttribute="trailing" secondItem="Nbq-kF-ipB" secondAttribute="trailing" id="EoP-PU-d9i"/>
+                            <constraint firstItem="xfy-8Y-3OT" firstAttribute="leading" secondItem="7Wy-pS-GmJ" secondAttribute="leading" constant="15" id="Bf2-HW-EBz"/>
                             <constraint firstItem="EkJ-FQ-swR" firstAttribute="top" secondItem="Nbq-kF-ipB" secondAttribute="bottom" constant="15" id="JI4-12-avl"/>
+                            <constraint firstItem="7Wy-pS-GmJ" firstAttribute="trailing" secondItem="Nbq-kF-ipB" secondAttribute="trailing" id="Jc7-pi-t9B"/>
+                            <constraint firstItem="KKQ-Hb-pgV" firstAttribute="top" secondItem="MPT-WN-Tgm" secondAttribute="bottom" constant="10" id="Jfp-Rm-Cx1"/>
                             <constraint firstItem="IaQ-HX-65f" firstAttribute="top" secondItem="EkJ-FQ-swR" secondAttribute="bottom" constant="20" id="KLO-7C-M23"/>
                             <constraint firstItem="EkJ-FQ-swR" firstAttribute="leading" secondItem="7Wy-pS-GmJ" secondAttribute="leading" constant="15" id="R8w-Ab-xJe"/>
                             <constraint firstItem="7Wy-pS-GmJ" firstAttribute="trailing" secondItem="Oe0-Gf-tZn" secondAttribute="trailing" constant="15" id="RJM-dS-U2J"/>
@@ -204,6 +225,7 @@
                             <constraint firstItem="7Wy-pS-GmJ" firstAttribute="bottom" secondItem="KKQ-Hb-pgV" secondAttribute="bottom" constant="15" id="pBm-wC-gB1"/>
                             <constraint firstItem="Nbq-kF-ipB" firstAttribute="leading" secondItem="7Wy-pS-GmJ" secondAttribute="leading" id="tRd-Nr-zdv"/>
                             <constraint firstItem="7Wy-pS-GmJ" firstAttribute="trailing" secondItem="KKQ-Hb-pgV" secondAttribute="trailing" constant="15" id="uPb-li-4Gy"/>
+                            <constraint firstItem="KKQ-Hb-pgV" firstAttribute="top" secondItem="xfy-8Y-3OT" secondAttribute="bottom" constant="10" id="ugX-Jp-Zp4"/>
                             <constraint firstItem="nfa-Cn-4b1" firstAttribute="leading" secondItem="YjY-aE-n2B" secondAttribute="trailing" constant="90" id="vPm-kX-1JM"/>
                             <constraint firstItem="YjY-aE-n2B" firstAttribute="top" secondItem="EkJ-FQ-swR" secondAttribute="bottom" constant="20" id="viY-Zc-Ptb"/>
                             <constraint firstItem="7Wy-pS-GmJ" firstAttribute="trailing" secondItem="EkJ-FQ-swR" secondAttribute="trailing" constant="15" id="zKq-fK-WXf"/>
@@ -215,6 +237,8 @@
                         <outlet property="fullPlayerArtistLabel" destination="tf8-MH-0Yi" id="JAS-ew-7oh"/>
                         <outlet property="fullPlayerScrubber" destination="KKQ-Hb-pgV" id="4pL-mj-TG0"/>
                         <outlet property="fullPlayerSongLabel" destination="Oe0-Gf-tZn" id="cdj-qO-aOs"/>
+                        <outlet property="timeElapsedLabel" destination="xfy-8Y-3OT" id="qgW-Y5-UVG"/>
+                        <outlet property="timeRemainingLabel" destination="MPT-WN-Tgm" id="2TZ-2X-zOv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Jh-wk-WUX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
