@@ -119,8 +119,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if SongCollection.shared.position > 0{
                 SongCollection.shared.position = SongCollection.shared.position - 1
                 SongPlayer.shared.player?.stop()
-                miniPlayerSongLabel.text = SongCollection.shared.songs[SongCollection.shared.position].name
-                miniPlayerArtistLabel.text = SongCollection.shared.songs[SongCollection.shared.position].artistName
+                updateMiniPlayerView()
                 SongPlayer.shared.playSong()
             }
         }
@@ -132,8 +131,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if SongCollection.shared.position < (SongCollection.shared.songs.count - 1){
                 SongCollection.shared.position = SongCollection.shared.position + 1
                 SongPlayer.shared.player?.stop()
-                miniPlayerSongLabel.text = SongCollection.shared.songs[SongCollection.shared.position].name
-                miniPlayerArtistLabel.text = SongCollection.shared.songs[SongCollection.shared.position].artistName
+                updateMiniPlayerView()
                 SongPlayer.shared.playSong()
             }
         }

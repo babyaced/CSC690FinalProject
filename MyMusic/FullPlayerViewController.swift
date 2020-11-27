@@ -66,41 +66,31 @@ class FullPlayerViewController: UIViewController {
         }
         timeElapsedLabel.textColor = song.colors?.secondary
         timeRemainingLabel.textColor = song.colors?.secondary
+        
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(fullPlayerTap))
+        tapRecognizer.numberOfTapsRequired = 1
+        tapRecognizer.numberOfTouchesRequired = 1
+        
+        let swipeLeftRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(fullPlayerSwipeLeft))
+        swipeLeftRecognizer.direction = .left
+        swipeLeftRecognizer.numberOfTouchesRequired = 1
+        
+        let swipeRightRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(fullPlayerSwipeRight))
+        swipeRightRecognizer.direction = .right
+        swipeRightRecognizer.numberOfTouchesRequired = 1
+        
+        
+        self.fullPlayerAlbumArt.addGestureRecognizer(tapRecognizer)
+        
+        self.fullPlayerAlbumArt.addGestureRecognizer(swipeLeftRecognizer)
+        
+        self.fullPlayerAlbumArt.addGestureRecognizer(swipeRightRecognizer)
+        
+        self.fullPlayerAlbumArt.isUserInteractionEnabled = true
     }
     
     func createObservers(){
         NotificationCenter.default.addObserver(self, selector: #selector(FullPlayerViewController.updateFullPlayerView), name: Notification.Name(rawValue: "dsimpson.sfsu.edu.updatePlayerViewsKey"), object: nil)
-    }
-    
-    @IBAction func fullPlayerPreviousTrack(_ sender: Any) {
-        if SongCollection.shared.position > 0{
-            SongCollection.shared.position = SongCollection.shared.position - 1
-            SongPlayer.shared.player?.stop()
-            fullPlayerSetup()
-            updateMiniPlayerDelegate.changedSong()
-            SongPlayer.shared.playSong()
-        }
-    }
-    
-    @IBAction func fullPlayerPlayPause(_ sender: Any) {
-        if SongPlayer.shared.player?.isPlaying == true {
-            //pause
-            SongPlayer.shared.player?.pause()
-        }
-        else{
-            //play
-            SongPlayer.shared.player?.play()
-        }
-    }
-    
-    @IBAction func fullPlayerNextTrack(_ sender: Any) {
-        if SongCollection.shared.position < (SongCollection.shared.songs.count - 1){
-            SongCollection.shared.position = SongCollection.shared.position + 1
-            SongPlayer.shared.player?.stop()
-            fullPlayerSetup()
-            updateMiniPlayerDelegate.changedSong()
-            SongPlayer.shared.playSong()
-        }
     }
     
     @IBAction func fullPlayerScrub(_ sender: Any) {
@@ -129,4 +119,41 @@ class FullPlayerViewController: UIViewController {
         return String(format:"%02i:%02i", minutes, seconds)
     }
     
+    @objc
+    func fullPlayerTap(_ gesture: UITapGestureRecognizer){
+        if SongPlayer.shared.player?.isPlaying == true {
+            //pause
+            SongPlayer.shared.player?.pause()
+        }
+        else{
+            //play
+            SongPlayer.shared.player?.play()
+        }
+    }
+    
+    @objc
+    func fullPlayerSwipeRight(_ gesture: UISwipeGestureRecognizer){
+        if SongCollection.shared.position != -1{
+            if SongCollection.shared.position > 0{
+                SongCollection.shared.position = SongCollection.shared.position - 1
+                SongPlayer.shared.player?.stop()
+                fullPlayerSetup()
+                updateMiniPlayerDelegate.changedSong()
+                SongPlayer.shared.playSong()
+            }
+        }
+    }
+    
+    @objc
+    func fullPlayerSwipeLeft(_ gesture: UISwipeGestureRecognizer){
+        if SongCollection.shared.position != -1{
+            if SongCollection.shared.position < (SongCollection.shared.songs.count - 1){
+                SongCollection.shared.position = SongCollection.shared.position + 1
+                SongPlayer.shared.player?.stop()
+                fullPlayerSetup()
+                updateMiniPlayerDelegate.changedSong()
+                SongPlayer.shared.playSong()
+            }
+        }
+    }
 }
