@@ -32,6 +32,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func setupMiniPlayer(){
+        miniPlayerView.clipsToBounds = true
+        miniPlayerView.layer.cornerRadius = 20
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(miniPlayerTap))
         tapRecognizer.numberOfTapsRequired = 1
         tapRecognizer.numberOfTouchesRequired = 1

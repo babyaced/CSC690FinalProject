@@ -43,6 +43,8 @@ class FullPlayerViewController: UIViewController {
     }
     
     func fullPlayerSetup(){
+        self.view.clipsToBounds = true
+        self.view.layer.cornerRadius = 20
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(fullPlayerTap))
         tapRecognizer.numberOfTapsRequired = 1
         tapRecognizer.numberOfTouchesRequired = 1
