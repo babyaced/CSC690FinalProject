@@ -18,7 +18,6 @@ class FullPlayerViewController: UIViewController {
     @IBOutlet var fullPlayerArtistLabel: UILabel!
     @IBOutlet var fullPlayerAlbumArt: UIImageView!
     @IBOutlet var fullPlayerAlbumName: UILabel!
-    @IBOutlet var fullPlayerYearOfRelease: UILabel!
     
     @IBOutlet var fullPlayerScrubber: UISlider!
     @IBOutlet var timeRemainingLabel: UILabel!
@@ -87,10 +86,12 @@ class FullPlayerViewController: UIViewController {
         let song = SongCollection.shared.songs[SongCollection.shared.position]
         if fullPlayerSongLabel != nil{
             fullPlayerSongLabel!.text = song.name!
+            fullPlayerSongLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
             fullPlayerSongLabel.textColor = song.colors?.primary
         }
         if fullPlayerArtistLabel != nil{
             fullPlayerArtistLabel!.text = song.artistName!
+            fullPlayerArtistLabel.font = UIFont.boldSystemFont(ofSize: 15.0)
             fullPlayerArtistLabel.textColor = song.colors?.secondary
         }
         if fullPlayerAlbumArt != nil{
@@ -99,14 +100,16 @@ class FullPlayerViewController: UIViewController {
         }
         if fullPlayerAlbumName != nil{
             fullPlayerAlbumName.text = song.albumName!
+            fullPlayerAlbumName.font = UIFont.boldSystemFont(ofSize: 20.0)
             fullPlayerAlbumName.textColor = song.colors?.secondary
         }
         if let player = SongPlayer.shared.player{
             fullPlayerScrubber.maximumValue = Float(SongPlayer.shared.player?.duration ?? 0)
         }
         timeElapsedLabel.textColor = song.colors?.secondary
+        timeElapsedLabel.font = UIFont.boldSystemFont(ofSize: 12.0)
         timeRemainingLabel.textColor = song.colors?.secondary
-        
+        timeRemainingLabel.font = UIFont.boldSystemFont(ofSize: 12.0)
         fullPlayerScrubber.tintColor = song.colors?.secondary
     }
     
@@ -123,10 +126,12 @@ class FullPlayerViewController: UIViewController {
         let song = SongCollection.shared.songs[SongCollection.shared.position]
         if fullPlayerSongLabel != nil{
             fullPlayerSongLabel!.text = song.name!
+            fullPlayerSongLabel.font = UIFont.systemFont(ofSize: 20.0)
             fullPlayerSongLabel.textColor = textColor
         }
         if fullPlayerArtistLabel != nil{
             fullPlayerArtistLabel!.text = song.artistName!
+            fullPlayerArtistLabel.font = UIFont.systemFont(ofSize: 15.0)
             fullPlayerArtistLabel.textColor = textColor
         }
         if fullPlayerAlbumArt != nil{
@@ -135,6 +140,7 @@ class FullPlayerViewController: UIViewController {
         }
         if fullPlayerAlbumName != nil{
             fullPlayerAlbumName.text = song.albumName!
+            fullPlayerAlbumName.font = UIFont.systemFont(ofSize: 20.0)
             fullPlayerAlbumName.textColor = textColor
         }
         if let player = SongPlayer.shared.player{
@@ -143,7 +149,9 @@ class FullPlayerViewController: UIViewController {
         
         
         timeElapsedLabel.textColor = textColor
+        timeElapsedLabel.font = UIFont.systemFont(ofSize: 12.0)
         timeRemainingLabel.textColor = textColor
+        timeRemainingLabel.font = UIFont.systemFont(ofSize: 12.0)
         
         fullPlayerScrubber.tintColor = textColor
     }

@@ -139,7 +139,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let song = SongCollection.shared.songs[SongCollection.shared.position]
         miniPlayerView.backgroundColor = song.colors?.background
         miniPlayerSongLabel.text = song.name
+        miniPlayerSongLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
         miniPlayerArtistLabel.text = song.artistName
+        miniPlayerArtistLabel.font = UIFont.boldSystemFont(ofSize: 15.0)
         miniPlayerSongLabel.textColor = song.colors?.primary
         miniPlayerArtistLabel.textColor = song.colors?.secondary
     }
@@ -150,6 +152,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let song = SongCollection.shared.songs[SongCollection.shared.position]
         miniPlayerView.backgroundColor = UIColor.systemBackground
         miniPlayerSongLabel.text = song.name
+        miniPlayerSongLabel.font = UIFont.systemFont(ofSize: 20.0)
+        miniPlayerArtistLabel.font = UIFont.systemFont(ofSize: 15.0)
         miniPlayerArtistLabel.text = song.artistName
         
         if traitCollection.userInterfaceStyle == .light{

@@ -115,6 +115,8 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
                 SongCollection.shared.position += 1
                 NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPlayingStatesKey), object: nil)
                startSong()
+            }else{
+                    NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPausedStatesKey), object: nil)
             }
         }
     }
