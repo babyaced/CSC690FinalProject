@@ -104,7 +104,7 @@ class FullPlayerViewController: UIViewController {
         }
         if fullPlayerAlbumName != nil{
             fullPlayerAlbumName.text = song.albumName!
-            fullPlayerAlbumName.font = UIFont.boldSystemFont(ofSize: 20.0)
+            fullPlayerAlbumName.font = UIFont.boldSystemFont(ofSize: 25.0)
             fullPlayerAlbumName.textColor = song.colors?.secondary
         }
         if let player = SongPlayer.shared.player{
@@ -146,11 +146,11 @@ class FullPlayerViewController: UIViewController {
         }
         if fullPlayerAlbumName != nil{
             fullPlayerAlbumName.text = song.albumName!
-            fullPlayerAlbumName.font = UIFont.systemFont(ofSize: 20.0)
+            fullPlayerAlbumName.font = UIFont.systemFont(ofSize: 25.0)
             fullPlayerAlbumName.textColor = textColor
         }
         if let player = SongPlayer.shared.player{
-            fullPlayerScrubber.maximumValue = Float(SongPlayer.shared.player?.duration ?? 0)
+            fullPlayerScrubber.maximumValue = Float(SongPlayer.shared.getCurrentTrackLength() ?? 0)
         }
         
         

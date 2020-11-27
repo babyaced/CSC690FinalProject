@@ -18,6 +18,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var miniPlayerSongLabel: UILabel!
     @IBOutlet weak var miniPlayerArtistLabel: UILabel!
     
+    @IBOutlet var songProgressView: UIProgressView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("mini player loaded")
@@ -25,6 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         table.dataSource = self
         setupMiniPlayer()
         createObservers()
+        var playbackTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateSongProgress), userInfo: nil, repeats: true)
     }
     
     deinit{
@@ -148,6 +151,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         miniPlayerArtistLabel.font = UIFont.boldSystemFont(ofSize: 15.0)
         miniPlayerSongLabel.textColor = song.colors?.primary
         miniPlayerArtistLabel.textColor = song.colors?.secondary
+        songProgressView.progressTintColor = song.colors?.secondary
     }
     
     @objc
@@ -171,6 +175,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         miniPlayerSongLabel.textColor = textColor
         miniPlayerArtistLabel.textColor = textColor
+        songProgressView.progressTintColor = textColor
+    }
+    
+    @objc
+    func updateSongProgress(){
+        if SongPlayer.shared.player != nil{
+            let songPercentage = SongPlayer.shared.getPlaybackTime()/SongPlayer.shared.getCurrentTrackLength()
+            songProgressView.setProgress(Float(songPercentage), animated: true)
+        }else{
+            songProgressView.setProgress(0, animated: false)
+        }
+
     }
 }
     

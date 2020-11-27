@@ -61,15 +61,25 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="efp-rs-Zuk">
+                                        <rect key="frame" x="0.0" y="85" width="375" height="5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="Ubo-6f-TaZ"/>
+                                        </constraints>
+                                        <color key="trackTintColor" systemColor="systemBackgroundColor"/>
+                                    </progressView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Hv0-BR-Deu" secondAttribute="bottom" constant="15" id="0Yh-QU-fwl"/>
                                     <constraint firstItem="x5U-8G-HvK" firstAttribute="leading" secondItem="id3-hO-0TE" secondAttribute="leading" constant="15" id="3rX-WA-rJw"/>
+                                    <constraint firstAttribute="bottom" secondItem="efp-rs-Zuk" secondAttribute="bottom" id="7zN-28-KKg"/>
                                     <constraint firstItem="Hv0-BR-Deu" firstAttribute="leading" secondItem="id3-hO-0TE" secondAttribute="leading" constant="15" id="87W-we-fyk"/>
                                     <constraint firstItem="x5U-8G-HvK" firstAttribute="top" secondItem="id3-hO-0TE" secondAttribute="top" constant="15" id="Asy-Lk-ihz"/>
+                                    <constraint firstItem="efp-rs-Zuk" firstAttribute="leading" secondItem="id3-hO-0TE" secondAttribute="leading" id="DNX-zH-Rk9"/>
                                     <constraint firstAttribute="trailing" secondItem="x5U-8G-HvK" secondAttribute="trailing" constant="15" id="QEz-V9-77T"/>
                                     <constraint firstItem="Hv0-BR-Deu" firstAttribute="top" secondItem="x5U-8G-HvK" secondAttribute="bottom" constant="15" id="RF9-dl-wYm"/>
+                                    <constraint firstAttribute="trailing" secondItem="efp-rs-Zuk" secondAttribute="trailing" id="hWV-5y-yaa"/>
                                     <constraint firstAttribute="trailing" secondItem="Hv0-BR-Deu" secondAttribute="trailing" constant="15" id="waj-6d-ro8"/>
                                     <constraint firstAttribute="height" constant="90" id="zAt-dz-G64"/>
                                 </constraints>
@@ -95,12 +105,13 @@
                         <outlet property="miniPlayerArtistLabel" destination="Hv0-BR-Deu" id="99X-4M-DzF"/>
                         <outlet property="miniPlayerSongLabel" destination="x5U-8G-HvK" id="iY1-YH-2aL"/>
                         <outlet property="miniPlayerView" destination="id3-hO-0TE" id="YZS-cW-KOU"/>
+                        <outlet property="songProgressView" destination="efp-rs-Zuk" id="o8p-FV-eJS"/>
                         <outlet property="table" destination="eml-PO-5iU" id="pTJ-zF-39n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="554" y="32"/>
+            <point key="canvasLocation" x="552.79999999999995" y="31.934032983508249"/>
         </scene>
         <!--Full Player View Controller-->
         <scene sceneID="xDt-ga-jJE">

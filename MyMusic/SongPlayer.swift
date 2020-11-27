@@ -90,6 +90,14 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
         return player.currentTime
     }
     
+    func getCurrentTrackLength() -> TimeInterval{
+        guard let player = player else{
+            print("player is nil")
+            return 0
+        }
+        return player.duration
+    }
+    
     func isPlaying() ->Bool{
         guard let player = player else{
             print("player is nil")
