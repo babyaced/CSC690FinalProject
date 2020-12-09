@@ -88,23 +88,23 @@ class FullPlayerViewController: UIViewController {
     {
         let song = SongCollection.shared.songs[SongCollection.shared.position]
         if fullPlayerSongLabel != nil{
-            fullPlayerSongLabel!.text = song.name!
+            fullPlayerSongLabel!.text = song.trackName
             fullPlayerSongLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
             fullPlayerSongLabel.textColor = song.colors?.primary
         }
         if fullPlayerArtistLabel != nil{
-            fullPlayerArtistLabel!.text = song.artistName!
+            fullPlayerArtistLabel!.text = song.artistName
             fullPlayerArtistLabel.font = UIFont.boldSystemFont(ofSize: 15.0)
             fullPlayerArtistLabel.textColor = song.colors?.secondary
         }
         if fullPlayerAlbumArt != nil{
-            fullPlayerAlbumArt!.image = UIImage(named:song.imageName!)
+            fullPlayerAlbumArt!.image = song.art
             UIView.animate(withDuration: 0.5, animations: {
                 self.view.backgroundColor =  song.colors?.background
             })
         }
         if fullPlayerAlbumName != nil{
-            fullPlayerAlbumName.text = song.albumName!
+            fullPlayerAlbumName.text = song.albumName
             fullPlayerAlbumName.font = UIFont.boldSystemFont(ofSize: 25.0)
             fullPlayerAlbumName.textColor = song.colors?.secondary
         }
@@ -130,23 +130,23 @@ class FullPlayerViewController: UIViewController {
         }
         let song = SongCollection.shared.songs[SongCollection.shared.position]
         if fullPlayerSongLabel != nil{
-            fullPlayerSongLabel!.text = song.name!
+            fullPlayerSongLabel!.text = song.trackName
             fullPlayerSongLabel.font = UIFont.systemFont(ofSize: 20.0)
             fullPlayerSongLabel.textColor = textColor
         }
         if fullPlayerArtistLabel != nil{
-            fullPlayerArtistLabel!.text = song.artistName!
+            fullPlayerArtistLabel!.text = song.artistName
             fullPlayerArtistLabel.font = UIFont.systemFont(ofSize: 15.0)
             fullPlayerArtistLabel.textColor = textColor
         }
         if fullPlayerAlbumArt != nil{
-            fullPlayerAlbumArt!.image = UIImage(named:song.imageName!)
+            fullPlayerAlbumArt!.image = song.art
             UIView.animate(withDuration: 0.5, animations: {
                 self.view.backgroundColor =  UIColor.systemBackground
             })
         }
         if fullPlayerAlbumName != nil{
-            fullPlayerAlbumName.text = song.albumName!
+            fullPlayerAlbumName.text = song.albumName
             fullPlayerAlbumName.font = UIFont.systemFont(ofSize: 25.0)
             fullPlayerAlbumName.textColor = textColor
         }

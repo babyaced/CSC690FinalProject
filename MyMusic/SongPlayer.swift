@@ -16,9 +16,7 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
     func startSong(){
         self.player?.delegate = nil
         let song = SongCollection.shared.songs[SongCollection.shared.position]
-            
-        let urlString = Bundle.main.path(forResource: song.trackName, ofType: "mp3")
-        
+        let urlString = song.path
         //change song and artist name in mini player
         
         do{

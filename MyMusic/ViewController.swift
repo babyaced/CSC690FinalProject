@@ -7,6 +7,8 @@
 import UIKit
 import UIImageColors
 
+
+
 let updatePlayerViewsToPlayingStatesKey = "dsimpson.sfsu.edu.updatePlayerViewsToPlayingStatesKey"
 let updatePlayerViewsToPausedStatesKey = "dsimpson.sfsu.edu.updatePlayerViewsToPausedStatesKey"
 
@@ -82,11 +84,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let song = SongCollection.shared.songs[indexPath.row]
         
         //configure
-        cell.textLabel?.text = song.name
-        //cell.textLabel?.textColor = colors?.primary
+        cell.textLabel?.text = song.trackName
+        //cell.textLabel?.textColor = song.colors?.primary
         cell.detailTextLabel?.text = song.albumName
-        //cell.detailTextLabel?.textColor = colors?.secondary
-        cell.imageView?.image = UIImage(named: song.imageName!)
+        //cell.detailTextLabel?.textColor = song.colors?.secondary
+        cell.imageView?.image = song.art
         //cell.backgroundColor = colors?.background
         cell.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 18)
         cell.detailTextLabel?.font = UIFont(name: "Helvetica", size: 17)
@@ -146,7 +148,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         UIView.animate(withDuration: 0.5, animations: {
             self.miniPlayerView.backgroundColor =  song.colors?.background
         })
-        miniPlayerSongLabel.text = song.name
+        miniPlayerSongLabel.text = song.trackName
         miniPlayerSongLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
         miniPlayerArtistLabel.text = song.artistName
         miniPlayerArtistLabel.font = UIFont.boldSystemFont(ofSize: 15.0)
@@ -163,7 +165,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         UIView.animate(withDuration: 0.5, animations: {
             self.miniPlayerView.backgroundColor = UIColor.systemBackground
         })
-        miniPlayerSongLabel.text = song.name
+        miniPlayerSongLabel.text = song.trackName
         miniPlayerSongLabel.font = UIFont.systemFont(ofSize: 20.0)
         miniPlayerArtistLabel.font = UIFont.systemFont(ofSize: 15.0)
         miniPlayerArtistLabel.text = song.artistName
@@ -189,6 +191,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
 
     }
+    
+
 }
     
 
