@@ -51,6 +51,16 @@
 		D3CC81B0258055DB006BA6A6 /* 02 - The Story of O.J. [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3CC81A6258055D9006BA6A6 /* 02 - The Story of O.J. [Explicit].mp3 */; };
 		D3CC81B1258055DB006BA6A6 /* 08 - Moonlight [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3CC81A7258055DA006BA6A6 /* 08 - Moonlight [Explicit].mp3 */; };
 		D3CC81B2258055DB006BA6A6 /* 09 - Marcy Me [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3CC81A8258055DB006BA6A6 /* 09 - Marcy Me [Explicit].mp3 */; };
+		D3CC81E125806283006BA6A6 /* 08 - - Ventilation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3CC81D72580627F006BA6A6 /* 08 - - Ventilation.mp3 */; };
+		D3CC81E225806283006BA6A6 /* 09 - - Double 07.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3CC81D82580627F006BA6A6 /* 09 - - Double 07.mp3 */; };
+		D3CC81E325806283006BA6A6 /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3CC81D925806280006BA6A6 /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 */; };
+		D3CC81E425806283006BA6A6 /* 01 - - BBS.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3CC81DA25806280006BA6A6 /* 01 - - BBS.mp3 */; };
+		D3CC81E525806283006BA6A6 /* 05 - - Life Instructions feat Smoke DZA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3CC81DB25806281006BA6A6 /* 05 - - Life Instructions feat Smoke DZA.mp3 */; };
+		D3CC81E625806283006BA6A6 /* 10 - - Success Is My Cologne.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3CC81DC25806281006BA6A6 /* 10 - - Success Is My Cologne.mp3 */; };
+		D3CC81E725806283006BA6A6 /* 04 - - Blood Sweat And Gears feat Fiend.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3CC81DD25806282006BA6A6 /* 04 - - Blood Sweat And Gears feat Fiend.mp3 */; };
+		D3CC81E825806283006BA6A6 /* 06 - - Smoke Break.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3CC81DE25806282006BA6A6 /* 06 - - Smoke Break.mp3 */; };
+		D3CC81E925806283006BA6A6 /* 03 - - The Type feat Prodigy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3CC81DF25806283006BA6A6 /* 03 - - The Type feat Prodigy.mp3 */; };
+		D3CC81EA25806283006BA6A6 /* 02 - - Full Metal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3CC81E025806283006BA6A6 /* 02 - - Full Metal.mp3 */; };
 		D3D11963256F5E210071F1C6 /* SongPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D11962256F5E210071F1C6 /* SongPlayer.swift */; };
 		D3EE3228256DC74000926074 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3227256DC74000926074 /* AppDelegate.swift */; };
 		D3EE322A256DC74000926074 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3229256DC74000926074 /* SceneDelegate.swift */; };
@@ -126,6 +136,16 @@
 		D3CC81A6258055D9006BA6A6 /* 02 - The Story of O.J. [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 - The Story of O.J. [Explicit].mp3"; sourceTree = "<group>"; };
 		D3CC81A7258055DA006BA6A6 /* 08 - Moonlight [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 - Moonlight [Explicit].mp3"; sourceTree = "<group>"; };
 		D3CC81A8258055DB006BA6A6 /* 09 - Marcy Me [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 - Marcy Me [Explicit].mp3"; sourceTree = "<group>"; };
+		D3CC81D72580627F006BA6A6 /* 08 - - Ventilation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 - - Ventilation.mp3"; sourceTree = "<group>"; };
+		D3CC81D82580627F006BA6A6 /* 09 - - Double 07.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 - - Double 07.mp3"; sourceTree = "<group>"; };
+		D3CC81D925806280006BA6A6 /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 - - Scottie Pippens feat Feddie Gibbs.mp3"; sourceTree = "<group>"; };
+		D3CC81DA25806280006BA6A6 /* 01 - - BBS.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 - - BBS.mp3"; sourceTree = "<group>"; };
+		D3CC81DB25806281006BA6A6 /* 05 - - Life Instructions feat Smoke DZA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 - - Life Instructions feat Smoke DZA.mp3"; sourceTree = "<group>"; };
+		D3CC81DC25806281006BA6A6 /* 10 - - Success Is My Cologne.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 - - Success Is My Cologne.mp3"; sourceTree = "<group>"; };
+		D3CC81DD25806282006BA6A6 /* 04 - - Blood Sweat And Gears feat Fiend.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 - - Blood Sweat And Gears feat Fiend.mp3"; sourceTree = "<group>"; };
+		D3CC81DE25806282006BA6A6 /* 06 - - Smoke Break.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 - - Smoke Break.mp3"; sourceTree = "<group>"; };
+		D3CC81DF25806283006BA6A6 /* 03 - - The Type feat Prodigy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03 - - The Type feat Prodigy.mp3"; sourceTree = "<group>"; };
+		D3CC81E025806283006BA6A6 /* 02 - - Full Metal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 - - Full Metal.mp3"; sourceTree = "<group>"; };
 		D3D11962256F5E210071F1C6 /* SongPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayer.swift; sourceTree = "<group>"; };
 		D3EE3224256DC74000926074 /* MyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EE3227256DC74000926074 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -264,6 +284,16 @@
 				D3CC81A3258055D7006BA6A6 /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 */,
 				D3CC81A1258055D6006BA6A6 /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 */,
 				D3CC81A0258055D5006BA6A6 /* 05 - 4_44 [Explicit].mp3 */,
+				D3CC81DA25806280006BA6A6 /* 01 - - BBS.mp3 */,
+				D3CC81E025806283006BA6A6 /* 02 - - Full Metal.mp3 */,
+				D3CC81DF25806283006BA6A6 /* 03 - - The Type feat Prodigy.mp3 */,
+				D3CC81DD25806282006BA6A6 /* 04 - - Blood Sweat And Gears feat Fiend.mp3 */,
+				D3CC81DB25806281006BA6A6 /* 05 - - Life Instructions feat Smoke DZA.mp3 */,
+				D3CC81DE25806282006BA6A6 /* 06 - - Smoke Break.mp3 */,
+				D3CC81D925806280006BA6A6 /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 */,
+				D3CC81D72580627F006BA6A6 /* 08 - - Ventilation.mp3 */,
+				D3CC81D82580627F006BA6A6 /* 09 - - Double 07.mp3 */,
+				D3CC81DC25806281006BA6A6 /* 10 - - Success Is My Cologne.mp3 */,
 				D3CC819F258055D4006BA6A6 /* 06 - Family Feud [feat. Beyoncé] [Explicit].mp3 */,
 				D3CC81A4258055D9006BA6A6 /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 */,
 				D3CC81A7258055DA006BA6A6 /* 08 - Moonlight [Explicit].mp3 */,
@@ -401,6 +431,7 @@
 				D3CC815E25802CCB006BA6A6 /* 14 - Big KRIT-Handwriting.mp3 in Resources */,
 				D3CC819525804CBE006BA6A6 /* 06 - Long Time.mp3 in Resources */,
 				D3CC815F25802CCB006BA6A6 /* 06 - Big KRIT-Me And My Old School Guitar By Mike Hartnett.mp3 in Resources */,
+				D3CC81E625806283006BA6A6 /* 10 - - Success Is My Cologne.mp3 in Resources */,
 				D3CC815625802CCB006BA6A6 /* 15 - Big KRIT-Insomnia Guitar By Mike Hartnett.mp3 in Resources */,
 				D3CC815825802CCB006BA6A6 /* 04 - Big KRIT-Boobie Miles.mp3 in Resources */,
 				D3CC81B2258055DB006BA6A6 /* 09 - Marcy Me [Explicit].mp3 in Resources */,
@@ -408,6 +439,7 @@
 				D3CC815525802CCB006BA6A6 /* 13 - Big KRIT-Temptation.mp3 in Resources */,
 				D3CC814F25802CCB006BA6A6 /* 07 - Big KRIT-1986.mp3 in Resources */,
 				D3CC819725804CBE006BA6A6 /* 11 - Fuck You Tahm Bout.mp3 in Resources */,
+				D3CC81E325806283006BA6A6 /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 in Resources */,
 				D3CC817A258049BA006BA6A6 /* 01 - Kill Jay Z [Explicit].mp3 in Resources */,
 				D3EE3234256DC74300926074 /* LaunchScreen.storyboard in Resources */,
 				D3CC818D25804CBE006BA6A6 /* 02 - Nostalgia.mp3 in Resources */,
@@ -418,6 +450,7 @@
 				D3CC819625804CBE006BA6A6 /* 14 - Hey Ma (ft Lili K and Peter CottonTale) [prod by Zak  Fox  Jablow and MC TREE].mp3 in Resources */,
 				D3CC81AB258055DB006BA6A6 /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 in Resources */,
 				D3EE3231256DC74300926074 /* Assets.xcassets in Resources */,
+				D3CC81E925806283006BA6A6 /* 03 - - The Type feat Prodigy.mp3 in Resources */,
 				D3CC81AD258055DB006BA6A6 /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 in Resources */,
 				D3CC815125802CCB006BA6A6 /* 16 - Big KRIT-5 04 AM.mp3 in Resources */,
 				D3CC819B25804CBE006BA6A6 /* 10 - Juke Juke [prod by Caleb James].mp3 in Resources */,
@@ -425,21 +458,28 @@
 				D3CC819425804CBE006BA6A6 /* 12 - Long Time II (ft Nico Segal) [prod by THEMPeople and Peter CottonTale].mp3 in Resources */,
 				D3CC815D25802CCB006BA6A6 /* 08 - Big KRIT-Country Rap Tunes.mp3 in Resources */,
 				D3CC819925804CBE006BA6A6 /* 13 - Prom Night [Prod by Prince Talent DJ SuchNSuch and THEMpeople].mp3 in Resources */,
+				D3CC81EA25806283006BA6A6 /* 02 - - Full Metal.mp3 in Resources */,
 				D3CC815C25802CCB006BA6A6 /* 09 - Big KRIT-Sky Club.mp3 in Resources */,
 				D3CC816025802CCB006BA6A6 /* 17 - Big KRIT-The Alarm.mp3 in Resources */,
 				D3CC819025804CBE006BA6A6 /* 07 - 22 Offs.mp3 in Resources */,
 				D3CC815025802CCB006BA6A6 /* 05 - Big KRIT-4EvaNaDay Theme.mp3 in Resources */,
 				D3CC815A25802CCB006BA6A6 /* 03 - Big KRIT-Yesterday.mp3 in Resources */,
+				D3CC81E525806283006BA6A6 /* 05 - - Life Instructions feat Smoke DZA.mp3 in Resources */,
 				D3CC819225804CBE006BA6A6 /* 01 - 14400 Minutes [prod by DJ SuchNSuch].mp3 in Resources */,
+				D3CC81E725806283006BA6A6 /* 04 - - Blood Sweat And Gears feat Fiend.mp3 in Resources */,
 				D3CC815725802CCB006BA6A6 /* 10 - Big KRIT-Red Eye.mp3 in Resources */,
 				D3CC815B25802CCB006BA6A6 /* 11 - Big KRIT-Down Out.mp3 in Resources */,
 				D3EE322F256DC74000926074 /* Main.storyboard in Resources */,
 				D3CC81AC258055DB006BA6A6 /* 10 - Legacy [Explicit].mp3 in Resources */,
 				D3CC819325804CBE006BA6A6 /* 09 - Family (ft Vic Mensa and Sulaiman) [prod by The Blended Babies].mp3 in Resources */,
 				D3CC81AA258055DB006BA6A6 /* 05 - 4_44 [Explicit].mp3 in Resources */,
+				D3CC81E825806283006BA6A6 /* 06 - - Smoke Break.mp3 in Resources */,
+				D3CC81E125806283006BA6A6 /* 08 - - Ventilation.mp3 in Resources */,
+				D3CC81E225806283006BA6A6 /* 09 - - Double 07.mp3 in Resources */,
 				D3CC815425802CCB006BA6A6 /* 12 - Big KRIT-Package Store.mp3 in Resources */,
 				D3CC81B1258055DB006BA6A6 /* 08 - Moonlight [Explicit].mp3 in Resources */,
 				D3CC81B0258055DB006BA6A6 /* 02 - The Story of O.J. [Explicit].mp3 in Resources */,
+				D3CC81E425806283006BA6A6 /* 01 - - BBS.mp3 in Resources */,
 				D3CC81AE258055DB006BA6A6 /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
