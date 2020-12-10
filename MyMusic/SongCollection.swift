@@ -22,25 +22,35 @@ class SongCollection{
         let artistName : String?
         let art : UIImage?
         let trackName : String?
+        let trackNum: Int?
+        let trackIndex: Int?
         let colors: UIImageColors?
         let path: String?
     }
     
     var songs = [Song]()
+    var albums = [String:[Song]]()
+    
+    
     var position: Int
     private init(){
         let folderURL = URL(fileURLWithPath: Bundle.main.resourcePath!)
         
         do{
-            let songFolder = try FileManager.default.contentsOfDirectory(at: folderURL, includingPropertiesForKeys: nil, options: .skipsHiddenFiles)
+            let folder = try FileManager.default.contentsOfDirectory(at: folderURL, includingPropertiesForKeys: nil, options: .skipsHiddenFiles)
             
-            for file in songFolder{
+            var index = 0;
+            
+            for file in folder{
                 let pathString = file.absoluteString
                 var mp3Name : String?
+                var mp3Index: Int?
                 var trackMeta : String?
                 var albumMeta : String?
                 var artistMeta : String?
                 var artMeta: UIImage?
+                var tracknumMeta : Int?
+               
                 
 //                print(pathString)
                 if pathString.contains(".mp3")
@@ -73,6 +83,7 @@ class SongCollection{
                         case "artist": artistMeta = value as? String
                         case "albumName": albumMeta = value as? String
                         case "artwork" where value is Data : artMeta = UIImage(data: value as! Data)
+                        case "TRCK": tracknumMeta = value as? Int
                         default:
                           continue
                        }
@@ -82,20 +93,32 @@ class SongCollection{
                 print("Artist: ", artistMeta)
                 print("Album: ", albumMeta)
                 print("\n")*/
-                let newSong = Song(name: mp3Name, albumName: albumMeta, artistName: artistMeta, art: artMeta, trackName: trackMeta, colors: (artMeta?.getColors(quality: preferredColorQuality)),path: pathString)
+                mp3Index = index
+                let newSong = Song(name: mp3Name, albumName: albumMeta, artistName: artistMeta, art: artMeta, trackName: trackMeta, trackNum: tracknumMeta , trackIndex: mp3Index,colors: (artMeta?.getColors(quality: preferredColorQuality)),path: pathString)
+                
 //                print(newSong)
                 if(mp3Name != nil){
 //                    print(newSong)
                     songs.append(newSong)
+                    index += 1
+                    if(albumMeta != nil){
+                        if(albums.keys.contains(albumMeta!)){
+                            albums[albumMeta!]!.append(newSong)
+                        }
+                        else{
+                            var albumSongs = [Song]()
+                            albumSongs.append(newSong)
+                            albums[albumMeta!] = albumSongs
+                        }
+                    }
                 }
                     
             }
-            songs.sort { $0.trackName! < $1.trackName! }
+//            songs.sort { $0.trackName! < $1.trackName! }
         }
         catch{
             
         }
         position = -1
-        
     }
 }
