@@ -27,6 +27,7 @@ class FullPlayerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("fullPlayer")
         createObservers()
         fullPlayerSetup()
         if(SongPlayer.shared.isPlaying()){
@@ -86,7 +87,7 @@ class FullPlayerViewController: UIViewController {
     @objc
     func updateFullPlayerViewtoPlayingView()
     {
-        let song = SongCollection.shared.songs[SongCollection.shared.position]
+        let song = SongPlayer.shared.getCurrentSong()
         if fullPlayerSongLabel != nil{
             fullPlayerSongLabel!.text = song.trackName
             fullPlayerSongLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
@@ -128,7 +129,7 @@ class FullPlayerViewController: UIViewController {
         else{
             textColor = UIColor.lightText
         }
-        let song = SongCollection.shared.songs[SongCollection.shared.position]
+        let song = SongPlayer.shared.getCurrentSong()
         if fullPlayerSongLabel != nil{
             fullPlayerSongLabel!.text = song.trackName
             fullPlayerSongLabel.font = UIFont.systemFont(ofSize: 20.0)

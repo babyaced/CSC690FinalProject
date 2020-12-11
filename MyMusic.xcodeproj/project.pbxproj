@@ -9,41 +9,34 @@
 /* Begin PBXBuildFile section */
 		0B1915288DA13528647F7337 /* Pods_MyMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6155E6CFBC8410C32A871674 /* Pods_MyMusic.framework */; };
 		D31CAA5F2581DBC900817AE0 /* SelectedAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31CAA5E2581DBC900817AE0 /* SelectedAlbumViewController.swift */; };
-		D31CAA742581E9B400817AE0 /* 05 - Big KRIT-4EvaNaDay Theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA632581E9B300817AE0 /* 05 - Big KRIT-4EvaNaDay Theme.mp3 */; };
-		D31CAA752581E9B400817AE0 /* 07 - Big KRIT-1986.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA642581E9B300817AE0 /* 07 - Big KRIT-1986.mp3 */; };
-		D31CAA762581E9B400817AE0 /* 09 - Big KRIT-Sky Club.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA652581E9B300817AE0 /* 09 - Big KRIT-Sky Club.mp3 */; };
-		D31CAA772581E9B400817AE0 /* 11 - Big KRIT-Down Out.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA662581E9B300817AE0 /* 11 - Big KRIT-Down Out.mp3 */; };
-		D31CAA782581E9B400817AE0 /* 17 - Big KRIT-The Alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA672581E9B300817AE0 /* 17 - Big KRIT-The Alarm.mp3 */; };
-		D31CAA792581E9B400817AE0 /* 12 - Big KRIT-Package Store.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA682581E9B400817AE0 /* 12 - Big KRIT-Package Store.mp3 */; };
-		D31CAA7A2581E9B400817AE0 /* 10 - Big KRIT-Red Eye.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA692581E9B400817AE0 /* 10 - Big KRIT-Red Eye.mp3 */; };
-		D31CAA7B2581E9B400817AE0 /* 01 - Big KRIT-8 04 AM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA6A2581E9B400817AE0 /* 01 - Big KRIT-8 04 AM.mp3 */; };
-		D31CAA7C2581E9B400817AE0 /* 04 - Big KRIT-Boobie Miles.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA6B2581E9B400817AE0 /* 04 - Big KRIT-Boobie Miles.mp3 */; };
-		D31CAA7D2581E9B400817AE0 /* 08 - Big KRIT-Country Rap Tunes.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA6C2581E9B400817AE0 /* 08 - Big KRIT-Country Rap Tunes.mp3 */; };
-		D31CAA7E2581E9B400817AE0 /* 02 - Big KRIT-Wake Up Saxaphone By Willie B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA6D2581E9B400817AE0 /* 02 - Big KRIT-Wake Up Saxaphone By Willie B.mp3 */; };
-		D31CAA7F2581E9B400817AE0 /* 03 - Big KRIT-Yesterday.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA6E2581E9B400817AE0 /* 03 - Big KRIT-Yesterday.mp3 */; };
-		D31CAA802581E9B400817AE0 /* 06 - Big KRIT-Me And My Old School Guitar By Mike Hartnett.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA6F2581E9B400817AE0 /* 06 - Big KRIT-Me And My Old School Guitar By Mike Hartnett.mp3 */; };
-		D31CAA812581E9B400817AE0 /* 13 - Big KRIT-Temptation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA702581E9B400817AE0 /* 13 - Big KRIT-Temptation.mp3 */; };
-		D31CAA822581E9B400817AE0 /* 14 - Big KRIT-Handwriting.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA712581E9B400817AE0 /* 14 - Big KRIT-Handwriting.mp3 */; };
-		D31CAA832581E9B400817AE0 /* 15 - Big KRIT-Insomnia Guitar By Mike Hartnett.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA722581E9B400817AE0 /* 15 - Big KRIT-Insomnia Guitar By Mike Hartnett.mp3 */; };
-		D31CAA842581E9B400817AE0 /* 16 - Big KRIT-5 04 AM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA732581E9B400817AE0 /* 16 - Big KRIT-5 04 AM.mp3 */; };
-		D31CAA952581E9C900817AE0 /* 02 - The Story of O.J. [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA8B2581E9C800817AE0 /* 02 - The Story of O.J. [Explicit].mp3 */; };
-		D31CAA962581E9C900817AE0 /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA8C2581E9C800817AE0 /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 */; };
-		D31CAA972581E9C900817AE0 /* 08 - Moonlight [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA8D2581E9C800817AE0 /* 08 - Moonlight [Explicit].mp3 */; };
-		D31CAA982581E9C900817AE0 /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA8E2581E9C800817AE0 /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 */; };
-		D31CAA992581E9C900817AE0 /* 01 - Kill Jay Z [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA8F2581E9C800817AE0 /* 01 - Kill Jay Z [Explicit].mp3 */; };
-		D31CAA9A2581E9C900817AE0 /* 06 - Family Feud [feat. Beyoncé] [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA902581E9C800817AE0 /* 06 - Family Feud [feat. Beyoncé] [Explicit].mp3 */; };
-		D31CAA9B2581E9C900817AE0 /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA912581E9C900817AE0 /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 */; };
-		D31CAA9C2581E9C900817AE0 /* 05 - 4_44 [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA922581E9C900817AE0 /* 05 - 4_44 [Explicit].mp3 */; };
-		D31CAA9D2581E9C900817AE0 /* 10 - Legacy [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA932581E9C900817AE0 /* 10 - Legacy [Explicit].mp3 */; };
-		D31CAA9E2581E9C900817AE0 /* 09 - Marcy Me [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D31CAA942581E9C900817AE0 /* 09 - Marcy Me [Explicit].mp3 */; };
 		D349930A256EEE0B00FE14BA /* SongCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3499309256EEE0B00FE14BA /* SongCollection.swift */; };
 		D3499395256F3C1200FE14BA /* FullPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3499394256F3C1200FE14BA /* FullPlayerViewController.swift */; };
+		D3C110BD2582C91000DC3EAA /* 06 - Family Feud [feat. Beyoncé] [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110B32582C90F00DC3EAA /* 06 - Family Feud [feat. Beyoncé] [Explicit].mp3 */; };
+		D3C110BE2582C91000DC3EAA /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110B42582C90F00DC3EAA /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 */; };
+		D3C110BF2582C91000DC3EAA /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110B52582C90F00DC3EAA /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 */; };
+		D3C110C02582C91000DC3EAA /* 10 - Legacy [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110B62582C90F00DC3EAA /* 10 - Legacy [Explicit].mp3 */; };
+		D3C110C12582C91000DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110B72582C91000DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 */; };
+		D3C110C22582C91000DC3EAA /* 05 - 4_44 [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110B82582C91000DC3EAA /* 05 - 4_44 [Explicit].mp3 */; };
+		D3C110C32582C91000DC3EAA /* 02 - The Story of O.J. [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110B92582C91000DC3EAA /* 02 - The Story of O.J. [Explicit].mp3 */; };
+		D3C110C42582C91000DC3EAA /* 08 - Moonlight [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110BA2582C91000DC3EAA /* 08 - Moonlight [Explicit].mp3 */; };
+		D3C110C52582C91000DC3EAA /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110BB2582C91000DC3EAA /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 */; };
+		D3C110C62582C91000DC3EAA /* 09 - Marcy Me [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110BC2582C91000DC3EAA /* 09 - Marcy Me [Explicit].mp3 */; };
+		D3C110D42582C92200DC3EAA /* 05 - - Life Instructions feat Smoke DZA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110CA2582C92100DC3EAA /* 05 - - Life Instructions feat Smoke DZA.mp3 */; };
+		D3C110D52582C92200DC3EAA /* 01 - - BBS.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110CB2582C92100DC3EAA /* 01 - - BBS.mp3 */; };
+		D3C110D62582C92200DC3EAA /* 04 - - Blood Sweat And Gears feat Fiend.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110CC2582C92100DC3EAA /* 04 - - Blood Sweat And Gears feat Fiend.mp3 */; };
+		D3C110D72582C92200DC3EAA /* 08 - - Ventilation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110CD2582C92100DC3EAA /* 08 - - Ventilation.mp3 */; };
+		D3C110D82582C92200DC3EAA /* 10 - - Success Is My Cologne.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110CE2582C92100DC3EAA /* 10 - - Success Is My Cologne.mp3 */; };
+		D3C110D92582C92200DC3EAA /* 02 - - Full Metal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110CF2582C92200DC3EAA /* 02 - - Full Metal.mp3 */; };
+		D3C110DA2582C92200DC3EAA /* 03 - - The Type feat Prodigy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110D02582C92200DC3EAA /* 03 - - The Type feat Prodigy.mp3 */; };
+		D3C110DB2582C92200DC3EAA /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110D12582C92200DC3EAA /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 */; };
+		D3C110DC2582C92200DC3EAA /* 09 - - Double 07.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110D22582C92200DC3EAA /* 09 - - Double 07.mp3 */; };
+		D3C110DD2582C92200DC3EAA /* 06 - - Smoke Break.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C110D32582C92200DC3EAA /* 06 - - Smoke Break.mp3 */; };
 		D3CC825A25808650006BA6A6 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC825925808650006BA6A6 /* AlbumsViewController.swift */; };
 		D3CC828F258091F7006BA6A6 /* MiniPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC828E258091F7006BA6A6 /* MiniPlayerViewController.swift */; };
 		D3D11963256F5E210071F1C6 /* SongPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D11962256F5E210071F1C6 /* SongPlayer.swift */; };
 		D3EE3228256DC74000926074 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3227256DC74000926074 /* AppDelegate.swift */; };
 		D3EE322A256DC74000926074 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3229256DC74000926074 /* SceneDelegate.swift */; };
-		D3EE322C256DC74000926074 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE322B256DC74000926074 /* ViewController.swift */; };
+		D3EE322C256DC74000926074 /* SongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE322B256DC74000926074 /* SongsViewController.swift */; };
 		D3EE322F256DC74000926074 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3EE322D256DC74000926074 /* Main.storyboard */; };
 		D3EE3231256DC74300926074 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3EE3230256DC74300926074 /* Assets.xcassets */; };
 		D3EE3234256DC74300926074 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3EE3232256DC74300926074 /* LaunchScreen.storyboard */; };
@@ -73,42 +66,35 @@
 		6155E6CFBC8410C32A871674 /* Pods_MyMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F512FD159070C6E27905E63 /* Pods-MyMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMusic.release.xcconfig"; path = "Target Support Files/Pods-MyMusic/Pods-MyMusic.release.xcconfig"; sourceTree = "<group>"; };
 		D31CAA5E2581DBC900817AE0 /* SelectedAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedAlbumViewController.swift; sourceTree = "<group>"; };
-		D31CAA632581E9B300817AE0 /* 05 - Big KRIT-4EvaNaDay Theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "05 - Big KRIT-4EvaNaDay Theme.mp3"; path = "../../../../Downloads/Big KRIT - 4eva N A Day (DatPiff.com)/05 - Big KRIT-4EvaNaDay Theme.mp3"; sourceTree = "<group>"; };
-		D31CAA642581E9B300817AE0 /* 07 - Big KRIT-1986.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "07 - Big KRIT-1986.mp3"; path = "../../../../Downloads/Big KRIT - 4eva N A Day (DatPiff.com)/07 - Big KRIT-1986.mp3"; sourceTree = "<group>"; };
-		D31CAA652581E9B300817AE0 /* 09 - Big KRIT-Sky Club.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "09 - Big KRIT-Sky Club.mp3"; path = "../../../../Downloads/Big KRIT - 4eva N A Day (DatPiff.com)/09 - Big KRIT-Sky Club.mp3"; sourceTree = "<group>"; };
-		D31CAA662581E9B300817AE0 /* 11 - Big KRIT-Down Out.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "11 - Big KRIT-Down Out.mp3"; path = "../../../../Downloads/Big KRIT - 4eva N A Day (DatPiff.com)/11 - Big KRIT-Down Out.mp3"; sourceTree = "<group>"; };
-		D31CAA672581E9B300817AE0 /* 17 - Big KRIT-The Alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "17 - Big KRIT-The Alarm.mp3"; path = "../../../../Downloads/Big KRIT - 4eva N A Day (DatPiff.com)/17 - Big KRIT-The Alarm.mp3"; sourceTree = "<group>"; };
-		D31CAA682581E9B400817AE0 /* 12 - Big KRIT-Package Store.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "12 - Big KRIT-Package Store.mp3"; path = "../../../../Downloads/Big KRIT - 4eva N A Day (DatPiff.com)/12 - Big KRIT-Package Store.mp3"; sourceTree = "<group>"; };
-		D31CAA692581E9B400817AE0 /* 10 - Big KRIT-Red Eye.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "10 - Big KRIT-Red Eye.mp3"; path = "../../../../Downloads/Big KRIT - 4eva N A Day (DatPiff.com)/10 - Big KRIT-Red Eye.mp3"; sourceTree = "<group>"; };
-		D31CAA6A2581E9B400817AE0 /* 01 - Big KRIT-8 04 AM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "01 - Big KRIT-8 04 AM.mp3"; path = "../../../../Downloads/Big KRIT - 4eva N A Day (DatPiff.com)/01 - Big KRIT-8 04 AM.mp3"; sourceTree = "<group>"; };
-		D31CAA6B2581E9B400817AE0 /* 04 - Big KRIT-Boobie Miles.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "04 - Big KRIT-Boobie Miles.mp3"; path = "../../../../Downloads/Big KRIT - 4eva N A Day (DatPiff.com)/04 - Big KRIT-Boobie Miles.mp3"; sourceTree = "<group>"; };
-		D31CAA6C2581E9B400817AE0 /* 08 - Big KRIT-Country Rap Tunes.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "08 - Big KRIT-Country Rap Tunes.mp3"; path = "../../../../Downloads/Big KRIT - 4eva N A Day (DatPiff.com)/08 - Big KRIT-Country Rap Tunes.mp3"; sourceTree = "<group>"; };
-		D31CAA6D2581E9B400817AE0 /* 02 - Big KRIT-Wake Up Saxaphone By Willie B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "02 - Big KRIT-Wake Up Saxaphone By Willie B.mp3"; path = "../../../../Downloads/Big KRIT - 4eva N A Day (DatPiff.com)/02 - Big KRIT-Wake Up Saxaphone By Willie B.mp3"; sourceTree = "<group>"; };
-		D31CAA6E2581E9B400817AE0 /* 03 - Big KRIT-Yesterday.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "03 - Big KRIT-Yesterday.mp3"; path = "../../../../Downloads/Big KRIT - 4eva N A Day (DatPiff.com)/03 - Big KRIT-Yesterday.mp3"; sourceTree = "<group>"; };
-		D31CAA6F2581E9B400817AE0 /* 06 - Big KRIT-Me And My Old School Guitar By Mike Hartnett.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "06 - Big KRIT-Me And My Old School Guitar By Mike Hartnett.mp3"; path = "../../../../Downloads/Big KRIT - 4eva N A Day (DatPiff.com)/06 - Big KRIT-Me And My Old School Guitar By Mike Hartnett.mp3"; sourceTree = "<group>"; };
-		D31CAA702581E9B400817AE0 /* 13 - Big KRIT-Temptation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "13 - Big KRIT-Temptation.mp3"; path = "../../../../Downloads/Big KRIT - 4eva N A Day (DatPiff.com)/13 - Big KRIT-Temptation.mp3"; sourceTree = "<group>"; };
-		D31CAA712581E9B400817AE0 /* 14 - Big KRIT-Handwriting.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "14 - Big KRIT-Handwriting.mp3"; path = "../../../../Downloads/Big KRIT - 4eva N A Day (DatPiff.com)/14 - Big KRIT-Handwriting.mp3"; sourceTree = "<group>"; };
-		D31CAA722581E9B400817AE0 /* 15 - Big KRIT-Insomnia Guitar By Mike Hartnett.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "15 - Big KRIT-Insomnia Guitar By Mike Hartnett.mp3"; path = "../../../../Downloads/Big KRIT - 4eva N A Day (DatPiff.com)/15 - Big KRIT-Insomnia Guitar By Mike Hartnett.mp3"; sourceTree = "<group>"; };
-		D31CAA732581E9B400817AE0 /* 16 - Big KRIT-5 04 AM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "16 - Big KRIT-5 04 AM.mp3"; path = "../../../../Downloads/Big KRIT - 4eva N A Day (DatPiff.com)/16 - Big KRIT-5 04 AM.mp3"; sourceTree = "<group>"; };
-		D31CAA8B2581E9C800817AE0 /* 02 - The Story of O.J. [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "02 - The Story of O.J. [Explicit].mp3"; path = "../../../../Downloads/02 - The Story of O.J. [Explicit].mp3"; sourceTree = "<group>"; };
-		D31CAA8C2581E9C800817AE0 /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3"; path = "../../../../Downloads/04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3"; sourceTree = "<group>"; };
-		D31CAA8D2581E9C800817AE0 /* 08 - Moonlight [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "08 - Moonlight [Explicit].mp3"; path = "../../../../Downloads/08 - Moonlight [Explicit].mp3"; sourceTree = "<group>"; };
-		D31CAA8E2581E9C800817AE0 /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "07 - Bam [feat. Damian Marley] [Explicit].mp3"; path = "../../../../Downloads/07 - Bam [feat. Damian Marley] [Explicit].mp3"; sourceTree = "<group>"; };
-		D31CAA8F2581E9C800817AE0 /* 01 - Kill Jay Z [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "01 - Kill Jay Z [Explicit].mp3"; path = "../../../../Downloads/01 - Kill Jay Z [Explicit].mp3"; sourceTree = "<group>"; };
-		D31CAA902581E9C800817AE0 /* 06 - Family Feud [feat. Beyoncé] [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "06 - Family Feud [feat. Beyoncé] [Explicit].mp3"; path = "../../../../Downloads/06 - Family Feud [feat. Beyoncé] [Explicit].mp3"; sourceTree = "<group>"; };
-		D31CAA912581E9C900817AE0 /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03 - Smile [feat. Gloria Carter] [Explicit].mp3"; sourceTree = "<group>"; };
-		D31CAA922581E9C900817AE0 /* 05 - 4_44 [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "05 - 4_44 [Explicit].mp3"; path = "../../../../Downloads/05 - 4_44 [Explicit].mp3"; sourceTree = "<group>"; };
-		D31CAA932581E9C900817AE0 /* 10 - Legacy [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "10 - Legacy [Explicit].mp3"; path = "../../../../Downloads/10 - Legacy [Explicit].mp3"; sourceTree = "<group>"; };
-		D31CAA942581E9C900817AE0 /* 09 - Marcy Me [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "09 - Marcy Me [Explicit].mp3"; path = "../../../../Downloads/09 - Marcy Me [Explicit].mp3"; sourceTree = "<group>"; };
 		D3499309256EEE0B00FE14BA /* SongCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCollection.swift; sourceTree = "<group>"; };
 		D3499394256F3C1200FE14BA /* FullPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPlayerViewController.swift; sourceTree = "<group>"; };
+		D3C110B32582C90F00DC3EAA /* 06 - Family Feud [feat. Beyoncé] [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "06 - Family Feud [feat. Beyoncé] [Explicit].mp3"; path = "../../../Songs/06 - Family Feud [feat. Beyoncé] [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C110B42582C90F00DC3EAA /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03 - Smile [feat. Gloria Carter] [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C110B52582C90F00DC3EAA /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "07 - Bam [feat. Damian Marley] [Explicit].mp3"; path = "../../../Songs/07 - Bam [feat. Damian Marley] [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C110B62582C90F00DC3EAA /* 10 - Legacy [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "10 - Legacy [Explicit].mp3"; path = "../../../Songs/10 - Legacy [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C110B72582C91000DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 - Kill Jay-Z [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C110B82582C91000DC3EAA /* 05 - 4_44 [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "05 - 4_44 [Explicit].mp3"; path = "../../../Songs/05 - 4_44 [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C110B92582C91000DC3EAA /* 02 - The Story of O.J. [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "02 - The Story of O.J. [Explicit].mp3"; path = "../../../Songs/02 - The Story of O.J. [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C110BA2582C91000DC3EAA /* 08 - Moonlight [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "08 - Moonlight [Explicit].mp3"; path = "../../../Songs/08 - Moonlight [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C110BB2582C91000DC3EAA /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3"; path = "../../../Songs/04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C110BC2582C91000DC3EAA /* 09 - Marcy Me [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "09 - Marcy Me [Explicit].mp3"; path = "../../../Songs/09 - Marcy Me [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C110CA2582C92100DC3EAA /* 05 - - Life Instructions feat Smoke DZA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "05 - - Life Instructions feat Smoke DZA.mp3"; path = "../../../../Downloads/Curreny - Covert Coup (DatPiff.com)/05 - - Life Instructions feat Smoke DZA.mp3"; sourceTree = "<group>"; };
+		D3C110CB2582C92100DC3EAA /* 01 - - BBS.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "01 - - BBS.mp3"; path = "../../../../Downloads/Curreny - Covert Coup (DatPiff.com)/01 - - BBS.mp3"; sourceTree = "<group>"; };
+		D3C110CC2582C92100DC3EAA /* 04 - - Blood Sweat And Gears feat Fiend.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "04 - - Blood Sweat And Gears feat Fiend.mp3"; path = "../../../../Downloads/Curreny - Covert Coup (DatPiff.com)/04 - - Blood Sweat And Gears feat Fiend.mp3"; sourceTree = "<group>"; };
+		D3C110CD2582C92100DC3EAA /* 08 - - Ventilation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "08 - - Ventilation.mp3"; path = "../../../../Downloads/Curreny - Covert Coup (DatPiff.com)/08 - - Ventilation.mp3"; sourceTree = "<group>"; };
+		D3C110CE2582C92100DC3EAA /* 10 - - Success Is My Cologne.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "10 - - Success Is My Cologne.mp3"; path = "../../../../Downloads/Curreny - Covert Coup (DatPiff.com)/10 - - Success Is My Cologne.mp3"; sourceTree = "<group>"; };
+		D3C110CF2582C92200DC3EAA /* 02 - - Full Metal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "02 - - Full Metal.mp3"; path = "../../../../Downloads/Curreny - Covert Coup (DatPiff.com)/02 - - Full Metal.mp3"; sourceTree = "<group>"; };
+		D3C110D02582C92200DC3EAA /* 03 - - The Type feat Prodigy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "03 - - The Type feat Prodigy.mp3"; path = "../../../../Downloads/Curreny - Covert Coup (DatPiff.com)/03 - - The Type feat Prodigy.mp3"; sourceTree = "<group>"; };
+		D3C110D12582C92200DC3EAA /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "07 - - Scottie Pippens feat Feddie Gibbs.mp3"; path = "../../../../Downloads/Curreny - Covert Coup (DatPiff.com)/07 - - Scottie Pippens feat Feddie Gibbs.mp3"; sourceTree = "<group>"; };
+		D3C110D22582C92200DC3EAA /* 09 - - Double 07.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "09 - - Double 07.mp3"; path = "../../../../Downloads/Curreny - Covert Coup (DatPiff.com)/09 - - Double 07.mp3"; sourceTree = "<group>"; };
+		D3C110D32582C92200DC3EAA /* 06 - - Smoke Break.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "06 - - Smoke Break.mp3"; path = "../../../../Downloads/Curreny - Covert Coup (DatPiff.com)/06 - - Smoke Break.mp3"; sourceTree = "<group>"; };
 		D3CC825925808650006BA6A6 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		D3CC828E258091F7006BA6A6 /* MiniPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerViewController.swift; sourceTree = "<group>"; };
 		D3D11962256F5E210071F1C6 /* SongPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayer.swift; sourceTree = "<group>"; };
 		D3EE3224256DC74000926074 /* MyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EE3227256DC74000926074 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3EE3229256DC74000926074 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D3EE322B256DC74000926074 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3EE322B256DC74000926074 /* SongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsViewController.swift; sourceTree = "<group>"; };
 		D3EE322E256DC74000926074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3EE3230256DC74300926074 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3EE3233256DC74300926074 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -193,7 +179,7 @@
 				D3EE325A256DC7D900926074 /* Songs */,
 				D3EE3227256DC74000926074 /* AppDelegate.swift */,
 				D3EE3229256DC74000926074 /* SceneDelegate.swift */,
-				D3EE322B256DC74000926074 /* ViewController.swift */,
+				D3EE322B256DC74000926074 /* SongsViewController.swift */,
 				D3EE322D256DC74000926074 /* Main.storyboard */,
 				D3EE3230256DC74300926074 /* Assets.xcassets */,
 				D3EE3232256DC74300926074 /* LaunchScreen.storyboard */,
@@ -228,33 +214,26 @@
 		D3EE325A256DC7D900926074 /* Songs */ = {
 			isa = PBXGroup;
 			children = (
-				D31CAA8F2581E9C800817AE0 /* 01 - Kill Jay Z [Explicit].mp3 */,
-				D31CAA8B2581E9C800817AE0 /* 02 - The Story of O.J. [Explicit].mp3 */,
-				D31CAA912581E9C900817AE0 /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 */,
-				D31CAA8C2581E9C800817AE0 /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 */,
-				D31CAA922581E9C900817AE0 /* 05 - 4_44 [Explicit].mp3 */,
-				D31CAA902581E9C800817AE0 /* 06 - Family Feud [feat. Beyoncé] [Explicit].mp3 */,
-				D31CAA8E2581E9C800817AE0 /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 */,
-				D31CAA8D2581E9C800817AE0 /* 08 - Moonlight [Explicit].mp3 */,
-				D31CAA942581E9C900817AE0 /* 09 - Marcy Me [Explicit].mp3 */,
-				D31CAA932581E9C900817AE0 /* 10 - Legacy [Explicit].mp3 */,
-				D31CAA6A2581E9B400817AE0 /* 01 - Big KRIT-8 04 AM.mp3 */,
-				D31CAA6D2581E9B400817AE0 /* 02 - Big KRIT-Wake Up Saxaphone By Willie B.mp3 */,
-				D31CAA6E2581E9B400817AE0 /* 03 - Big KRIT-Yesterday.mp3 */,
-				D31CAA6B2581E9B400817AE0 /* 04 - Big KRIT-Boobie Miles.mp3 */,
-				D31CAA632581E9B300817AE0 /* 05 - Big KRIT-4EvaNaDay Theme.mp3 */,
-				D31CAA6F2581E9B400817AE0 /* 06 - Big KRIT-Me And My Old School Guitar By Mike Hartnett.mp3 */,
-				D31CAA642581E9B300817AE0 /* 07 - Big KRIT-1986.mp3 */,
-				D31CAA6C2581E9B400817AE0 /* 08 - Big KRIT-Country Rap Tunes.mp3 */,
-				D31CAA652581E9B300817AE0 /* 09 - Big KRIT-Sky Club.mp3 */,
-				D31CAA692581E9B400817AE0 /* 10 - Big KRIT-Red Eye.mp3 */,
-				D31CAA662581E9B300817AE0 /* 11 - Big KRIT-Down Out.mp3 */,
-				D31CAA682581E9B400817AE0 /* 12 - Big KRIT-Package Store.mp3 */,
-				D31CAA702581E9B400817AE0 /* 13 - Big KRIT-Temptation.mp3 */,
-				D31CAA712581E9B400817AE0 /* 14 - Big KRIT-Handwriting.mp3 */,
-				D31CAA722581E9B400817AE0 /* 15 - Big KRIT-Insomnia Guitar By Mike Hartnett.mp3 */,
-				D31CAA732581E9B400817AE0 /* 16 - Big KRIT-5 04 AM.mp3 */,
-				D31CAA672581E9B300817AE0 /* 17 - Big KRIT-The Alarm.mp3 */,
+				D3C110B72582C91000DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 */,
+				D3C110B92582C91000DC3EAA /* 02 - The Story of O.J. [Explicit].mp3 */,
+				D3C110B42582C90F00DC3EAA /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 */,
+				D3C110BB2582C91000DC3EAA /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 */,
+				D3C110B82582C91000DC3EAA /* 05 - 4_44 [Explicit].mp3 */,
+				D3C110B32582C90F00DC3EAA /* 06 - Family Feud [feat. Beyoncé] [Explicit].mp3 */,
+				D3C110B52582C90F00DC3EAA /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 */,
+				D3C110BA2582C91000DC3EAA /* 08 - Moonlight [Explicit].mp3 */,
+				D3C110BC2582C91000DC3EAA /* 09 - Marcy Me [Explicit].mp3 */,
+				D3C110B62582C90F00DC3EAA /* 10 - Legacy [Explicit].mp3 */,
+				D3C110CB2582C92100DC3EAA /* 01 - - BBS.mp3 */,
+				D3C110CF2582C92200DC3EAA /* 02 - - Full Metal.mp3 */,
+				D3C110D02582C92200DC3EAA /* 03 - - The Type feat Prodigy.mp3 */,
+				D3C110CC2582C92100DC3EAA /* 04 - - Blood Sweat And Gears feat Fiend.mp3 */,
+				D3C110CA2582C92100DC3EAA /* 05 - - Life Instructions feat Smoke DZA.mp3 */,
+				D3C110D32582C92200DC3EAA /* 06 - - Smoke Break.mp3 */,
+				D3C110D12582C92200DC3EAA /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 */,
+				D3C110CD2582C92100DC3EAA /* 08 - - Ventilation.mp3 */,
+				D3C110D22582C92200DC3EAA /* 09 - - Double 07.mp3 */,
+				D3C110CE2582C92100DC3EAA /* 10 - - Success Is My Cologne.mp3 */,
 			);
 			path = Songs;
 			sourceTree = "<group>";
@@ -364,36 +343,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D31CAA772581E9B400817AE0 /* 11 - Big KRIT-Down Out.mp3 in Resources */,
-				D31CAA802581E9B400817AE0 /* 06 - Big KRIT-Me And My Old School Guitar By Mike Hartnett.mp3 in Resources */,
+				D3C110C32582C91000DC3EAA /* 02 - The Story of O.J. [Explicit].mp3 in Resources */,
+				D3C110C22582C91000DC3EAA /* 05 - 4_44 [Explicit].mp3 in Resources */,
+				D3C110D82582C92200DC3EAA /* 10 - - Success Is My Cologne.mp3 in Resources */,
 				D3EE3234256DC74300926074 /* LaunchScreen.storyboard in Resources */,
+				D3C110BD2582C91000DC3EAA /* 06 - Family Feud [feat. Beyoncé] [Explicit].mp3 in Resources */,
+				D3C110C42582C91000DC3EAA /* 08 - Moonlight [Explicit].mp3 in Resources */,
+				D3C110C02582C91000DC3EAA /* 10 - Legacy [Explicit].mp3 in Resources */,
+				D3C110D62582C92200DC3EAA /* 04 - - Blood Sweat And Gears feat Fiend.mp3 in Resources */,
+				D3C110DA2582C92200DC3EAA /* 03 - - The Type feat Prodigy.mp3 in Resources */,
+				D3C110C12582C91000DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 in Resources */,
+				D3C110D52582C92200DC3EAA /* 01 - - BBS.mp3 in Resources */,
 				D3EE3231256DC74300926074 /* Assets.xcassets in Resources */,
-				D31CAA9B2581E9C900817AE0 /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 in Resources */,
-				D31CAA782581E9B400817AE0 /* 17 - Big KRIT-The Alarm.mp3 in Resources */,
-				D31CAA832581E9B400817AE0 /* 15 - Big KRIT-Insomnia Guitar By Mike Hartnett.mp3 in Resources */,
-				D31CAA822581E9B400817AE0 /* 14 - Big KRIT-Handwriting.mp3 in Resources */,
-				D31CAA9D2581E9C900817AE0 /* 10 - Legacy [Explicit].mp3 in Resources */,
-				D31CAA792581E9B400817AE0 /* 12 - Big KRIT-Package Store.mp3 in Resources */,
-				D31CAA952581E9C900817AE0 /* 02 - The Story of O.J. [Explicit].mp3 in Resources */,
-				D31CAA812581E9B400817AE0 /* 13 - Big KRIT-Temptation.mp3 in Resources */,
+				D3C110BE2582C91000DC3EAA /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 in Resources */,
+				D3C110C62582C91000DC3EAA /* 09 - Marcy Me [Explicit].mp3 in Resources */,
 				D3EE322F256DC74000926074 /* Main.storyboard in Resources */,
-				D31CAA982581E9C900817AE0 /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 in Resources */,
-				D31CAA762581E9B400817AE0 /* 09 - Big KRIT-Sky Club.mp3 in Resources */,
-				D31CAA7B2581E9B400817AE0 /* 01 - Big KRIT-8 04 AM.mp3 in Resources */,
-				D31CAA7D2581E9B400817AE0 /* 08 - Big KRIT-Country Rap Tunes.mp3 in Resources */,
-				D31CAA9A2581E9C900817AE0 /* 06 - Family Feud [feat. Beyoncé] [Explicit].mp3 in Resources */,
-				D31CAA9C2581E9C900817AE0 /* 05 - 4_44 [Explicit].mp3 in Resources */,
-				D31CAA7C2581E9B400817AE0 /* 04 - Big KRIT-Boobie Miles.mp3 in Resources */,
-				D31CAA742581E9B400817AE0 /* 05 - Big KRIT-4EvaNaDay Theme.mp3 in Resources */,
-				D31CAA962581E9C900817AE0 /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 in Resources */,
-				D31CAA842581E9B400817AE0 /* 16 - Big KRIT-5 04 AM.mp3 in Resources */,
-				D31CAA7F2581E9B400817AE0 /* 03 - Big KRIT-Yesterday.mp3 in Resources */,
-				D31CAA7A2581E9B400817AE0 /* 10 - Big KRIT-Red Eye.mp3 in Resources */,
-				D31CAA7E2581E9B400817AE0 /* 02 - Big KRIT-Wake Up Saxaphone By Willie B.mp3 in Resources */,
-				D31CAA9E2581E9C900817AE0 /* 09 - Marcy Me [Explicit].mp3 in Resources */,
-				D31CAA992581E9C900817AE0 /* 01 - Kill Jay Z [Explicit].mp3 in Resources */,
-				D31CAA752581E9B400817AE0 /* 07 - Big KRIT-1986.mp3 in Resources */,
-				D31CAA972581E9C900817AE0 /* 08 - Moonlight [Explicit].mp3 in Resources */,
+				D3C110C52582C91000DC3EAA /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 in Resources */,
+				D3C110BF2582C91000DC3EAA /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 in Resources */,
+				D3C110DC2582C92200DC3EAA /* 09 - - Double 07.mp3 in Resources */,
+				D3C110D42582C92200DC3EAA /* 05 - - Life Instructions feat Smoke DZA.mp3 in Resources */,
+				D3C110D72582C92200DC3EAA /* 08 - - Ventilation.mp3 in Resources */,
+				D3C110DB2582C92200DC3EAA /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 in Resources */,
+				D3C110D92582C92200DC3EAA /* 02 - - Full Metal.mp3 in Resources */,
+				D3C110DD2582C92200DC3EAA /* 06 - - Smoke Break.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,7 +435,7 @@
 				D3CC825A25808650006BA6A6 /* AlbumsViewController.swift in Sources */,
 				D3499395256F3C1200FE14BA /* FullPlayerViewController.swift in Sources */,
 				D3CC828F258091F7006BA6A6 /* MiniPlayerViewController.swift in Sources */,
-				D3EE322C256DC74000926074 /* ViewController.swift in Sources */,
+				D3EE322C256DC74000926074 /* SongsViewController.swift in Sources */,
 				D3EE3228256DC74000926074 /* AppDelegate.swift in Sources */,
 				D31CAA5F2581DBC900817AE0 /* SelectedAlbumViewController.swift in Sources */,
 				D349930A256EEE0B00FE14BA /* SongCollection.swift in Sources */,

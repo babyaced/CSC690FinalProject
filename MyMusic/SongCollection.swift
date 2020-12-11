@@ -22,7 +22,7 @@ class SongCollection{
         let artistName : String?
         let art : UIImage?
         let trackName : String?
-        let trackNum: Int?
+        var trackNum: Int?
         let trackIndex: Int?
         let colors: UIImageColors?
         let path: String?
@@ -30,6 +30,7 @@ class SongCollection{
     
     var songs = [Song]()
     var albums = [String:[Song]]()
+//    var artists = [String:[Song]]()
     
     
     var position: Int
@@ -49,7 +50,7 @@ class SongCollection{
                 var albumMeta : String?
                 var artistMeta : String?
                 var artMeta: UIImage?
-                var tracknumMeta : Int?
+                var tracknumMeta = 0
                
                 
 //                print(pathString)
@@ -71,30 +72,21 @@ class SongCollection{
                 let metadataList = playerItem.asset.metadata as [AVMetadataItem]
 //                print(metadataList)
                 for item in metadataList {
-                        if item.commonKey == nil{
-                            continue
-                        }
-                        guard let key = item.commonKey?.rawValue, let value = item.value else{
+                        guard let ckey = item.commonKey?.rawValue, let cvalue = item.value else{
                             continue
                         }
 
-                       switch key {
-                        case "title" : trackMeta = value as? String
-                        case "artist": artistMeta = value as? String
-                        case "albumName": albumMeta = value as? String
-                        case "artwork" where value is Data : artMeta = UIImage(data: value as! Data)
-                        case "TRCK": tracknumMeta = value as? Int
+                       switch ckey {
+                        case "title" : trackMeta = cvalue as? String
+                        case "artist": artistMeta = cvalue as? String
+                        case "albumName": albumMeta = cvalue as? String
+                        case "artwork" where cvalue is Data : artMeta = UIImage(data: cvalue as! Data)
                         default:
                           continue
                        }
-
                 }
-                /*print("Song: ", trackMeta)
-                print("Artist: ", artistMeta)
-                print("Album: ", albumMeta)
-                print("\n")*/
                 mp3Index = index
-                let newSong = Song(name: mp3Name, albumName: albumMeta, artistName: artistMeta, art: artMeta, trackName: trackMeta, trackNum: tracknumMeta , trackIndex: mp3Index,colors: (artMeta?.getColors(quality: preferredColorQuality)),path: pathString)
+                var newSong = Song(name: mp3Name, albumName: albumMeta, artistName: artistMeta, art: artMeta, trackName: trackMeta, trackNum: tracknumMeta , trackIndex: mp3Index,colors: (artMeta?.getColors(quality: preferredColorQuality)),path: pathString)
                 
 //                print(newSong)
                 if(mp3Name != nil){
@@ -103,18 +95,33 @@ class SongCollection{
                     index += 1
                     if(albumMeta != nil){
                         if(albums.keys.contains(albumMeta!)){
+                            newSong.trackNum = albums[albumMeta!]!.count + 1
                             albums[albumMeta!]!.append(newSong)
+                            albums[albumMeta!]!.sort {$0.trackNum ?? 0 < $1.trackNum ?? 0}
                         }
                         else{
                             var albumSongs = [Song]()
+                            newSong.trackNum = albumSongs.count + 1
                             albumSongs.append(newSong)
                             albums[albumMeta!] = albumSongs
                         }
                     }
+//                    if(artist != nil){
+//                        if(albums.keys.contains(albumMeta!)){
+//                            newSong.trackNum = albums[albumMeta!]!.count + 1
+//                            albums[albumMeta!]!.append(newSong)
+//                            albums[albumMeta!]!.sort {$0.trackNum ?? 0 < $1.trackNum ?? 0}
+//                        }
+//                        else{
+//                            var albumSongs = [Song]()
+//                            newSong.trackNum = albumSongs.count + 1
+//                            albumSongs.append(newSong)
+//                            albums[albumMeta!] = albumSongs
+//                        }
+//                    }
                 }
                     
             }
-//            songs.sort { $0.trackName! < $1.trackName! }
         }
         catch{
             

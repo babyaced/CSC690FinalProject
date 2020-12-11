@@ -7,16 +7,29 @@
 import AVFoundation
 import Foundation
 
+let updatePlayerViewsToPlayingStatesKey = "dsimpson.sfsu.edu.updatePlayerViewsToPlayingStatesKey"
+let updatePlayerViewsToPausedStatesKey = "dsimpson.sfsu.edu.updatePlayerViewsToPausedStatesKey"
+
 class SongPlayer : NSObject, AVAudioPlayerDelegate{
     
     static let shared = SongPlayer()
     
     var player: AVAudioPlayer?
     
+    var songQueue = [SongCollection.Song]()
+    
+    var queueIndex: Int?
+    
+    func initQueue(queue: [SongCollection.Song], startingPos: Int){
+        songQueue = queue
+        queueIndex = startingPos
+    }
+    
+    
     func startSong(){
         self.player?.delegate = nil
-        let song = SongCollection.shared.songs[SongCollection.shared.position]
-        let urlString = song.path
+        let currentSong = songQueue[queueIndex!]
+        let urlString = currentSong.path
         //change song and artist name in mini player
         
         do{
@@ -28,7 +41,7 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
                 return
             }
                 
-            player = try AVAudioPlayer(contentsOf: URL(string: urlString)!)
+            player = try AVAudioPlayer(contentsOf:URL(string: urlString)!)
                 
             guard let player = player else{
                 print("player is nil")
@@ -36,7 +49,7 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
             }
             
             player.delegate = self
-            NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPlayingStatesKey), object: nil)
+            NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPlayingStatesKey), object: nil, userInfo: ["currentSong": currentSong])
             player.play()
         }
         catch{
@@ -49,7 +62,8 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
             print("player is nil")
             return
         }
-        NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPlayingStatesKey), object: nil)
+        let currentSong = songQueue[queueIndex!]
+        NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPlayingStatesKey), object: nil, userInfo:["currentSong": currentSong])
         player.play()
     }
     
@@ -58,7 +72,8 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
             print("player is nil")
             return
         }
-        NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPausedStatesKey), object: nil)
+        let currentSong = songQueue[queueIndex!]
+        NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPausedStatesKey), object: nil, userInfo:["currentSong": currentSong])
         player.pause()
     }
     
@@ -105,10 +120,11 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
     }
     
     func prevSong(){
-        if SongCollection.shared.position != -1{
-            if SongCollection.shared.position > 0{
-                SongCollection.shared.position -= 1
-                NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPlayingStatesKey), object: nil)
+        if queueIndex != nil{
+            if queueIndex! > 0{
+                queueIndex! -= 1
+                let currentSong = songQueue[queueIndex!]
+                NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPlayingStatesKey), object: nil,userInfo:["currentSong": currentSong])
                 startSong()
             }
         }
@@ -116,18 +132,24 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
     }
     
     func nextSong(){
-        if SongCollection.shared.position != -1{
-            if SongCollection.shared.position < (SongCollection.shared.songs.count - 1){
-                SongCollection.shared.position += 1
-                NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPlayingStatesKey), object: nil)
+        if queueIndex != nil{
+            if queueIndex! < (songQueue.count - 1){
+                queueIndex! += 1
+                let currentSong = songQueue[queueIndex!]
+                NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPlayingStatesKey), object: nil, userInfo: ["currentSong": currentSong])
                startSong()
             }else{
-                    NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPausedStatesKey), object: nil)
+                let currentSong = songQueue[queueIndex!]
+                NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPausedStatesKey), object: nil, userInfo: ["currentSong": currentSong])
             }
         }
     }
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool){
         nextSong()
+    }
+    
+    func getCurrentSong() -> SongCollection.Song{
+        return songQueue[queueIndex ?? 1]
     }
 }

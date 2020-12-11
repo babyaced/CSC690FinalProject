@@ -9,10 +9,8 @@ import UIImageColors
 
 
 
-let updatePlayerViewsToPlayingStatesKey = "dsimpson.sfsu.edu.updatePlayerViewsToPlayingStatesKey"
-let updatePlayerViewsToPausedStatesKey = "dsimpson.sfsu.edu.updatePlayerViewsToPausedStatesKey"
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SongsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var table: UITableView!
 
@@ -50,12 +48,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 90
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         //present the player
-        SongCollection.shared.position = SongCollection.shared.songs[indexPath.row].trackIndex!
+        tableView.deselectRow(at: indexPath, animated: true)
+        SongPlayer.shared.initQueue(queue: SongCollection.shared.songs, startingPos: indexPath.row)
         SongPlayer.shared.startSong()
     }
 }
