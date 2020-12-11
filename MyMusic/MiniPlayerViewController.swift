@@ -26,7 +26,7 @@ class MiniPlayerViewController: UIViewController {
             updateMiniPlayerViewToPlayingView()
             updateSongProgress()
         }
-        else if SongPlayer.shared.player != nil{
+        else if SongPlayer.shared.player != nil {
             updateMiniPlayerViewToPausedView()
             updateSongProgress()
         }

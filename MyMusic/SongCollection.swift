@@ -77,8 +77,8 @@ class SongCollection{
                         guard let ckey = item.commonKey?.rawValue, let cvalue = item.value else{
                             continue
                         }
-                        print("Key", ckey)
-                        print("Value", cvalue)
+//                        print("Key", ckey)
+//                        print("Value", cvalue)
 
                        switch ckey {
                         case "title" : trackMeta = cvalue as? String

@@ -37,14 +37,14 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
             try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
                 
             guard let urlString = urlString else{
-                print("urlString is nil")
+//                print("urlString is nil")
                 return
             }
                 
             player = try AVAudioPlayer(contentsOf:URL(string: urlString)!)
                 
             guard let player = player else{
-                print("player is nil")
+//                print("player is nil")
                 return
             }
             
@@ -59,7 +59,7 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
     
     func playSong(){
         guard let player = player else{
-            print("player is nil")
+//            print("player is nil")
             return
         }
         let currentSong = songQueue[queueIndex!]
@@ -69,7 +69,7 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
     
     func pauseSong(){
         guard let player = player else{
-            print("player is nil")
+//            print("player is nil")
             return
         }
         let currentSong = songQueue[queueIndex!]
@@ -79,7 +79,7 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
     
     func stopSong(){
         guard let player = player else{
-            print("player is nil")
+//            print("player is nil")
             return
         }
         player.stop()
@@ -87,7 +87,7 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
     
     func scrubSong(time: TimeInterval){
         guard let player = player else{
-            print("player is nil")
+//            print("player is nil")
             return
         }
         stopSong()
@@ -97,7 +97,7 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
     
     func getPlaybackTime() -> TimeInterval{
         guard let player = player else{
-            print("player is nil")
+//            print("player is nil")
             return 0
         }
         return player.currentTime
@@ -105,7 +105,7 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
     
     func getCurrentTrackLength() -> TimeInterval{
         guard let player = player else{
-            print("player is nil")
+//            print("player is nil")
             return 0
         }
         return player.duration
@@ -113,7 +113,7 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
     
     func isPlaying() ->Bool{
         guard let player = player else{
-            print("player is nil")
+//            print("player is nil")
             return false
         }
         return player.isPlaying
