@@ -75,6 +75,8 @@ class SongCollection{
                         guard let ckey = item.commonKey?.rawValue, let cvalue = item.value else{
                             continue
                         }
+                        print("Key", ckey)
+                        print("Value", cvalue)
 
                        switch ckey {
                         case "title" : trackMeta = cvalue as? String
@@ -106,26 +108,13 @@ class SongCollection{
                             albums[albumMeta!] = albumSongs
                         }
                     }
-//                    if(artist != nil){
-//                        if(albums.keys.contains(albumMeta!)){
-//                            newSong.trackNum = albums[albumMeta!]!.count + 1
-//                            albums[albumMeta!]!.append(newSong)
-//                            albums[albumMeta!]!.sort {$0.trackNum ?? 0 < $1.trackNum ?? 0}
-//                        }
-//                        else{
-//                            var albumSongs = [Song]()
-//                            newSong.trackNum = albumSongs.count + 1
-//                            albumSongs.append(newSong)
-//                            albums[albumMeta!] = albumSongs
-//                        }
-//                    }
                 }
-                    
             }
         }
         catch{
-            
+            print("Could not import songs")
         }
+        songs.sort{$0.trackName! < $1.trackName!}
         position = -1
     }
 }

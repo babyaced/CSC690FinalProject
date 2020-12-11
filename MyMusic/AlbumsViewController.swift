@@ -38,8 +38,6 @@ class AlbumsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         //cell.detailTextLabel?.textColor = song.colors?.secondary
         cell.imageView?.image = SongCollection.shared.albums[tempKey]![0].art
         //cell.backgroundColor = colors?.background
-        cell.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 18)
-        cell.detailTextLabel?.font = UIFont(name: "Helvetica", size: 17)
         
         return cell
     }

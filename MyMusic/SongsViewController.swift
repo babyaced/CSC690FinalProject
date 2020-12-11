@@ -34,12 +34,10 @@ class SongsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         //configure
         cell.textLabel?.text = song.trackName
         //cell.textLabel?.textColor = song.colors?.primary
-        cell.detailTextLabel?.text = song.albumName
+        cell.detailTextLabel?.text = song.artistName
         //cell.detailTextLabel?.textColor = song.colors?.secondary
         cell.imageView?.image = song.art
         //cell.backgroundColor = colors?.background
-        cell.textLabel?.font = UIFont(name: "Helvetica-Bold", size: 18)
-        cell.detailTextLabel?.font = UIFont(name: "Helvetica", size: 17)
         
         /*let backgroundView = UIView()
         backgroundView.backgroundColor = song.colors?.background

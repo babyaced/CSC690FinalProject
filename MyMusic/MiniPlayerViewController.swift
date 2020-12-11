@@ -91,13 +91,10 @@ class MiniPlayerViewController: UIViewController {
     
     @objc
     func miniPlayerSwipeUp(_ gesture: UISwipeGestureRecognizer){
-        print("Swipe up")
             guard let vc = storyboard?.instantiateViewController(identifier: "FullPlayer") as? FullPlayerViewController else {
-                print("cant present full player")
                 return
             }
             present(vc, animated: true)
-            print("presented full player")
     }
     
     @objc

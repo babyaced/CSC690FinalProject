@@ -32,7 +32,7 @@ class FullPlayerViewController: UIViewController {
         fullPlayerSetup()
         if(SongPlayer.shared.isPlaying()){
             updateFullPlayerViewtoPlayingView()
-        }else{
+        }else if SongPlayer.shared.player != nil{
             updateFullPlayerViewtoPausedView()
         }
         var playbackTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateScrubber), userInfo: nil, repeats: true)

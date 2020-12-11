@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SelectedAlbumViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -30,6 +31,7 @@ class SelectedAlbumViewController: UIViewController, UITableViewDelegate, UITabl
 //        print(song.artistName)
         cell.textLabel?.text = song.trackName
         cell.detailTextLabel?.text = song.artistName
+
         return cell
     }
     
@@ -41,6 +43,6 @@ class SelectedAlbumViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 45
+        return 55
     }
 }
