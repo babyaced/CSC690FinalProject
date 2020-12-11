@@ -11,16 +11,7 @@
 		D31CAA5F2581DBC900817AE0 /* SelectedAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31CAA5E2581DBC900817AE0 /* SelectedAlbumViewController.swift */; };
 		D349930A256EEE0B00FE14BA /* SongCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3499309256EEE0B00FE14BA /* SongCollection.swift */; };
 		D3499395256F3C1200FE14BA /* FullPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3499394256F3C1200FE14BA /* FullPlayerViewController.swift */; };
-		D3C1110C2582F47D00DC3EAA /* 10 - - Success Is My Cologne.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111022582F46800DC3EAA /* 10 - - Success Is My Cologne.mp3 */; };
-		D3C1110D2582F47D00DC3EAA /* 09 - - Double 07.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111032582F46900DC3EAA /* 09 - - Double 07.mp3 */; };
-		D3C1110E2582F47D00DC3EAA /* 02 - - Full Metal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111042582F46E00DC3EAA /* 02 - - Full Metal.mp3 */; };
-		D3C1110F2582F47D00DC3EAA /* 06 - - Smoke Break.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111052582F47200DC3EAA /* 06 - - Smoke Break.mp3 */; };
-		D3C111102582F47D00DC3EAA /* 05 - - Life Instructions feat Smoke DZA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111062582F47400DC3EAA /* 05 - - Life Instructions feat Smoke DZA.mp3 */; };
-		D3C111112582F47D00DC3EAA /* 03 - - The Type feat Prodigy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111072582F47600DC3EAA /* 03 - - The Type feat Prodigy.mp3 */; };
-		D3C111122582F47D00DC3EAA /* 04 - - Blood Sweat And Gears feat Fiend.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111082582F47800DC3EAA /* 04 - - Blood Sweat And Gears feat Fiend.mp3 */; };
-		D3C111132582F47D00DC3EAA /* 01 - - BBS.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111092582F47900DC3EAA /* 01 - - BBS.mp3 */; };
-		D3C111142582F47D00DC3EAA /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1110A2582F47B00DC3EAA /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 */; };
-		D3C111152582F47D00DC3EAA /* 08 - - Ventilation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1110B2582F47D00DC3EAA /* 08 - - Ventilation.mp3 */; };
+		D3C1112D2583091600DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1112C2583091600DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 */; };
 		D3CC825A25808650006BA6A6 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC825925808650006BA6A6 /* AlbumsViewController.swift */; };
 		D3CC828F258091F7006BA6A6 /* MiniPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC828E258091F7006BA6A6 /* MiniPlayerViewController.swift */; };
 		D3D11963256F5E210071F1C6 /* SongPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D11962256F5E210071F1C6 /* SongPlayer.swift */; };
@@ -58,16 +49,7 @@
 		D31CAA5E2581DBC900817AE0 /* SelectedAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedAlbumViewController.swift; sourceTree = "<group>"; };
 		D3499309256EEE0B00FE14BA /* SongCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCollection.swift; sourceTree = "<group>"; };
 		D3499394256F3C1200FE14BA /* FullPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPlayerViewController.swift; sourceTree = "<group>"; };
-		D3C111022582F46800DC3EAA /* 10 - - Success Is My Cologne.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 - - Success Is My Cologne.mp3"; sourceTree = "<group>"; };
-		D3C111032582F46900DC3EAA /* 09 - - Double 07.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 - - Double 07.mp3"; sourceTree = "<group>"; };
-		D3C111042582F46E00DC3EAA /* 02 - - Full Metal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 - - Full Metal.mp3"; sourceTree = "<group>"; };
-		D3C111052582F47200DC3EAA /* 06 - - Smoke Break.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 - - Smoke Break.mp3"; sourceTree = "<group>"; };
-		D3C111062582F47400DC3EAA /* 05 - - Life Instructions feat Smoke DZA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 - - Life Instructions feat Smoke DZA.mp3"; sourceTree = "<group>"; };
-		D3C111072582F47600DC3EAA /* 03 - - The Type feat Prodigy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03 - - The Type feat Prodigy.mp3"; sourceTree = "<group>"; };
-		D3C111082582F47800DC3EAA /* 04 - - Blood Sweat And Gears feat Fiend.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 - - Blood Sweat And Gears feat Fiend.mp3"; sourceTree = "<group>"; };
-		D3C111092582F47900DC3EAA /* 01 - - BBS.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 - - BBS.mp3"; sourceTree = "<group>"; };
-		D3C1110A2582F47B00DC3EAA /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 - - Scottie Pippens feat Feddie Gibbs.mp3"; sourceTree = "<group>"; };
-		D3C1110B2582F47D00DC3EAA /* 08 - - Ventilation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 - - Ventilation.mp3"; sourceTree = "<group>"; };
+		D3C1112C2583091600DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 - Kill Jay-Z [Explicit].mp3"; sourceTree = "<group>"; };
 		D3CC825925808650006BA6A6 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		D3CC828E258091F7006BA6A6 /* MiniPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerViewController.swift; sourceTree = "<group>"; };
 		D3D11962256F5E210071F1C6 /* SongPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayer.swift; sourceTree = "<group>"; };
@@ -194,16 +176,7 @@
 		D3EE325A256DC7D900926074 /* Songs */ = {
 			isa = PBXGroup;
 			children = (
-				D3C111092582F47900DC3EAA /* 01 - - BBS.mp3 */,
-				D3C111042582F46E00DC3EAA /* 02 - - Full Metal.mp3 */,
-				D3C111072582F47600DC3EAA /* 03 - - The Type feat Prodigy.mp3 */,
-				D3C111082582F47800DC3EAA /* 04 - - Blood Sweat And Gears feat Fiend.mp3 */,
-				D3C111062582F47400DC3EAA /* 05 - - Life Instructions feat Smoke DZA.mp3 */,
-				D3C111052582F47200DC3EAA /* 06 - - Smoke Break.mp3 */,
-				D3C1110A2582F47B00DC3EAA /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 */,
-				D3C1110B2582F47D00DC3EAA /* 08 - - Ventilation.mp3 */,
-				D3C111032582F46900DC3EAA /* 09 - - Double 07.mp3 */,
-				D3C111022582F46800DC3EAA /* 10 - - Success Is My Cologne.mp3 */,
+				D3C1112C2583091600DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 */,
 			);
 			path = Songs;
 			sourceTree = "<group>";
@@ -314,18 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3EE3234256DC74300926074 /* LaunchScreen.storyboard in Resources */,
-				D3C111142582F47D00DC3EAA /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 in Resources */,
-				D3C1110E2582F47D00DC3EAA /* 02 - - Full Metal.mp3 in Resources */,
 				D3EE3231256DC74300926074 /* Assets.xcassets in Resources */,
-				D3C111112582F47D00DC3EAA /* 03 - - The Type feat Prodigy.mp3 in Resources */,
-				D3C111122582F47D00DC3EAA /* 04 - - Blood Sweat And Gears feat Fiend.mp3 in Resources */,
-				D3C111102582F47D00DC3EAA /* 05 - - Life Instructions feat Smoke DZA.mp3 in Resources */,
-				D3C1110C2582F47D00DC3EAA /* 10 - - Success Is My Cologne.mp3 in Resources */,
-				D3C1110F2582F47D00DC3EAA /* 06 - - Smoke Break.mp3 in Resources */,
-				D3C1110D2582F47D00DC3EAA /* 09 - - Double 07.mp3 in Resources */,
-				D3C111132582F47D00DC3EAA /* 01 - - BBS.mp3 in Resources */,
 				D3EE322F256DC74000926074 /* Main.storyboard in Resources */,
-				D3C111152582F47D00DC3EAA /* 08 - - Ventilation.mp3 in Resources */,
+				D3C1112D2583091600DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

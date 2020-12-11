@@ -30,7 +30,7 @@ class SelectedAlbumViewController: UIViewController, UITableViewDelegate, UITabl
         let song = selectedAlbumSongs[indexPath.row]
 //        print(song.artistName)
         cell.textLabel?.text = song.trackName
-        cell.detailTextLabel?.text = song.artistName
+        cell.detailTextLabel?.text = song.trackDuration
 
         return cell
     }

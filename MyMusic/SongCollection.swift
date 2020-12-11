@@ -26,6 +26,7 @@ class SongCollection{
         let trackIndex: Int?
         let colors: UIImageColors?
         let path: String?
+        let trackDuration: String?
     }
     
     var songs = [Song]()
@@ -51,6 +52,7 @@ class SongCollection{
                 var artistMeta : String?
                 var artMeta: UIImage?
                 var tracknumMeta = 0
+                var trackDur: String?
                
                 
 //                print(pathString)
@@ -88,7 +90,9 @@ class SongCollection{
                        }
                 }
                 mp3Index = index
-                var newSong = Song(name: mp3Name, albumName: albumMeta, artistName: artistMeta, art: artMeta, trackName: trackMeta, trackNum: tracknumMeta , trackIndex: mp3Index,colors: (artMeta?.getColors(quality: preferredColorQuality)),path: pathString)
+                
+                trackDur = convertSecondsToTime(seconds: Int(Double(playerItem.asset.duration.value) / Double(playerItem.asset.duration.timescale)))
+                var newSong = Song(name: mp3Name, albumName: albumMeta, artistName: artistMeta, art: artMeta, trackName: trackMeta, trackNum: tracknumMeta , trackIndex: mp3Index,colors: (artMeta?.getColors(quality: preferredColorQuality)),path: pathString, trackDuration: trackDur)
                 
 //                print(newSong)
                 if(mp3Name != nil){
@@ -117,4 +121,10 @@ class SongCollection{
         songs.sort{$0.trackName! < $1.trackName!}
         position = -1
     }
+}
+
+func convertSecondsToTime(seconds: Int) -> String{
+    let minutes = seconds / 60
+    let seconds = seconds % 60
+    return String(format:"%02i:%02i", minutes, seconds)
 }
