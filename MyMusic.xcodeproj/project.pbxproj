@@ -11,7 +11,24 @@
 		D31CAA5F2581DBC900817AE0 /* SelectedAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31CAA5E2581DBC900817AE0 /* SelectedAlbumViewController.swift */; };
 		D349930A256EEE0B00FE14BA /* SongCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3499309256EEE0B00FE14BA /* SongCollection.swift */; };
 		D3499395256F3C1200FE14BA /* FullPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3499394256F3C1200FE14BA /* FullPlayerViewController.swift */; };
-		D3C1112D2583091600DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1112C2583091600DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 */; };
+		D3C1113C25830CAB00DC3EAA /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1113425830CA200DC3EAA /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 */; };
+		D3C1113D25830CAB00DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1113525830CA300DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 */; };
+		D3C1113E25830CAB00DC3EAA /* 08 - Moonlight [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1113625830CA400DC3EAA /* 08 - Moonlight [Explicit].mp3 */; };
+		D3C1113F25830CAB00DC3EAA /* 09 - Marcy Me [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1113725830CA600DC3EAA /* 09 - Marcy Me [Explicit].mp3 */; };
+		D3C1114025830CAB00DC3EAA /* 05 - 4_44 [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1113825830CA700DC3EAA /* 05 - 4_44 [Explicit].mp3 */; };
+		D3C1114125830CAB00DC3EAA /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1113925830CA900DC3EAA /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 */; };
+		D3C1114225830CAB00DC3EAA /* 02 - The Story of O.J. [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1113A25830CAA00DC3EAA /* 02 - The Story of O.J. [Explicit].mp3 */; };
+		D3C1114325830CAB00DC3EAA /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1113B25830CAB00DC3EAA /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 */; };
+		D3C1115125830CD400DC3EAA /* 10 - - Success Is My Cologne.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1114725830CC800DC3EAA /* 10 - - Success Is My Cologne.mp3 */; };
+		D3C1115225830CD400DC3EAA /* 04 - - Blood Sweat And Gears feat Fiend.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1114825830CCA00DC3EAA /* 04 - - Blood Sweat And Gears feat Fiend.mp3 */; };
+		D3C1115325830CD400DC3EAA /* 03 - - The Type feat Prodigy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1114925830CCB00DC3EAA /* 03 - - The Type feat Prodigy.mp3 */; };
+		D3C1115425830CD400DC3EAA /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1114A25830CCC00DC3EAA /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 */; };
+		D3C1115525830CD400DC3EAA /* 06 - - Smoke Break.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1114B25830CCD00DC3EAA /* 06 - - Smoke Break.mp3 */; };
+		D3C1115625830CD400DC3EAA /* 02 - - Full Metal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1114C25830CCF00DC3EAA /* 02 - - Full Metal.mp3 */; };
+		D3C1115725830CD400DC3EAA /* 05 - - Life Instructions feat Smoke DZA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1114D25830CD000DC3EAA /* 05 - - Life Instructions feat Smoke DZA.mp3 */; };
+		D3C1115825830CD400DC3EAA /* 08 - - Ventilation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1114E25830CD100DC3EAA /* 08 - - Ventilation.mp3 */; };
+		D3C1115925830CD400DC3EAA /* 01 - - BBS.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1114F25830CD300DC3EAA /* 01 - - BBS.mp3 */; };
+		D3C1115A25830CD400DC3EAA /* 09 - - Double 07.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1115025830CD400DC3EAA /* 09 - - Double 07.mp3 */; };
 		D3CC825A25808650006BA6A6 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC825925808650006BA6A6 /* AlbumsViewController.swift */; };
 		D3CC828F258091F7006BA6A6 /* MiniPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC828E258091F7006BA6A6 /* MiniPlayerViewController.swift */; };
 		D3D11963256F5E210071F1C6 /* SongPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D11962256F5E210071F1C6 /* SongPlayer.swift */; };
@@ -49,7 +66,24 @@
 		D31CAA5E2581DBC900817AE0 /* SelectedAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedAlbumViewController.swift; sourceTree = "<group>"; };
 		D3499309256EEE0B00FE14BA /* SongCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCollection.swift; sourceTree = "<group>"; };
 		D3499394256F3C1200FE14BA /* FullPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPlayerViewController.swift; sourceTree = "<group>"; };
-		D3C1112C2583091600DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 - Kill Jay-Z [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C1113425830CA200DC3EAA /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 - Bam [feat. Damian Marley] [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C1113525830CA300DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 - Kill Jay-Z [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C1113625830CA400DC3EAA /* 08 - Moonlight [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 - Moonlight [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C1113725830CA600DC3EAA /* 09 - Marcy Me [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 - Marcy Me [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C1113825830CA700DC3EAA /* 05 - 4_44 [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 - 4_44 [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C1113925830CA900DC3EAA /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C1113A25830CAA00DC3EAA /* 02 - The Story of O.J. [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 - The Story of O.J. [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C1113B25830CAB00DC3EAA /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03 - Smile [feat. Gloria Carter] [Explicit].mp3"; sourceTree = "<group>"; };
+		D3C1114725830CC800DC3EAA /* 10 - - Success Is My Cologne.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 - - Success Is My Cologne.mp3"; sourceTree = "<group>"; };
+		D3C1114825830CCA00DC3EAA /* 04 - - Blood Sweat And Gears feat Fiend.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 - - Blood Sweat And Gears feat Fiend.mp3"; sourceTree = "<group>"; };
+		D3C1114925830CCB00DC3EAA /* 03 - - The Type feat Prodigy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03 - - The Type feat Prodigy.mp3"; sourceTree = "<group>"; };
+		D3C1114A25830CCC00DC3EAA /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 - - Scottie Pippens feat Feddie Gibbs.mp3"; sourceTree = "<group>"; };
+		D3C1114B25830CCD00DC3EAA /* 06 - - Smoke Break.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 - - Smoke Break.mp3"; sourceTree = "<group>"; };
+		D3C1114C25830CCF00DC3EAA /* 02 - - Full Metal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 - - Full Metal.mp3"; sourceTree = "<group>"; };
+		D3C1114D25830CD000DC3EAA /* 05 - - Life Instructions feat Smoke DZA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 - - Life Instructions feat Smoke DZA.mp3"; sourceTree = "<group>"; };
+		D3C1114E25830CD100DC3EAA /* 08 - - Ventilation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 - - Ventilation.mp3"; sourceTree = "<group>"; };
+		D3C1114F25830CD300DC3EAA /* 01 - - BBS.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 - - BBS.mp3"; sourceTree = "<group>"; };
+		D3C1115025830CD400DC3EAA /* 09 - - Double 07.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 - - Double 07.mp3"; sourceTree = "<group>"; };
 		D3CC825925808650006BA6A6 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		D3CC828E258091F7006BA6A6 /* MiniPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerViewController.swift; sourceTree = "<group>"; };
 		D3D11962256F5E210071F1C6 /* SongPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayer.swift; sourceTree = "<group>"; };
@@ -176,7 +210,24 @@
 		D3EE325A256DC7D900926074 /* Songs */ = {
 			isa = PBXGroup;
 			children = (
-				D3C1112C2583091600DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 */,
+				D3C1113525830CA300DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 */,
+				D3C1113A25830CAA00DC3EAA /* 02 - The Story of O.J. [Explicit].mp3 */,
+				D3C1113B25830CAB00DC3EAA /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 */,
+				D3C1113925830CA900DC3EAA /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 */,
+				D3C1114F25830CD300DC3EAA /* 01 - - BBS.mp3 */,
+				D3C1114C25830CCF00DC3EAA /* 02 - - Full Metal.mp3 */,
+				D3C1114925830CCB00DC3EAA /* 03 - - The Type feat Prodigy.mp3 */,
+				D3C1114825830CCA00DC3EAA /* 04 - - Blood Sweat And Gears feat Fiend.mp3 */,
+				D3C1114D25830CD000DC3EAA /* 05 - - Life Instructions feat Smoke DZA.mp3 */,
+				D3C1114B25830CCD00DC3EAA /* 06 - - Smoke Break.mp3 */,
+				D3C1114A25830CCC00DC3EAA /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 */,
+				D3C1114E25830CD100DC3EAA /* 08 - - Ventilation.mp3 */,
+				D3C1115025830CD400DC3EAA /* 09 - - Double 07.mp3 */,
+				D3C1114725830CC800DC3EAA /* 10 - - Success Is My Cologne.mp3 */,
+				D3C1113825830CA700DC3EAA /* 05 - 4_44 [Explicit].mp3 */,
+				D3C1113425830CA200DC3EAA /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 */,
+				D3C1113625830CA400DC3EAA /* 08 - Moonlight [Explicit].mp3 */,
+				D3C1113725830CA600DC3EAA /* 09 - Marcy Me [Explicit].mp3 */,
 			);
 			path = Songs;
 			sourceTree = "<group>";
@@ -286,10 +337,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C1114225830CAB00DC3EAA /* 02 - The Story of O.J. [Explicit].mp3 in Resources */,
 				D3EE3234256DC74300926074 /* LaunchScreen.storyboard in Resources */,
+				D3C1115925830CD400DC3EAA /* 01 - - BBS.mp3 in Resources */,
+				D3C1115125830CD400DC3EAA /* 10 - - Success Is My Cologne.mp3 in Resources */,
+				D3C1115225830CD400DC3EAA /* 04 - - Blood Sweat And Gears feat Fiend.mp3 in Resources */,
 				D3EE3231256DC74300926074 /* Assets.xcassets in Resources */,
+				D3C1115825830CD400DC3EAA /* 08 - - Ventilation.mp3 in Resources */,
+				D3C1115725830CD400DC3EAA /* 05 - - Life Instructions feat Smoke DZA.mp3 in Resources */,
+				D3C1113D25830CAB00DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 in Resources */,
+				D3C1115A25830CD400DC3EAA /* 09 - - Double 07.mp3 in Resources */,
+				D3C1115325830CD400DC3EAA /* 03 - - The Type feat Prodigy.mp3 in Resources */,
+				D3C1114325830CAB00DC3EAA /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 in Resources */,
+				D3C1115625830CD400DC3EAA /* 02 - - Full Metal.mp3 in Resources */,
+				D3C1115525830CD400DC3EAA /* 06 - - Smoke Break.mp3 in Resources */,
+				D3C1113E25830CAB00DC3EAA /* 08 - Moonlight [Explicit].mp3 in Resources */,
 				D3EE322F256DC74000926074 /* Main.storyboard in Resources */,
-				D3C1112D2583091600DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 in Resources */,
+				D3C1115425830CD400DC3EAA /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 in Resources */,
+				D3C1114025830CAB00DC3EAA /* 05 - 4_44 [Explicit].mp3 in Resources */,
+				D3C1113F25830CAB00DC3EAA /* 09 - Marcy Me [Explicit].mp3 in Resources */,
+				D3C1114125830CAB00DC3EAA /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 in Resources */,
+				D3C1113C25830CAB00DC3EAA /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

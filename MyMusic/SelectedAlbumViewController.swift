@@ -10,10 +10,12 @@ import AVFoundation
 
 class SelectedAlbumViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet var selectedAlbumImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         albumTracksTable.delegate = self
         albumTracksTable.dataSource = self
+        selectedAlbumImage.image = selectedAlbumSongs[0].art
 //        print(selectedAlbumSongs)
     }
     
