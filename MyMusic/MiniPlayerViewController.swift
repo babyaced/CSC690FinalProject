@@ -26,6 +26,10 @@ class MiniPlayerViewController: UIViewController {
             updateMiniPlayerViewToPlayingView()
             updateSongProgress()
         }
+        else if SongPlayer.shared.player != nil{
+            updateMiniPlayerViewToPausedView()
+            updateSongProgress()
+        }
 
         var playbackTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateSongProgress), userInfo: nil, repeats: true)
     }
