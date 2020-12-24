@@ -202,6 +202,7 @@ class MiniPlayerViewController: UIViewController {
     }
     
     func initMiniPlayerViewToPausedView(){
+        let textColor : UIColor
         let song = SongPlayer.shared.getCurrentSong()
         
         self.view.backgroundColor = UIColor.systemBackground
@@ -210,8 +211,14 @@ class MiniPlayerViewController: UIViewController {
         miniPlayerSongLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
         miniPlayerArtistLabel.text = song.artistName
         miniPlayerArtistLabel.font = UIFont.systemFont(ofSize: 15.0)
-        miniPlayerSongLabel.textColor = song.colors?.primary
-        miniPlayerArtistLabel.textColor = song.colors?.secondary
+        if traitCollection.userInterfaceStyle == .light{
+            textColor = UIColor.darkText
+        }
+        else{
+            textColor = UIColor.lightText
+        }
+        miniPlayerSongLabel.textColor = textColor
+        miniPlayerArtistLabel.textColor = textColor
         miniPlayerSongProgress.progressTintColor = song.colors?.secondary
     }
     
