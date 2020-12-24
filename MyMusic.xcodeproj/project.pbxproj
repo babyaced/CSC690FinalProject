@@ -29,6 +29,70 @@
 		D3C1115825830CD400DC3EAA /* 08 - - Ventilation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1114E25830CD100DC3EAA /* 08 - - Ventilation.mp3 */; };
 		D3C1115925830CD400DC3EAA /* 01 - - BBS.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1114F25830CD300DC3EAA /* 01 - - BBS.mp3 */; };
 		D3C1115A25830CD400DC3EAA /* 09 - - Double 07.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1115025830CD400DC3EAA /* 09 - - Double 07.mp3 */; };
+		D3C1117E258322C600DC3EAA /* 17 - Wale-The Ambitious Girl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C11169258322A500DC3EAA /* 17 - Wale-The Ambitious Girl.mp3 */; };
+		D3C1117F258322C600DC3EAA /* 02 - Wale-The MC.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1116A258322A700DC3EAA /* 02 - Wale-The MC.mp3 */; };
+		D3C11180258322C600DC3EAA /* 11 - Wale-The Black N Gold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1116B258322A900DC3EAA /* 11 - Wale-The Black N Gold.mp3 */; };
+		D3C11181258322C600DC3EAA /* 16 - Wale-The Trip Downtown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1116C258322AB00DC3EAA /* 16 - Wale-The Trip Downtown.mp3 */; };
+		D3C11182258322C600DC3EAA /* 10 - Wale-The Work Workin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1116D258322AC00DC3EAA /* 10 - Wale-The Work Workin.mp3 */; };
+		D3C11183258322C600DC3EAA /* 05 - Wale-The Friends Strangers.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1116E258322AE00DC3EAA /* 05 - Wale-The Friends Strangers.mp3 */; };
+		D3C11184258322C600DC3EAA /* 06 - Wale-The Number Won.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1116F258322B000DC3EAA /* 06 - Wale-The Number Won.mp3 */; };
+		D3C11185258322C600DC3EAA /* 08 - Wale-The War.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C11170258322B100DC3EAA /* 08 - Wale-The War.mp3 */; };
+		D3C11186258322C600DC3EAA /* 21 - Wale-The Flight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C11171258322B300DC3EAA /* 21 - Wale-The Flight.mp3 */; };
+		D3C11187258322C600DC3EAA /* 01 - Wale-The Problem.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C11172258322B500DC3EAA /* 01 - Wale-The Problem.mp3 */; };
+		D3C11188258322C600DC3EAA /* 04 - Wale-The Breeze Cool.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C11173258322B700DC3EAA /* 04 - Wale-The Breeze Cool.mp3 */; };
+		D3C11189258322C600DC3EAA /* 07 - Wale-The Eyes of The Tiger.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C11174258322B900DC3EAA /* 07 - Wale-The Eyes of The Tiger.mp3 */; };
+		D3C1118A258322C600DC3EAA /* 12 - Wale-The Manipulation 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C11175258322BA00DC3EAA /* 12 - Wale-The Manipulation 2.mp3 */; };
+		D3C1118B258322C600DC3EAA /* 18 - Wale-The Motivation B Right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C11176258322BC00DC3EAA /* 18 - Wale-The Motivation B Right.mp3 */; };
+		D3C1118C258322C600DC3EAA /* 13 - Wale-The Best In The League.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C11177258322BD00DC3EAA /* 13 - Wale-The Best In The League.mp3 */; };
+		D3C1118D258322C600DC3EAA /* 20 - Wale-The Power.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C11178258322BF00DC3EAA /* 20 - Wale-The Power.mp3 */; };
+		D3C1118E258322C600DC3EAA /* 14 - Wale-The Posse Cut.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C11179258322C000DC3EAA /* 14 - Wale-The Posse Cut.mp3 */; };
+		D3C1118F258322C600DC3EAA /* 15 - Wale-The Guilty Pleasure No Hands.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1117A258322C100DC3EAA /* 15 - Wale-The Guilty Pleasure No Hands.mp3 */; };
+		D3C11190258322C600DC3EAA /* 19 - Wale-The Cloud.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1117B258322C300DC3EAA /* 19 - Wale-The Cloud.mp3 */; };
+		D3C11191258322C600DC3EAA /* 09 - Wale-The Breakup Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1117C258322C400DC3EAA /* 09 - Wale-The Breakup Song.mp3 */; };
+		D3C11192258322C600DC3EAA /* 03 - Wale-The Soup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1117D258322C600DC3EAA /* 03 - Wale-The Soup.mp3 */; };
+		D3C111A42583262F00DC3EAA /* 05 - Fun (Interlude).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111962583261A00DC3EAA /* 05 - Fun (Interlude).mp3 */; };
+		D3C111A52583262F00DC3EAA /* 07 - Time Is Money (Ft Rockie Fresh).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111972583261B00DC3EAA /* 07 - Time Is Money (Ft Rockie Fresh).mp3 */; };
+		D3C111A62583262F00DC3EAA /* 03 - Lovely Day.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111982583261D00DC3EAA /* 03 - Lovely Day.mp3 */; };
+		D3C111A72583262F00DC3EAA /* 12 - Yap Yap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111992583261F00DC3EAA /* 12 - Yap Yap.mp3 */; };
+		D3C111A82583262F00DC3EAA /* 11 - Fear & Doubt (Ft Kenna & Joey Purp).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1119A2583262100DC3EAA /* 11 - Fear & Doubt (Ft Kenna & Joey Purp).mp3 */; };
+		D3C111A92583262F00DC3EAA /* 04 - Tweakin (Ft Chance The Rapper).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1119B2583262300DC3EAA /* 04 - Tweakin (Ft Chance The Rapper).mp3 */; };
+		D3C111AA2583262F00DC3EAA /* 01 - Welcome to INNANET.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1119C2583262400DC3EAA /* 01 - Welcome to INNANET.mp3 */; };
+		D3C111AB2583262F00DC3EAA /* 02 - Orange Soda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1119D2583262600DC3EAA /* 02 - Orange Soda.mp3 */; };
+		D3C111AC2583262F00DC3EAA /* 06 - Magic (Ft Jesse Boykins III).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1119E2583262700DC3EAA /* 06 - Magic (Ft Jesse Boykins III).mp3 */; };
+		D3C111AD2583262F00DC3EAA /* 14 - That Nigga.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C1119F2583262900DC3EAA /* 14 - That Nigga.mp3 */; };
+		D3C111AE2583262F00DC3EAA /* 09 - Hollywood LA (Ft Lili K).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111A02583262A00DC3EAA /* 09 - Hollywood LA (Ft Lili K).mp3 */; };
+		D3C111AF2583262F00DC3EAA /* 10 - Holy Holy (Ft Ab-Soul & BJ The Chicago Kid).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111A12583262C00DC3EAA /* 10 - Holy Holy (Ft Ab-Soul & BJ The Chicago Kid).mp3 */; };
+		D3C111B02583262F00DC3EAA /* 13 - RUN (Ft Thundercat).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111A22583262D00DC3EAA /* 13 - RUN (Ft Thundercat).mp3 */; };
+		D3C111B12583262F00DC3EAA /* 08 - YNSP (Ft Eliza Doolittle).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111A32583262E00DC3EAA /* 08 - YNSP (Ft Eliza Doolittle).mp3 */; };
+		D3C111C32583268F00DC3EAA /* 04 - Windows (Ft Alex Wiley and Akenya Seymour).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111B52583268100DC3EAA /* 04 - Windows (Ft Alex Wiley and Akenya Seymour).mp3 */; };
+		D3C111C42583268F00DC3EAA /* 14 - Hey Ma (ft Lili K and Peter CottonTale) [prod by Zak  Fox  Jablow and MC TREE].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111B62583268200DC3EAA /* 14 - Hey Ma (ft Lili K and Peter CottonTale) [prod by Zak  Fox  Jablow and MC TREE].mp3 */; };
+		D3C111C52583268F00DC3EAA /* 10 - Juke Juke [prod by Caleb James].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111B72583268300DC3EAA /* 10 - Juke Juke [prod by Caleb James].mp3 */; };
+		D3C111C62583268F00DC3EAA /* 03 - Missing You [prod by Thomas Foolery].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111B82583268400DC3EAA /* 03 - Missing You [prod by Thomas Foolery].mp3 */; };
+		D3C111C72583268F00DC3EAA /* 07 - 22 Offs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111B92583268500DC3EAA /* 07 - 22 Offs.mp3 */; };
+		D3C111C82583268F00DC3EAA /* 12 - Long Time II (ft Nico Segal) [prod by THEMPeople and Peter CottonTale].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111BA2583268700DC3EAA /* 12 - Long Time II (ft Nico Segal) [prod by THEMPeople and Peter CottonTale].mp3 */; };
+		D3C111C92583268F00DC3EAA /* 02 - Nostalgia.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111BB2583268800DC3EAA /* 02 - Nostalgia.mp3 */; };
+		D3C111CA2583268F00DC3EAA /* 06 - Long Time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111BC2583268900DC3EAA /* 06 - Long Time.mp3 */; };
+		D3C111CB2583268F00DC3EAA /* 08 - U Got Me Fucked Up [prod by Chuck Inglish].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111BD2583268A00DC3EAA /* 08 - U Got Me Fucked Up [prod by Chuck Inglish].mp3 */; };
+		D3C111CC2583268F00DC3EAA /* 11 - Fuck You Tahm Bout.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111BE2583268B00DC3EAA /* 11 - Fuck You Tahm Bout.mp3 */; };
+		D3C111CD2583268F00DC3EAA /* 01 - 14400 Minutes [prod by DJ SuchNSuch].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111BF2583268C00DC3EAA /* 01 - 14400 Minutes [prod by DJ SuchNSuch].mp3 */; };
+		D3C111CE2583268F00DC3EAA /* 05 - Brain Cells [prod by Peter Cottontale].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111C02583268D00DC3EAA /* 05 - Brain Cells [prod by Peter Cottontale].mp3 */; };
+		D3C111CF2583268F00DC3EAA /* 13 - Prom Night [Prod by Prince Talent DJ SuchNSuch and THEMpeople].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111C12583268E00DC3EAA /* 13 - Prom Night [Prod by Prince Talent DJ SuchNSuch and THEMpeople].mp3 */; };
+		D3C111D02583268F00DC3EAA /* 09 - Family (ft Vic Mensa and Sulaiman) [prod by The Blended Babies].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111C22583268F00DC3EAA /* 09 - Family (ft Vic Mensa and Sulaiman) [prod by The Blended Babies].mp3 */; };
+		D3C111E3258326E300DC3EAA /* 04 - Survival Tactics Feat Capital STEEZ (Prod By Vin Skully).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111D4258326D600DC3EAA /* 04 - Survival Tactics Feat Capital STEEZ (Prod By Vin Skully).mp3 */; };
+		D3C111E4258326E300DC3EAA /* 12 - Don t Front Feat CJ Fly (Prod By Statik Selektah).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111D5258326D700DC3EAA /* 12 - Don t Front Feat CJ Fly (Prod By Statik Selektah).mp3 */; };
+		D3C111E5258326E300DC3EAA /* 08 - Pennyroyal (Prod By MF DOOM).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111D6258326D800DC3EAA /* 08 - Pennyroyal (Prod By MF DOOM).mp3 */; };
+		D3C111E6258326E300DC3EAA /* 06 - Hardknock Feat CJ Fly (Prod By Lewis Parker).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111D7258326D900DC3EAA /* 06 - Hardknock Feat CJ Fly (Prod By Lewis Parker).mp3 */; };
+		D3C111E7258326E300DC3EAA /* 09 - Funky Ho (Prod By Lord Finesse).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111D8258326DA00DC3EAA /* 09 - Funky Ho (Prod By Lord Finesse).mp3 */; };
+		D3C111E8258326E300DC3EAA /* 15 - Suspect Feat PRO ERA Capital STEEZ CJ Fly Chuck Strangers Dyemond Lewis NYCk Caution Kirk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111D9258326DB00DC3EAA /* 15 - Suspect Feat PRO ERA Capital STEEZ CJ Fly Chuck Strangers Dyemond Lewis NYCk Caution Kirk.mp3 */; };
+		D3C111E9258326E300DC3EAA /* 05 - Killuminati Feat Capital STEEZ (Prod By Knxwledge).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111DA258326DB00DC3EAA /* 05 - Killuminati Feat Capital STEEZ (Prod By Knxwledge).mp3 */; };
+		D3C111EA258326E300DC3EAA /* 14 - Where It At Feat Kirk Knight (Prod By J Dilla).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111DB258326DC00DC3EAA /* 14 - Where It At Feat Kirk Knight (Prod By J Dilla).mp3 */; };
+		D3C111EB258326E300DC3EAA /* 07 - World Domination (Prod By MF DOOM).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111DC258326DD00DC3EAA /* 07 - World Domination (Prod By MF DOOM).mp3 */; };
+		D3C111EC258326E300DC3EAA /* 10 - Daily Routine (Prod By Chuck Strangers).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111DD258326DE00DC3EAA /* 10 - Daily Routine (Prod By Chuck Strangers).mp3 */; };
+		D3C111ED258326E300DC3EAA /* 11 - Snakes Feat T nah Apex (Prod By J Dilla).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111DE258326DF00DC3EAA /* 11 - Snakes Feat T nah Apex (Prod By J Dilla).mp3 */; };
+		D3C111EE258326E300DC3EAA /* 01 - Summer Knights (Prod By Chuck Strangers).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111DF258326E000DC3EAA /* 01 - Summer Knights (Prod By Chuck Strangers).mp3 */; };
+		D3C111EF258326E300DC3EAA /* 13 - Righteous Minds (Prod By Bruce LeeKix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111E0258326E100DC3EAA /* 13 - Righteous Minds (Prod By Bruce LeeKix).mp3 */; };
+		D3C111F0258326E300DC3EAA /* 03 - FromdaTomb Feat Chuck Strangers (Prod By Chuck Strangers Scratches By Statik Selektah).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111E1258326E200DC3EAA /* 03 - FromdaTomb Feat Chuck Strangers (Prod By Chuck Strangers Scratches By Statik Selektah).mp3 */; };
+		D3C111F1258326E300DC3EAA /* 02 - Waves (Prod By Freddie Joachim).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3C111E2258326E300DC3EAA /* 02 - Waves (Prod By Freddie Joachim).mp3 */; };
 		D3CC825A25808650006BA6A6 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC825925808650006BA6A6 /* AlbumsViewController.swift */; };
 		D3CC828F258091F7006BA6A6 /* MiniPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CC828E258091F7006BA6A6 /* MiniPlayerViewController.swift */; };
 		D3D11963256F5E210071F1C6 /* SongPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D11962256F5E210071F1C6 /* SongPlayer.swift */; };
@@ -84,6 +148,70 @@
 		D3C1114E25830CD100DC3EAA /* 08 - - Ventilation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 - - Ventilation.mp3"; sourceTree = "<group>"; };
 		D3C1114F25830CD300DC3EAA /* 01 - - BBS.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 - - BBS.mp3"; sourceTree = "<group>"; };
 		D3C1115025830CD400DC3EAA /* 09 - - Double 07.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 - - Double 07.mp3"; sourceTree = "<group>"; };
+		D3C11169258322A500DC3EAA /* 17 - Wale-The Ambitious Girl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "17 - Wale-The Ambitious Girl.mp3"; sourceTree = "<group>"; };
+		D3C1116A258322A700DC3EAA /* 02 - Wale-The MC.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 - Wale-The MC.mp3"; sourceTree = "<group>"; };
+		D3C1116B258322A900DC3EAA /* 11 - Wale-The Black N Gold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "11 - Wale-The Black N Gold.mp3"; sourceTree = "<group>"; };
+		D3C1116C258322AB00DC3EAA /* 16 - Wale-The Trip Downtown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "16 - Wale-The Trip Downtown.mp3"; sourceTree = "<group>"; };
+		D3C1116D258322AC00DC3EAA /* 10 - Wale-The Work Workin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 - Wale-The Work Workin.mp3"; sourceTree = "<group>"; };
+		D3C1116E258322AE00DC3EAA /* 05 - Wale-The Friends Strangers.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 - Wale-The Friends Strangers.mp3"; sourceTree = "<group>"; };
+		D3C1116F258322B000DC3EAA /* 06 - Wale-The Number Won.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 - Wale-The Number Won.mp3"; sourceTree = "<group>"; };
+		D3C11170258322B100DC3EAA /* 08 - Wale-The War.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 - Wale-The War.mp3"; sourceTree = "<group>"; };
+		D3C11171258322B300DC3EAA /* 21 - Wale-The Flight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "21 - Wale-The Flight.mp3"; sourceTree = "<group>"; };
+		D3C11172258322B500DC3EAA /* 01 - Wale-The Problem.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 - Wale-The Problem.mp3"; sourceTree = "<group>"; };
+		D3C11173258322B700DC3EAA /* 04 - Wale-The Breeze Cool.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 - Wale-The Breeze Cool.mp3"; sourceTree = "<group>"; };
+		D3C11174258322B900DC3EAA /* 07 - Wale-The Eyes of The Tiger.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 - Wale-The Eyes of The Tiger.mp3"; sourceTree = "<group>"; };
+		D3C11175258322BA00DC3EAA /* 12 - Wale-The Manipulation 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "12 - Wale-The Manipulation 2.mp3"; sourceTree = "<group>"; };
+		D3C11176258322BC00DC3EAA /* 18 - Wale-The Motivation B Right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "18 - Wale-The Motivation B Right.mp3"; sourceTree = "<group>"; };
+		D3C11177258322BD00DC3EAA /* 13 - Wale-The Best In The League.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "13 - Wale-The Best In The League.mp3"; sourceTree = "<group>"; };
+		D3C11178258322BF00DC3EAA /* 20 - Wale-The Power.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "20 - Wale-The Power.mp3"; sourceTree = "<group>"; };
+		D3C11179258322C000DC3EAA /* 14 - Wale-The Posse Cut.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "14 - Wale-The Posse Cut.mp3"; sourceTree = "<group>"; };
+		D3C1117A258322C100DC3EAA /* 15 - Wale-The Guilty Pleasure No Hands.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "15 - Wale-The Guilty Pleasure No Hands.mp3"; sourceTree = "<group>"; };
+		D3C1117B258322C300DC3EAA /* 19 - Wale-The Cloud.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "19 - Wale-The Cloud.mp3"; sourceTree = "<group>"; };
+		D3C1117C258322C400DC3EAA /* 09 - Wale-The Breakup Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 - Wale-The Breakup Song.mp3"; sourceTree = "<group>"; };
+		D3C1117D258322C600DC3EAA /* 03 - Wale-The Soup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03 - Wale-The Soup.mp3"; sourceTree = "<group>"; };
+		D3C111962583261A00DC3EAA /* 05 - Fun (Interlude).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 - Fun (Interlude).mp3"; sourceTree = "<group>"; };
+		D3C111972583261B00DC3EAA /* 07 - Time Is Money (Ft Rockie Fresh).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 - Time Is Money (Ft Rockie Fresh).mp3"; sourceTree = "<group>"; };
+		D3C111982583261D00DC3EAA /* 03 - Lovely Day.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03 - Lovely Day.mp3"; sourceTree = "<group>"; };
+		D3C111992583261F00DC3EAA /* 12 - Yap Yap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "12 - Yap Yap.mp3"; sourceTree = "<group>"; };
+		D3C1119A2583262100DC3EAA /* 11 - Fear & Doubt (Ft Kenna & Joey Purp).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "11 - Fear & Doubt (Ft Kenna & Joey Purp).mp3"; sourceTree = "<group>"; };
+		D3C1119B2583262300DC3EAA /* 04 - Tweakin (Ft Chance The Rapper).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 - Tweakin (Ft Chance The Rapper).mp3"; sourceTree = "<group>"; };
+		D3C1119C2583262400DC3EAA /* 01 - Welcome to INNANET.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 - Welcome to INNANET.mp3"; sourceTree = "<group>"; };
+		D3C1119D2583262600DC3EAA /* 02 - Orange Soda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 - Orange Soda.mp3"; sourceTree = "<group>"; };
+		D3C1119E2583262700DC3EAA /* 06 - Magic (Ft Jesse Boykins III).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 - Magic (Ft Jesse Boykins III).mp3"; sourceTree = "<group>"; };
+		D3C1119F2583262900DC3EAA /* 14 - That Nigga.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "14 - That Nigga.mp3"; sourceTree = "<group>"; };
+		D3C111A02583262A00DC3EAA /* 09 - Hollywood LA (Ft Lili K).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 - Hollywood LA (Ft Lili K).mp3"; sourceTree = "<group>"; };
+		D3C111A12583262C00DC3EAA /* 10 - Holy Holy (Ft Ab-Soul & BJ The Chicago Kid).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 - Holy Holy (Ft Ab-Soul & BJ The Chicago Kid).mp3"; sourceTree = "<group>"; };
+		D3C111A22583262D00DC3EAA /* 13 - RUN (Ft Thundercat).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "13 - RUN (Ft Thundercat).mp3"; sourceTree = "<group>"; };
+		D3C111A32583262E00DC3EAA /* 08 - YNSP (Ft Eliza Doolittle).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 - YNSP (Ft Eliza Doolittle).mp3"; sourceTree = "<group>"; };
+		D3C111B52583268100DC3EAA /* 04 - Windows (Ft Alex Wiley and Akenya Seymour).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 - Windows (Ft Alex Wiley and Akenya Seymour).mp3"; sourceTree = "<group>"; };
+		D3C111B62583268200DC3EAA /* 14 - Hey Ma (ft Lili K and Peter CottonTale) [prod by Zak  Fox  Jablow and MC TREE].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "14 - Hey Ma (ft Lili K and Peter CottonTale) [prod by Zak  Fox  Jablow and MC TREE].mp3"; sourceTree = "<group>"; };
+		D3C111B72583268300DC3EAA /* 10 - Juke Juke [prod by Caleb James].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 - Juke Juke [prod by Caleb James].mp3"; sourceTree = "<group>"; };
+		D3C111B82583268400DC3EAA /* 03 - Missing You [prod by Thomas Foolery].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03 - Missing You [prod by Thomas Foolery].mp3"; sourceTree = "<group>"; };
+		D3C111B92583268500DC3EAA /* 07 - 22 Offs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 - 22 Offs.mp3"; sourceTree = "<group>"; };
+		D3C111BA2583268700DC3EAA /* 12 - Long Time II (ft Nico Segal) [prod by THEMPeople and Peter CottonTale].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "12 - Long Time II (ft Nico Segal) [prod by THEMPeople and Peter CottonTale].mp3"; sourceTree = "<group>"; };
+		D3C111BB2583268800DC3EAA /* 02 - Nostalgia.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 - Nostalgia.mp3"; sourceTree = "<group>"; };
+		D3C111BC2583268900DC3EAA /* 06 - Long Time.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 - Long Time.mp3"; sourceTree = "<group>"; };
+		D3C111BD2583268A00DC3EAA /* 08 - U Got Me Fucked Up [prod by Chuck Inglish].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 - U Got Me Fucked Up [prod by Chuck Inglish].mp3"; sourceTree = "<group>"; };
+		D3C111BE2583268B00DC3EAA /* 11 - Fuck You Tahm Bout.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "11 - Fuck You Tahm Bout.mp3"; sourceTree = "<group>"; };
+		D3C111BF2583268C00DC3EAA /* 01 - 14400 Minutes [prod by DJ SuchNSuch].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 - 14400 Minutes [prod by DJ SuchNSuch].mp3"; sourceTree = "<group>"; };
+		D3C111C02583268D00DC3EAA /* 05 - Brain Cells [prod by Peter Cottontale].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 - Brain Cells [prod by Peter Cottontale].mp3"; sourceTree = "<group>"; };
+		D3C111C12583268E00DC3EAA /* 13 - Prom Night [Prod by Prince Talent DJ SuchNSuch and THEMpeople].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "13 - Prom Night [Prod by Prince Talent DJ SuchNSuch and THEMpeople].mp3"; sourceTree = "<group>"; };
+		D3C111C22583268F00DC3EAA /* 09 - Family (ft Vic Mensa and Sulaiman) [prod by The Blended Babies].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 - Family (ft Vic Mensa and Sulaiman) [prod by The Blended Babies].mp3"; sourceTree = "<group>"; };
+		D3C111D4258326D600DC3EAA /* 04 - Survival Tactics Feat Capital STEEZ (Prod By Vin Skully).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 - Survival Tactics Feat Capital STEEZ (Prod By Vin Skully).mp3"; sourceTree = "<group>"; };
+		D3C111D5258326D700DC3EAA /* 12 - Don t Front Feat CJ Fly (Prod By Statik Selektah).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "12 - Don t Front Feat CJ Fly (Prod By Statik Selektah).mp3"; sourceTree = "<group>"; };
+		D3C111D6258326D800DC3EAA /* 08 - Pennyroyal (Prod By MF DOOM).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 - Pennyroyal (Prod By MF DOOM).mp3"; sourceTree = "<group>"; };
+		D3C111D7258326D900DC3EAA /* 06 - Hardknock Feat CJ Fly (Prod By Lewis Parker).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 - Hardknock Feat CJ Fly (Prod By Lewis Parker).mp3"; sourceTree = "<group>"; };
+		D3C111D8258326DA00DC3EAA /* 09 - Funky Ho (Prod By Lord Finesse).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 - Funky Ho (Prod By Lord Finesse).mp3"; sourceTree = "<group>"; };
+		D3C111D9258326DB00DC3EAA /* 15 - Suspect Feat PRO ERA Capital STEEZ CJ Fly Chuck Strangers Dyemond Lewis NYCk Caution Kirk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "15 - Suspect Feat PRO ERA Capital STEEZ CJ Fly Chuck Strangers Dyemond Lewis NYCk Caution Kirk.mp3"; sourceTree = "<group>"; };
+		D3C111DA258326DB00DC3EAA /* 05 - Killuminati Feat Capital STEEZ (Prod By Knxwledge).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 - Killuminati Feat Capital STEEZ (Prod By Knxwledge).mp3"; sourceTree = "<group>"; };
+		D3C111DB258326DC00DC3EAA /* 14 - Where It At Feat Kirk Knight (Prod By J Dilla).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "14 - Where It At Feat Kirk Knight (Prod By J Dilla).mp3"; sourceTree = "<group>"; };
+		D3C111DC258326DD00DC3EAA /* 07 - World Domination (Prod By MF DOOM).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 - World Domination (Prod By MF DOOM).mp3"; sourceTree = "<group>"; };
+		D3C111DD258326DE00DC3EAA /* 10 - Daily Routine (Prod By Chuck Strangers).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 - Daily Routine (Prod By Chuck Strangers).mp3"; sourceTree = "<group>"; };
+		D3C111DE258326DF00DC3EAA /* 11 - Snakes Feat T nah Apex (Prod By J Dilla).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "11 - Snakes Feat T nah Apex (Prod By J Dilla).mp3"; sourceTree = "<group>"; };
+		D3C111DF258326E000DC3EAA /* 01 - Summer Knights (Prod By Chuck Strangers).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 - Summer Knights (Prod By Chuck Strangers).mp3"; sourceTree = "<group>"; };
+		D3C111E0258326E100DC3EAA /* 13 - Righteous Minds (Prod By Bruce LeeKix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "13 - Righteous Minds (Prod By Bruce LeeKix).mp3"; sourceTree = "<group>"; };
+		D3C111E1258326E200DC3EAA /* 03 - FromdaTomb Feat Chuck Strangers (Prod By Chuck Strangers Scratches By Statik Selektah).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03 - FromdaTomb Feat Chuck Strangers (Prod By Chuck Strangers Scratches By Statik Selektah).mp3"; sourceTree = "<group>"; };
+		D3C111E2258326E300DC3EAA /* 02 - Waves (Prod By Freddie Joachim).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 - Waves (Prod By Freddie Joachim).mp3"; sourceTree = "<group>"; };
 		D3CC825925808650006BA6A6 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		D3CC828E258091F7006BA6A6 /* MiniPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerViewController.swift; sourceTree = "<group>"; };
 		D3D11962256F5E210071F1C6 /* SongPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongPlayer.swift; sourceTree = "<group>"; };
@@ -217,6 +345,70 @@
 				D3C1114F25830CD300DC3EAA /* 01 - - BBS.mp3 */,
 				D3C1114C25830CCF00DC3EAA /* 02 - - Full Metal.mp3 */,
 				D3C1114925830CCB00DC3EAA /* 03 - - The Type feat Prodigy.mp3 */,
+				D3C11172258322B500DC3EAA /* 01 - Wale-The Problem.mp3 */,
+				D3C1116A258322A700DC3EAA /* 02 - Wale-The MC.mp3 */,
+				D3C1117D258322C600DC3EAA /* 03 - Wale-The Soup.mp3 */,
+				D3C11173258322B700DC3EAA /* 04 - Wale-The Breeze Cool.mp3 */,
+				D3C1116E258322AE00DC3EAA /* 05 - Wale-The Friends Strangers.mp3 */,
+				D3C1116F258322B000DC3EAA /* 06 - Wale-The Number Won.mp3 */,
+				D3C11174258322B900DC3EAA /* 07 - Wale-The Eyes of The Tiger.mp3 */,
+				D3C11170258322B100DC3EAA /* 08 - Wale-The War.mp3 */,
+				D3C1117C258322C400DC3EAA /* 09 - Wale-The Breakup Song.mp3 */,
+				D3C111DF258326E000DC3EAA /* 01 - Summer Knights (Prod By Chuck Strangers).mp3 */,
+				D3C111E2258326E300DC3EAA /* 02 - Waves (Prod By Freddie Joachim).mp3 */,
+				D3C111E1258326E200DC3EAA /* 03 - FromdaTomb Feat Chuck Strangers (Prod By Chuck Strangers Scratches By Statik Selektah).mp3 */,
+				D3C111D4258326D600DC3EAA /* 04 - Survival Tactics Feat Capital STEEZ (Prod By Vin Skully).mp3 */,
+				D3C111DA258326DB00DC3EAA /* 05 - Killuminati Feat Capital STEEZ (Prod By Knxwledge).mp3 */,
+				D3C111D7258326D900DC3EAA /* 06 - Hardknock Feat CJ Fly (Prod By Lewis Parker).mp3 */,
+				D3C111DC258326DD00DC3EAA /* 07 - World Domination (Prod By MF DOOM).mp3 */,
+				D3C111D6258326D800DC3EAA /* 08 - Pennyroyal (Prod By MF DOOM).mp3 */,
+				D3C111D8258326DA00DC3EAA /* 09 - Funky Ho (Prod By Lord Finesse).mp3 */,
+				D3C111DD258326DE00DC3EAA /* 10 - Daily Routine (Prod By Chuck Strangers).mp3 */,
+				D3C111DE258326DF00DC3EAA /* 11 - Snakes Feat T nah Apex (Prod By J Dilla).mp3 */,
+				D3C111D5258326D700DC3EAA /* 12 - Don t Front Feat CJ Fly (Prod By Statik Selektah).mp3 */,
+				D3C111E0258326E100DC3EAA /* 13 - Righteous Minds (Prod By Bruce LeeKix).mp3 */,
+				D3C111DB258326DC00DC3EAA /* 14 - Where It At Feat Kirk Knight (Prod By J Dilla).mp3 */,
+				D3C111D9258326DB00DC3EAA /* 15 - Suspect Feat PRO ERA Capital STEEZ CJ Fly Chuck Strangers Dyemond Lewis NYCk Caution Kirk.mp3 */,
+				D3C1119C2583262400DC3EAA /* 01 - Welcome to INNANET.mp3 */,
+				D3C1119D2583262600DC3EAA /* 02 - Orange Soda.mp3 */,
+				D3C111982583261D00DC3EAA /* 03 - Lovely Day.mp3 */,
+				D3C1119B2583262300DC3EAA /* 04 - Tweakin (Ft Chance The Rapper).mp3 */,
+				D3C111962583261A00DC3EAA /* 05 - Fun (Interlude).mp3 */,
+				D3C111BF2583268C00DC3EAA /* 01 - 14400 Minutes [prod by DJ SuchNSuch].mp3 */,
+				D3C111BB2583268800DC3EAA /* 02 - Nostalgia.mp3 */,
+				D3C111B82583268400DC3EAA /* 03 - Missing You [prod by Thomas Foolery].mp3 */,
+				D3C111B52583268100DC3EAA /* 04 - Windows (Ft Alex Wiley and Akenya Seymour).mp3 */,
+				D3C111C02583268D00DC3EAA /* 05 - Brain Cells [prod by Peter Cottontale].mp3 */,
+				D3C111BC2583268900DC3EAA /* 06 - Long Time.mp3 */,
+				D3C111B92583268500DC3EAA /* 07 - 22 Offs.mp3 */,
+				D3C111BD2583268A00DC3EAA /* 08 - U Got Me Fucked Up [prod by Chuck Inglish].mp3 */,
+				D3C111C22583268F00DC3EAA /* 09 - Family (ft Vic Mensa and Sulaiman) [prod by The Blended Babies].mp3 */,
+				D3C111B72583268300DC3EAA /* 10 - Juke Juke [prod by Caleb James].mp3 */,
+				D3C111BE2583268B00DC3EAA /* 11 - Fuck You Tahm Bout.mp3 */,
+				D3C111BA2583268700DC3EAA /* 12 - Long Time II (ft Nico Segal) [prod by THEMPeople and Peter CottonTale].mp3 */,
+				D3C111C12583268E00DC3EAA /* 13 - Prom Night [Prod by Prince Talent DJ SuchNSuch and THEMpeople].mp3 */,
+				D3C111B62583268200DC3EAA /* 14 - Hey Ma (ft Lili K and Peter CottonTale) [prod by Zak  Fox  Jablow and MC TREE].mp3 */,
+				D3C1119E2583262700DC3EAA /* 06 - Magic (Ft Jesse Boykins III).mp3 */,
+				D3C111972583261B00DC3EAA /* 07 - Time Is Money (Ft Rockie Fresh).mp3 */,
+				D3C111A32583262E00DC3EAA /* 08 - YNSP (Ft Eliza Doolittle).mp3 */,
+				D3C111A02583262A00DC3EAA /* 09 - Hollywood LA (Ft Lili K).mp3 */,
+				D3C111A12583262C00DC3EAA /* 10 - Holy Holy (Ft Ab-Soul & BJ The Chicago Kid).mp3 */,
+				D3C1119A2583262100DC3EAA /* 11 - Fear & Doubt (Ft Kenna & Joey Purp).mp3 */,
+				D3C111992583261F00DC3EAA /* 12 - Yap Yap.mp3 */,
+				D3C111A22583262D00DC3EAA /* 13 - RUN (Ft Thundercat).mp3 */,
+				D3C1119F2583262900DC3EAA /* 14 - That Nigga.mp3 */,
+				D3C1116D258322AC00DC3EAA /* 10 - Wale-The Work Workin.mp3 */,
+				D3C1116B258322A900DC3EAA /* 11 - Wale-The Black N Gold.mp3 */,
+				D3C11175258322BA00DC3EAA /* 12 - Wale-The Manipulation 2.mp3 */,
+				D3C11177258322BD00DC3EAA /* 13 - Wale-The Best In The League.mp3 */,
+				D3C11179258322C000DC3EAA /* 14 - Wale-The Posse Cut.mp3 */,
+				D3C1117A258322C100DC3EAA /* 15 - Wale-The Guilty Pleasure No Hands.mp3 */,
+				D3C1116C258322AB00DC3EAA /* 16 - Wale-The Trip Downtown.mp3 */,
+				D3C11169258322A500DC3EAA /* 17 - Wale-The Ambitious Girl.mp3 */,
+				D3C11176258322BC00DC3EAA /* 18 - Wale-The Motivation B Right.mp3 */,
+				D3C1117B258322C300DC3EAA /* 19 - Wale-The Cloud.mp3 */,
+				D3C11178258322BF00DC3EAA /* 20 - Wale-The Power.mp3 */,
+				D3C11171258322B300DC3EAA /* 21 - Wale-The Flight.mp3 */,
 				D3C1114825830CCA00DC3EAA /* 04 - - Blood Sweat And Gears feat Fiend.mp3 */,
 				D3C1114D25830CD000DC3EAA /* 05 - - Life Instructions feat Smoke DZA.mp3 */,
 				D3C1114B25830CCD00DC3EAA /* 06 - - Smoke Break.mp3 */,
@@ -337,25 +529,89 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3C11181258322C600DC3EAA /* 16 - Wale-The Trip Downtown.mp3 in Resources */,
+				D3C111AE2583262F00DC3EAA /* 09 - Hollywood LA (Ft Lili K).mp3 in Resources */,
+				D3C1118F258322C600DC3EAA /* 15 - Wale-The Guilty Pleasure No Hands.mp3 in Resources */,
+				D3C11192258322C600DC3EAA /* 03 - Wale-The Soup.mp3 in Resources */,
+				D3C11186258322C600DC3EAA /* 21 - Wale-The Flight.mp3 in Resources */,
+				D3C11187258322C600DC3EAA /* 01 - Wale-The Problem.mp3 in Resources */,
+				D3C111C42583268F00DC3EAA /* 14 - Hey Ma (ft Lili K and Peter CottonTale) [prod by Zak  Fox  Jablow and MC TREE].mp3 in Resources */,
+				D3C11184258322C600DC3EAA /* 06 - Wale-The Number Won.mp3 in Resources */,
+				D3C111ED258326E300DC3EAA /* 11 - Snakes Feat T nah Apex (Prod By J Dilla).mp3 in Resources */,
 				D3C1114225830CAB00DC3EAA /* 02 - The Story of O.J. [Explicit].mp3 in Resources */,
 				D3EE3234256DC74300926074 /* LaunchScreen.storyboard in Resources */,
 				D3C1115925830CD400DC3EAA /* 01 - - BBS.mp3 in Resources */,
+				D3C111C52583268F00DC3EAA /* 10 - Juke Juke [prod by Caleb James].mp3 in Resources */,
+				D3C111CC2583268F00DC3EAA /* 11 - Fuck You Tahm Bout.mp3 in Resources */,
+				D3C1118C258322C600DC3EAA /* 13 - Wale-The Best In The League.mp3 in Resources */,
+				D3C111AD2583262F00DC3EAA /* 14 - That Nigga.mp3 in Resources */,
+				D3C111E5258326E300DC3EAA /* 08 - Pennyroyal (Prod By MF DOOM).mp3 in Resources */,
+				D3C111A62583262F00DC3EAA /* 03 - Lovely Day.mp3 in Resources */,
+				D3C111CB2583268F00DC3EAA /* 08 - U Got Me Fucked Up [prod by Chuck Inglish].mp3 in Resources */,
+				D3C11180258322C600DC3EAA /* 11 - Wale-The Black N Gold.mp3 in Resources */,
+				D3C11190258322C600DC3EAA /* 19 - Wale-The Cloud.mp3 in Resources */,
+				D3C111C82583268F00DC3EAA /* 12 - Long Time II (ft Nico Segal) [prod by THEMPeople and Peter CottonTale].mp3 in Resources */,
+				D3C111AA2583262F00DC3EAA /* 01 - Welcome to INNANET.mp3 in Resources */,
+				D3C11182258322C600DC3EAA /* 10 - Wale-The Work Workin.mp3 in Resources */,
+				D3C111CD2583268F00DC3EAA /* 01 - 14400 Minutes [prod by DJ SuchNSuch].mp3 in Resources */,
+				D3C111CE2583268F00DC3EAA /* 05 - Brain Cells [prod by Peter Cottontale].mp3 in Resources */,
 				D3C1115125830CD400DC3EAA /* 10 - - Success Is My Cologne.mp3 in Resources */,
 				D3C1115225830CD400DC3EAA /* 04 - - Blood Sweat And Gears feat Fiend.mp3 in Resources */,
+				D3C11185258322C600DC3EAA /* 08 - Wale-The War.mp3 in Resources */,
 				D3EE3231256DC74300926074 /* Assets.xcassets in Resources */,
+				D3C11188258322C600DC3EAA /* 04 - Wale-The Breeze Cool.mp3 in Resources */,
+				D3C1118D258322C600DC3EAA /* 20 - Wale-The Power.mp3 in Resources */,
+				D3C111EA258326E300DC3EAA /* 14 - Where It At Feat Kirk Knight (Prod By J Dilla).mp3 in Resources */,
+				D3C1117F258322C600DC3EAA /* 02 - Wale-The MC.mp3 in Resources */,
+				D3C111A82583262F00DC3EAA /* 11 - Fear & Doubt (Ft Kenna & Joey Purp).mp3 in Resources */,
+				D3C111AF2583262F00DC3EAA /* 10 - Holy Holy (Ft Ab-Soul & BJ The Chicago Kid).mp3 in Resources */,
+				D3C1117E258322C600DC3EAA /* 17 - Wale-The Ambitious Girl.mp3 in Resources */,
+				D3C111EF258326E300DC3EAA /* 13 - Righteous Minds (Prod By Bruce LeeKix).mp3 in Resources */,
 				D3C1115825830CD400DC3EAA /* 08 - - Ventilation.mp3 in Resources */,
+				D3C111C62583268F00DC3EAA /* 03 - Missing You [prod by Thomas Foolery].mp3 in Resources */,
 				D3C1115725830CD400DC3EAA /* 05 - - Life Instructions feat Smoke DZA.mp3 in Resources */,
+				D3C111AB2583262F00DC3EAA /* 02 - Orange Soda.mp3 in Resources */,
+				D3C111E6258326E300DC3EAA /* 06 - Hardknock Feat CJ Fly (Prod By Lewis Parker).mp3 in Resources */,
+				D3C111CA2583268F00DC3EAA /* 06 - Long Time.mp3 in Resources */,
 				D3C1113D25830CAB00DC3EAA /* 01 - Kill Jay-Z [Explicit].mp3 in Resources */,
 				D3C1115A25830CD400DC3EAA /* 09 - - Double 07.mp3 in Resources */,
+				D3C111E8258326E300DC3EAA /* 15 - Suspect Feat PRO ERA Capital STEEZ CJ Fly Chuck Strangers Dyemond Lewis NYCk Caution Kirk.mp3 in Resources */,
+				D3C111E9258326E300DC3EAA /* 05 - Killuminati Feat Capital STEEZ (Prod By Knxwledge).mp3 in Resources */,
+				D3C1118E258322C600DC3EAA /* 14 - Wale-The Posse Cut.mp3 in Resources */,
+				D3C111EE258326E300DC3EAA /* 01 - Summer Knights (Prod By Chuck Strangers).mp3 in Resources */,
 				D3C1115325830CD400DC3EAA /* 03 - - The Type feat Prodigy.mp3 in Resources */,
 				D3C1114325830CAB00DC3EAA /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 in Resources */,
+				D3C111EB258326E300DC3EAA /* 07 - World Domination (Prod By MF DOOM).mp3 in Resources */,
+				D3C111CF2583268F00DC3EAA /* 13 - Prom Night [Prod by Prince Talent DJ SuchNSuch and THEMpeople].mp3 in Resources */,
+				D3C1118A258322C600DC3EAA /* 12 - Wale-The Manipulation 2.mp3 in Resources */,
+				D3C111F0258326E300DC3EAA /* 03 - FromdaTomb Feat Chuck Strangers (Prod By Chuck Strangers Scratches By Statik Selektah).mp3 in Resources */,
+				D3C111E7258326E300DC3EAA /* 09 - Funky Ho (Prod By Lord Finesse).mp3 in Resources */,
+				D3C11183258322C600DC3EAA /* 05 - Wale-The Friends Strangers.mp3 in Resources */,
+				D3C111D02583268F00DC3EAA /* 09 - Family (ft Vic Mensa and Sulaiman) [prod by The Blended Babies].mp3 in Resources */,
+				D3C1118B258322C600DC3EAA /* 18 - Wale-The Motivation B Right.mp3 in Resources */,
+				D3C111A92583262F00DC3EAA /* 04 - Tweakin (Ft Chance The Rapper).mp3 in Resources */,
+				D3C111B02583262F00DC3EAA /* 13 - RUN (Ft Thundercat).mp3 in Resources */,
+				D3C111A72583262F00DC3EAA /* 12 - Yap Yap.mp3 in Resources */,
 				D3C1115625830CD400DC3EAA /* 02 - - Full Metal.mp3 in Resources */,
+				D3C111C32583268F00DC3EAA /* 04 - Windows (Ft Alex Wiley and Akenya Seymour).mp3 in Resources */,
+				D3C11191258322C600DC3EAA /* 09 - Wale-The Breakup Song.mp3 in Resources */,
+				D3C111B12583262F00DC3EAA /* 08 - YNSP (Ft Eliza Doolittle).mp3 in Resources */,
+				D3C111E4258326E300DC3EAA /* 12 - Don t Front Feat CJ Fly (Prod By Statik Selektah).mp3 in Resources */,
+				D3C111A52583262F00DC3EAA /* 07 - Time Is Money (Ft Rockie Fresh).mp3 in Resources */,
+				D3C11189258322C600DC3EAA /* 07 - Wale-The Eyes of The Tiger.mp3 in Resources */,
 				D3C1115525830CD400DC3EAA /* 06 - - Smoke Break.mp3 in Resources */,
+				D3C111E3258326E300DC3EAA /* 04 - Survival Tactics Feat Capital STEEZ (Prod By Vin Skully).mp3 in Resources */,
+				D3C111AC2583262F00DC3EAA /* 06 - Magic (Ft Jesse Boykins III).mp3 in Resources */,
+				D3C111F1258326E300DC3EAA /* 02 - Waves (Prod By Freddie Joachim).mp3 in Resources */,
 				D3C1113E25830CAB00DC3EAA /* 08 - Moonlight [Explicit].mp3 in Resources */,
 				D3EE322F256DC74000926074 /* Main.storyboard in Resources */,
+				D3C111A42583262F00DC3EAA /* 05 - Fun (Interlude).mp3 in Resources */,
 				D3C1115425830CD400DC3EAA /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 in Resources */,
+				D3C111C72583268F00DC3EAA /* 07 - 22 Offs.mp3 in Resources */,
 				D3C1114025830CAB00DC3EAA /* 05 - 4_44 [Explicit].mp3 in Resources */,
 				D3C1113F25830CAB00DC3EAA /* 09 - Marcy Me [Explicit].mp3 in Resources */,
+				D3C111C92583268F00DC3EAA /* 02 - Nostalgia.mp3 in Resources */,
+				D3C111EC258326E300DC3EAA /* 10 - Daily Routine (Prod By Chuck Strangers).mp3 in Resources */,
 				D3C1114125830CAB00DC3EAA /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 in Resources */,
 				D3C1113C25830CAB00DC3EAA /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 in Resources */,
 			);

@@ -13,9 +13,24 @@ class SelectedAlbumViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet var selectedAlbumImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController!.navigationBar.shadowImage = UIImage()
+        self.navigationController!.navigationBar.isTranslucent = true
         albumTracksTable.delegate = self
         albumTracksTable.dataSource = self
         selectedAlbumImage.image = selectedAlbumSongs[0].art
+        if traitCollection.userInterfaceStyle == .light{
+            selectedAlbumImage.layer.shadowColor = UIColor.black.cgColor
+        }
+        else{
+            selectedAlbumImage.layer.shadowColor = UIColor.white.cgColor
+        }
+        
+        selectedAlbumImage.layer.shadowOffset = CGSize(width: -10, height: -10)
+        selectedAlbumImage.layer.shadowOpacity = 1.0
+        selectedAlbumImage.layer.shadowRadius = 100.0
+
+        
 //        print(selectedAlbumSongs)
     }
     
@@ -32,6 +47,7 @@ class SelectedAlbumViewController: UIViewController, UITableViewDelegate, UITabl
         let song = selectedAlbumSongs[indexPath.row]
 //        print(song.artistName)
         cell.textLabel?.text = song.trackName
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 18.0)
         cell.detailTextLabel?.text = song.trackDuration
 
         return cell

@@ -19,19 +19,55 @@ class MiniPlayerViewController: UIViewController {
     override func viewDidLoad() {
  
         super.viewDidLoad()
+//        self.view.layer.borderWidth = 3
+        
         setupMiniPlayer()
         createObservers()
+        if traitCollection.userInterfaceStyle == .light{
+            self.view.layer.shadowColor = UIColor.black.cgColor
+        }
+        else{
+            self.view.layer.shadowColor = UIColor.white.cgColor
+        }
+        
+        self.view.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        self.view.layer.shadowOpacity = 0.5
+        self.view.layer.shadowRadius = 5.0
+        
+//        if traitCollection.userInterfaceStyle == .light{
+//            self.view.layer.borderColor = UIColor.darkText.cgColor
+//        }
+//        else{
+//            self.view.layer.borderColor = UIColor.lightText.cgColor
+//        }
         if(SongPlayer.shared.isPlaying())
         {
+            self.view.isUserInteractionEnabled = true
             updateMiniPlayerViewToPlayingView()
             updateSongProgress()
         }
         else if SongPlayer.shared.player != nil {
+            self.view.isUserInteractionEnabled = true
             updateMiniPlayerViewToPausedView()
             updateSongProgress()
         }
 
+
         var playbackTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateSongProgress), userInfo: nil, repeats: true)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if(SongPlayer.shared.isPlaying())
+        {
+            self.view.isUserInteractionEnabled = true
+            updateMiniPlayerViewToPlayingView()
+            updateSongProgress()
+        }
+        else if SongPlayer.shared.player != nil {
+            self.view.isUserInteractionEnabled = true
+            updateMiniPlayerViewToPausedView()
+            updateSongProgress()
+        }
     }
     
     deinit{
@@ -42,9 +78,9 @@ class MiniPlayerViewController: UIViewController {
     
     
     func setupMiniPlayer(){
-        self.view.clipsToBounds = true
-        self.view.layer.cornerRadius = 20
-        self.view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+//        self.view.clipsToBounds = true
+//        self.view.layer.cornerRadius = 20
+//        self.view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(miniPlayerTap))
         tapRecognizer.numberOfTapsRequired = 1
         tapRecognizer.numberOfTouchesRequired = 1
@@ -110,17 +146,20 @@ class MiniPlayerViewController: UIViewController {
     @objc
     func updateMiniPlayerViewToPlayingView(){
         let song = SongPlayer.shared.getCurrentSong()
-        UIView.animate(withDuration: 0.5, animations: {
-            self.view.backgroundColor =  song.colors?.background
-        })
+        
+//        if self.view.backgroundColor == UIColor.systemBackground{
+            UIView.animate(withDuration: 0.5, animations: {
+                self.view.backgroundColor = song.colors?.background
+            })
+//        }
+
         miniPlayerSongLabel.text = song.trackName
         miniPlayerSongLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
         miniPlayerArtistLabel.text = song.artistName
-        miniPlayerArtistLabel.font = UIFont.boldSystemFont(ofSize: 15.0)
+        miniPlayerArtistLabel.font = UIFont.systemFont(ofSize: 15.0)
         miniPlayerSongLabel.textColor = song.colors?.primary
         miniPlayerArtistLabel.textColor = song.colors?.secondary
         miniPlayerSongProgress.progressTintColor = song.colors?.secondary
-        
     }
     
     @objc
@@ -128,11 +167,14 @@ class MiniPlayerViewController: UIViewController {
         let textColor : UIColor
         let song = SongPlayer.shared.getCurrentSong()
         
-        UIView.animate(withDuration: 0.5, animations: {
-            self.view.backgroundColor = UIColor.systemBackground
-        })
+//        if self.view.backgroundColor == song.colors?.background{
+            UIView.animate(withDuration: 0.5, animations: {
+                self.view.backgroundColor = UIColor.systemBackground
+            })
+//        }
+
         miniPlayerSongLabel.text = song.trackName
-        miniPlayerSongLabel.font = UIFont.systemFont(ofSize: 20.0)
+        miniPlayerSongLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
         miniPlayerArtistLabel.font = UIFont.systemFont(ofSize: 15.0)
         miniPlayerArtistLabel.text = song.artistName
         
