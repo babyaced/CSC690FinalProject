@@ -17,6 +17,7 @@ class MiniPlayerViewController: UIViewController {
     @IBOutlet var miniPlayerSongProgress: UIProgressView!
     
     override func viewDidLoad() {
+        print("MiniPlayerViewController did load")
  
         super.viewDidLoad()
 //        self.view.layer.borderWidth = 3
@@ -43,12 +44,12 @@ class MiniPlayerViewController: UIViewController {
         if(SongPlayer.shared.isPlaying())
         {
             self.view.isUserInteractionEnabled = true
-            updateMiniPlayerViewToPlayingView()
+            initMiniPlayerViewToPlayingView()
             updateSongProgress()
         }
         else if SongPlayer.shared.player != nil {
             self.view.isUserInteractionEnabled = true
-            updateMiniPlayerViewToPausedView()
+            initMiniPlayerViewToPausedView()
             updateSongProgress()
         }
 
@@ -57,15 +58,16 @@ class MiniPlayerViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        print("MiniPlayerViewController will appear")
         if(SongPlayer.shared.isPlaying())
         {
             self.view.isUserInteractionEnabled = true
-            updateMiniPlayerViewToPlayingView()
+            initMiniPlayerViewToPlayingView()
             updateSongProgress()
         }
         else if SongPlayer.shared.player != nil {
             self.view.isUserInteractionEnabled = true
-            updateMiniPlayerViewToPausedView()
+            initMiniPlayerViewToPausedView()
             updateSongProgress()
         }
     }
@@ -147,11 +149,23 @@ class MiniPlayerViewController: UIViewController {
     func updateMiniPlayerViewToPlayingView(){
         let song = SongPlayer.shared.getCurrentSong()
         
-//        if self.view.backgroundColor == UIColor.systemBackground{
-            UIView.animate(withDuration: 0.5, animations: {
-                self.view.backgroundColor = song.colors?.background
-            })
-//        }
+        UIView.animate(withDuration: 0.5, animations: {
+            self.view.backgroundColor = song.colors?.background
+        })
+
+        miniPlayerSongLabel.text = song.trackName
+        miniPlayerSongLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+        miniPlayerArtistLabel.text = song.artistName
+        miniPlayerArtistLabel.font = UIFont.systemFont(ofSize: 15.0)
+        miniPlayerSongLabel.textColor = song.colors?.primary
+        miniPlayerArtistLabel.textColor = song.colors?.secondary
+        miniPlayerSongProgress.progressTintColor = song.colors?.secondary
+    }
+    
+    func initMiniPlayerViewToPlayingView(){
+        let song = SongPlayer.shared.getCurrentSong()
+        
+        self.view.backgroundColor = song.colors?.background
 
         miniPlayerSongLabel.text = song.trackName
         miniPlayerSongLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
@@ -163,15 +177,13 @@ class MiniPlayerViewController: UIViewController {
     }
     
     @objc
-    func updateMiniPlayerViewToPausedView(){
+    func updateMiniPlayerViewToPausedView(_ animated: Bool = true){
         let textColor : UIColor
         let song = SongPlayer.shared.getCurrentSong()
         
-//        if self.view.backgroundColor == song.colors?.background{
-            UIView.animate(withDuration: 0.5, animations: {
-                self.view.backgroundColor = UIColor.systemBackground
-            })
-//        }
+        UIView.animate(withDuration: 0.5, animations: {
+            self.view.backgroundColor = UIColor.systemBackground
+        })
 
         miniPlayerSongLabel.text = song.trackName
         miniPlayerSongLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
@@ -187,6 +199,20 @@ class MiniPlayerViewController: UIViewController {
         miniPlayerSongLabel.textColor = textColor
         miniPlayerArtistLabel.textColor = textColor
         miniPlayerSongProgress.progressTintColor = textColor
+    }
+    
+    func initMiniPlayerViewToPausedView(){
+        let song = SongPlayer.shared.getCurrentSong()
+        
+        self.view.backgroundColor = UIColor.systemBackground
+
+        miniPlayerSongLabel.text = song.trackName
+        miniPlayerSongLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+        miniPlayerArtistLabel.text = song.artistName
+        miniPlayerArtistLabel.font = UIFont.systemFont(ofSize: 15.0)
+        miniPlayerSongLabel.textColor = song.colors?.primary
+        miniPlayerArtistLabel.textColor = song.colors?.secondary
+        miniPlayerSongProgress.progressTintColor = song.colors?.secondary
     }
     
     @objc

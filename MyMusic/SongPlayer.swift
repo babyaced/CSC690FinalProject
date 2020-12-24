@@ -138,11 +138,16 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
                 let currentSong = songQueue[queueIndex!]
                 NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPlayingStatesKey), object: nil, userInfo: ["currentSong": currentSong])
                startSong()
-            }else{
+            }
+            else if queueIndex! == songQueue.count - 1{
+                return
+            }
+            else{
                 let currentSong = songQueue[queueIndex!]
                 NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPausedStatesKey), object: nil, userInfo: ["currentSong": currentSong])
             }
         }
+        
     }
     
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool){
