@@ -29,6 +29,7 @@ class AlbumsOfSelectedArtistViewController: UIViewController, UITableViewDelegat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "artistAlbumCell", for: indexPath)
         cell.textLabel?.text = selectedArtistAlbums[indexPath.row].name!
+        cell.imageView?.image = selectedArtistAlbums[indexPath.row].art!
         return cell
     }
     
@@ -41,5 +42,9 @@ class AlbumsOfSelectedArtistViewController: UIViewController, UITableViewDelegat
             destVC.selectedAlbumSongs = selectedArtistAlbums[(table.indexPathForSelectedRow?.row)!].albumSongs
             table.deselectRow(at: table.indexPathForSelectedRow!, animated: true)
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
     }
 }

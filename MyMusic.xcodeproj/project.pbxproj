@@ -43,6 +43,20 @@
 		D3D5D49E259692A700312DD9 /* 04 - Big KRIT-King Without A Crown Prod By Big KRIT.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D5D48D259692A700312DD9 /* 04 - Big KRIT-King Without A Crown Prod By Big KRIT.mp3 */; };
 		D3D5D49F259692A700312DD9 /* 16 - Big KRIT-Bigger Picture Prod By Big KRIT.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D5D48E259692A700312DD9 /* 16 - Big KRIT-Bigger Picture Prod By Big KRIT.mp3 */; };
 		D3D5D4A0259692A700312DD9 /* 15 - Big KRIT-WTF Prod By Big KRIT.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D5D48F259692A700312DD9 /* 15 - Big KRIT-WTF Prod By Big KRIT.mp3 */; };
+		D3D5D4B22596AC8800312DD9 /* 11 - Cant Be Stll Feat BJ The Chicago Kid (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D5D4A42596AC8600312DD9 /* 11 - Cant Be Stll Feat BJ The Chicago Kid (Produced by Big KRIT) (DatPiff Exclusive).mp3 */; };
+		D3D5D4B32596AC8800312DD9 /* 09 - Vanilla Sky (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D5D4A52596AC8600312DD9 /* 09 - Vanilla Sky (Produced by Big KRIT) (DatPiff Exclusive).mp3 */; };
+		D3D5D4B42596AC8800312DD9 /* 02 - King Pt 4 (Produced by Kenneth Whalum) (DatPiff Exclusive).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D5D4A62596AC8600312DD9 /* 02 - King Pt 4 (Produced by Kenneth Whalum) (DatPiff Exclusive).mp3 */; };
+		D3D5D4B52596AC8800312DD9 /* 07 - How Bout That Money Feat Young Dolph (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D5D4A72596AC8600312DD9 /* 07 - How Bout That Money Feat Young Dolph (Produced by Big KRIT) (DatPiff Exclusive).mp3 */; };
+		D3D5D4B62596AC8800312DD9 /* 08 - In The Darkness Feat Wolfe de MCHLS (Produced by WOLFE de MCHLS) (DatPiff Exclusive).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D5D4A82596AC8700312DD9 /* 08 - In The Darkness Feat Wolfe de MCHLS (Produced by WOLFE de MCHLS) (DatPiff Exclusive).mp3 */; };
+		D3D5D4B72596AC8800312DD9 /* 14 - Its Better This Way (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D5D4A92596AC8700312DD9 /* 14 - Its Better This Way (Produced by Big KRIT) (DatPiff Exclusive).mp3 */; };
+		D3D5D4B82596AC8800312DD9 /* 01 - Intro (DatPiff Exclusive).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D5D4AA2596AC8700312DD9 /* 01 - Intro (DatPiff Exclusive).mp3 */; };
+		D3D5D4B92596AC8800312DD9 /* 05 - Piece On Chain (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D5D4AB2596AC8700312DD9 /* 05 - Piece On Chain (Produced by Big KRIT) (DatPiff Exclusive).mp3 */; };
+		D3D5D4BA2596AC8800312DD9 /* 04 - No Static ft Warren G  (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D5D4AC2596AC8700312DD9 /* 04 - No Static ft Warren G  (Produced by Big KRIT) (DatPiff Exclusive).mp3 */; };
+		D3D5D4BB2596AC8800312DD9 /* 12 - Keep It Boomin (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D5D4AD2596AC8700312DD9 /* 12 - Keep It Boomin (Produced by Big KRIT) (DatPiff Exclusive).mp3 */; };
+		D3D5D4BC2596AC8800312DD9 /* 06 - Shakem Off Feat Ludacis  K Camp (Produced by WOLFE de MCHLS) (DatPiff Exclusive).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D5D4AE2596AC8700312DD9 /* 06 - Shakem Off Feat Ludacis  K Camp (Produced by WOLFE de MCHLS) (DatPiff Exclusive).mp3 */; };
+		D3D5D4BD2596AC8800312DD9 /* 13 - Party Tonight (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D5D4AF2596AC8700312DD9 /* 13 - Party Tonight (Produced by Big KRIT) (DatPiff Exclusive).mp3 */; };
+		D3D5D4BE2596AC8800312DD9 /* 10 - Got Me Thru Feat DeLorean Big SANT  Scar (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D5D4B02596AC8700312DD9 /* 10 - Got Me Thru Feat DeLorean Big SANT  Scar (Produced by Big KRIT) (DatPiff Exclusive).mp3 */; };
+		D3D5D4BF2596AC8800312DD9 /* 03 - 86  (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D3D5D4B12596AC8800312DD9 /* 03 - 86  (Produced by Big KRIT) (DatPiff Exclusive).mp3 */; };
 		D3EE3228256DC74000926074 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3227256DC74000926074 /* AppDelegate.swift */; };
 		D3EE322A256DC74000926074 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3229256DC74000926074 /* SceneDelegate.swift */; };
 		D3EE322C256DC74000926074 /* SongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE322B256DC74000926074 /* SongsViewController.swift */; };
@@ -109,6 +123,20 @@
 		D3D5D48D259692A700312DD9 /* 04 - Big KRIT-King Without A Crown Prod By Big KRIT.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 - Big KRIT-King Without A Crown Prod By Big KRIT.mp3"; sourceTree = "<group>"; };
 		D3D5D48E259692A700312DD9 /* 16 - Big KRIT-Bigger Picture Prod By Big KRIT.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "16 - Big KRIT-Bigger Picture Prod By Big KRIT.mp3"; sourceTree = "<group>"; };
 		D3D5D48F259692A700312DD9 /* 15 - Big KRIT-WTF Prod By Big KRIT.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "15 - Big KRIT-WTF Prod By Big KRIT.mp3"; sourceTree = "<group>"; };
+		D3D5D4A42596AC8600312DD9 /* 11 - Cant Be Stll Feat BJ The Chicago Kid (Produced by Big KRIT) (DatPiff Exclusive).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "11 - Cant Be Stll Feat BJ The Chicago Kid (Produced by Big KRIT) (DatPiff Exclusive).mp3"; sourceTree = "<group>"; };
+		D3D5D4A52596AC8600312DD9 /* 09 - Vanilla Sky (Produced by Big KRIT) (DatPiff Exclusive).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 - Vanilla Sky (Produced by Big KRIT) (DatPiff Exclusive).mp3"; sourceTree = "<group>"; };
+		D3D5D4A62596AC8600312DD9 /* 02 - King Pt 4 (Produced by Kenneth Whalum) (DatPiff Exclusive).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 - King Pt 4 (Produced by Kenneth Whalum) (DatPiff Exclusive).mp3"; sourceTree = "<group>"; };
+		D3D5D4A72596AC8600312DD9 /* 07 - How Bout That Money Feat Young Dolph (Produced by Big KRIT) (DatPiff Exclusive).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 - How Bout That Money Feat Young Dolph (Produced by Big KRIT) (DatPiff Exclusive).mp3"; sourceTree = "<group>"; };
+		D3D5D4A82596AC8700312DD9 /* 08 - In The Darkness Feat Wolfe de MCHLS (Produced by WOLFE de MCHLS) (DatPiff Exclusive).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 - In The Darkness Feat Wolfe de MCHLS (Produced by WOLFE de MCHLS) (DatPiff Exclusive).mp3"; sourceTree = "<group>"; };
+		D3D5D4A92596AC8700312DD9 /* 14 - Its Better This Way (Produced by Big KRIT) (DatPiff Exclusive).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "14 - Its Better This Way (Produced by Big KRIT) (DatPiff Exclusive).mp3"; sourceTree = "<group>"; };
+		D3D5D4AA2596AC8700312DD9 /* 01 - Intro (DatPiff Exclusive).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 - Intro (DatPiff Exclusive).mp3"; sourceTree = "<group>"; };
+		D3D5D4AB2596AC8700312DD9 /* 05 - Piece On Chain (Produced by Big KRIT) (DatPiff Exclusive).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 - Piece On Chain (Produced by Big KRIT) (DatPiff Exclusive).mp3"; sourceTree = "<group>"; };
+		D3D5D4AC2596AC8700312DD9 /* 04 - No Static ft Warren G  (Produced by Big KRIT) (DatPiff Exclusive).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 - No Static ft Warren G  (Produced by Big KRIT) (DatPiff Exclusive).mp3"; sourceTree = "<group>"; };
+		D3D5D4AD2596AC8700312DD9 /* 12 - Keep It Boomin (Produced by Big KRIT) (DatPiff Exclusive).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "12 - Keep It Boomin (Produced by Big KRIT) (DatPiff Exclusive).mp3"; sourceTree = "<group>"; };
+		D3D5D4AE2596AC8700312DD9 /* 06 - Shakem Off Feat Ludacis  K Camp (Produced by WOLFE de MCHLS) (DatPiff Exclusive).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 - Shakem Off Feat Ludacis  K Camp (Produced by WOLFE de MCHLS) (DatPiff Exclusive).mp3"; sourceTree = "<group>"; };
+		D3D5D4AF2596AC8700312DD9 /* 13 - Party Tonight (Produced by Big KRIT) (DatPiff Exclusive).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "13 - Party Tonight (Produced by Big KRIT) (DatPiff Exclusive).mp3"; sourceTree = "<group>"; };
+		D3D5D4B02596AC8700312DD9 /* 10 - Got Me Thru Feat DeLorean Big SANT  Scar (Produced by Big KRIT) (DatPiff Exclusive).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 - Got Me Thru Feat DeLorean Big SANT  Scar (Produced by Big KRIT) (DatPiff Exclusive).mp3"; sourceTree = "<group>"; };
+		D3D5D4B12596AC8800312DD9 /* 03 - 86  (Produced by Big KRIT) (DatPiff Exclusive).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03 - 86  (Produced by Big KRIT) (DatPiff Exclusive).mp3"; sourceTree = "<group>"; };
 		D3EE3224256DC74000926074 /* MyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3EE3227256DC74000926074 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3EE3229256DC74000926074 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -245,6 +273,20 @@
 				D318C57A259583F70067B5D3 /* 09 - Marcy Me [Explicit].mp3 */,
 				D318C57D259583FA0067B5D3 /* 10 - Legacy [Explicit].mp3 */,
 				D3D5D480259692A400312DD9 /* 01 - Big KRIT-Purpose Prod By Big KRIT.mp3 */,
+				D3D5D4AA2596AC8700312DD9 /* 01 - Intro (DatPiff Exclusive).mp3 */,
+				D3D5D4A62596AC8600312DD9 /* 02 - King Pt 4 (Produced by Kenneth Whalum) (DatPiff Exclusive).mp3 */,
+				D3D5D4B12596AC8800312DD9 /* 03 - 86  (Produced by Big KRIT) (DatPiff Exclusive).mp3 */,
+				D3D5D4AC2596AC8700312DD9 /* 04 - No Static ft Warren G  (Produced by Big KRIT) (DatPiff Exclusive).mp3 */,
+				D3D5D4AB2596AC8700312DD9 /* 05 - Piece On Chain (Produced by Big KRIT) (DatPiff Exclusive).mp3 */,
+				D3D5D4AE2596AC8700312DD9 /* 06 - Shakem Off Feat Ludacis  K Camp (Produced by WOLFE de MCHLS) (DatPiff Exclusive).mp3 */,
+				D3D5D4A72596AC8600312DD9 /* 07 - How Bout That Money Feat Young Dolph (Produced by Big KRIT) (DatPiff Exclusive).mp3 */,
+				D3D5D4A82596AC8700312DD9 /* 08 - In The Darkness Feat Wolfe de MCHLS (Produced by WOLFE de MCHLS) (DatPiff Exclusive).mp3 */,
+				D3D5D4A52596AC8600312DD9 /* 09 - Vanilla Sky (Produced by Big KRIT) (DatPiff Exclusive).mp3 */,
+				D3D5D4B02596AC8700312DD9 /* 10 - Got Me Thru Feat DeLorean Big SANT  Scar (Produced by Big KRIT) (DatPiff Exclusive).mp3 */,
+				D3D5D4A42596AC8600312DD9 /* 11 - Cant Be Stll Feat BJ The Chicago Kid (Produced by Big KRIT) (DatPiff Exclusive).mp3 */,
+				D3D5D4AD2596AC8700312DD9 /* 12 - Keep It Boomin (Produced by Big KRIT) (DatPiff Exclusive).mp3 */,
+				D3D5D4AF2596AC8700312DD9 /* 13 - Party Tonight (Produced by Big KRIT) (DatPiff Exclusive).mp3 */,
+				D3D5D4A92596AC8700312DD9 /* 14 - Its Better This Way (Produced by Big KRIT) (DatPiff Exclusive).mp3 */,
 				D3D5D482259692A500312DD9 /* 02 - Big KRIT-Shine On Feat Bun B Prod By Big KRIT.mp3 */,
 				D3D5D48B259692A600312DD9 /* 03 - Big KRIT-Talkin Bout Nothing Prod By Big KRIT.mp3 */,
 				D3D5D48D259692A700312DD9 /* 04 - Big KRIT-King Without A Crown Prod By Big KRIT.mp3 */,
@@ -370,21 +412,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D5D4B42596AC8800312DD9 /* 02 - King Pt 4 (Produced by Kenneth Whalum) (DatPiff Exclusive).mp3 in Resources */,
 				D318C585259583FB0067B5D3 /* 06 - Family Feud [feat. Beyoncé] [Explicit].mp3 in Resources */,
+				D3D5D4B22596AC8800312DD9 /* 11 - Cant Be Stll Feat BJ The Chicago Kid (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
+				D3D5D4B82596AC8800312DD9 /* 01 - Intro (DatPiff Exclusive).mp3 in Resources */,
 				D3D5D493259692A700312DD9 /* 02 - Big KRIT-Shine On Feat Bun B Prod By Big KRIT.mp3 in Resources */,
+				D3D5D4B62596AC8800312DD9 /* 08 - In The Darkness Feat Wolfe de MCHLS (Produced by WOLFE de MCHLS) (DatPiff Exclusive).mp3 in Resources */,
 				D3D5D497259692A700312DD9 /* 05 - Big KRIT-REM Prod By Big KRIT.mp3 in Resources */,
 				D3D5D49C259692A700312DD9 /* 03 - Big KRIT-Talkin Bout Nothing Prod By Big KRIT.mp3 in Resources */,
+				D3D5D4BD2596AC8800312DD9 /* 13 - Party Tonight (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
 				D3D5D490259692A700312DD9 /* 13 - Big KRIT-Banana Clip Theory Prod By Big KRIT.mp3 in Resources */,
+				D3D5D4B32596AC8800312DD9 /* 09 - Vanilla Sky (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
 				D3D5D492259692A700312DD9 /* 14 - Big KRIT-Life Is A Gamble Feat BJ The Chicago Kid Prod By 9th Wonder.mp3 in Resources */,
 				D3D5D49E259692A700312DD9 /* 04 - Big KRIT-King Without A Crown Prod By Big KRIT.mp3 in Resources */,
+				D3D5D4BE2596AC8800312DD9 /* 10 - Got Me Thru Feat DeLorean Big SANT  Scar (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
 				D3D5D49A259692A700312DD9 /* 12 - Big KRIT-Only One Feat Wiz Khalifa Smoke DZA Prod By Big KRIT.mp3 in Resources */,
+				D3D5D4B92596AC8800312DD9 /* 05 - Piece On Chain (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
 				D318C584259583FB0067B5D3 /* 09 - Marcy Me [Explicit].mp3 in Resources */,
+				D3D5D4BC2596AC8800312DD9 /* 06 - Shakem Off Feat Ludacis  K Camp (Produced by WOLFE de MCHLS) (DatPiff Exclusive).mp3 in Resources */,
 				D3D5D491259692A700312DD9 /* 01 - Big KRIT-Purpose Prod By Big KRIT.mp3 in Resources */,
 				D3D5D498259692A700312DD9 /* 07 - Big KRIT-Serve This Royalty Prod By Big KRIT.mp3 in Resources */,
 				D318C587259583FB0067B5D3 /* 10 - Legacy [Explicit].mp3 in Resources */,
 				D318C589259583FB0067B5D3 /* 01 - Kill Jay-Z [Explicit].mp3 in Resources */,
 				D3D5D499259692A700312DD9 /* 09 - Big KRIT-Just Last Week Feat Future Snippet Prod By Big KRIT.mp3 in Resources */,
+				D3D5D4B52596AC8800312DD9 /* 07 - How Bout That Money Feat Young Dolph (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
 				D3D5D496259692A700312DD9 /* 11 - Big KRIT-How U Luv That Feat Big SANT Prod By Big KRIT.mp3 in Resources */,
+				D3D5D4BA2596AC8800312DD9 /* 04 - No Static ft Warren G  (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
 				D318C588259583FB0067B5D3 /* 08 - Moonlight [Explicit].mp3 in Resources */,
 				D318C581259583FB0067B5D3 /* 02 - The Story of O.J. [Explicit].mp3 in Resources */,
 				D3D5D494259692A700312DD9 /* 06 - Big KRIT-Meditate Prod By Big KRIT.mp3 in Resources */,
@@ -393,10 +446,13 @@
 				D3EE3231256DC74300926074 /* Assets.xcassets in Resources */,
 				D3EE322F256DC74000926074 /* Main.storyboard in Resources */,
 				D318C586259583FB0067B5D3 /* 05 - 4_44 [Explicit].mp3 in Resources */,
+				D3D5D4BB2596AC8800312DD9 /* 12 - Keep It Boomin (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
 				D3D5D495259692A700312DD9 /* 17 - Big KRIT-Multi Til The Sun Die Prod By Big KRIT.mp3 in Resources */,
 				D3D5D49B259692A700312DD9 /* 08 - Big KRIT-Good 2getha Feat Ashton Jones Prod By Big KRIT.mp3 in Resources */,
 				D3D5D49D259692A700312DD9 /* 10 - Big KRIT-My Trunk Feat Trinidad Jame Prod By Big KRIT.mp3 in Resources */,
+				D3D5D4B72596AC8800312DD9 /* 14 - Its Better This Way (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
 				D318C582259583FB0067B5D3 /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 in Resources */,
+				D3D5D4BF2596AC8800312DD9 /* 03 - 86  (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
 				D3D5D49F259692A700312DD9 /* 16 - Big KRIT-Bigger Picture Prod By Big KRIT.mp3 in Resources */,
 				D318C580259583FB0067B5D3 /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 in Resources */,
 				D3D5D4A0259692A700312DD9 /* 15 - Big KRIT-WTF Prod By Big KRIT.mp3 in Resources */,
