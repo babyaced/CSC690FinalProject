@@ -30,16 +30,20 @@ class SongCollection{
     }
     
     struct Album{
-        let name: String?
-        let artist: String?
-        let art: UIImage?
+        var name: String?
+        var artist: String?
+        var art: UIImage?
+        var albumSongs = [Song]()
+    }
+    
+    struct Artist{
+        var name: String?
+        var albums = [Album]()
     }
     
     var songs = [Song]()
+    var albums = [String: Album]()
     var artists = [String]()
-    var albums = [String]()
-//    var albums = [String:[Song]]()
-//    var artists = [String:[Song]]()
     
     private init(){
         let folderURL = URL(fileURLWithPath: Bundle.main.resourcePath!)
@@ -100,31 +104,34 @@ class SongCollection{
                 trackDur = convertSecondsToTime(seconds: Int(Double(playerItem.asset.duration.value) / Double(playerItem.asset.duration.timescale)))
                 var newSong = Song(name: mp3Name, albumName: albumMeta, artistName: artistMeta, art: artMeta, trackName: trackMeta, trackNum: tracknumMeta , trackIndex: mp3Index,colors: (artMeta?.getColors(quality: preferredColorQuality)),path: pathString, trackDuration: trackDur)     
                 
-//                print(newSong)
                 if(mp3Name != nil){
-//                    print(newSong)
                     songs.append(newSong)
-                    if(!albums.contains(newSong.albumName!)){
-                        albums.append(newSong.albumName!)
+                    index += 1
+                    if(albumMeta != nil){
+                        if(albums.keys.contains(albumMeta!)){
+                            newSong.trackNum = albums[albumMeta!]!.albumSongs.count + 1
+                            albums[albumMeta!]!.albumSongs.append(newSong)
+                            albums[albumMeta!]!.albumSongs.sort {$0.trackNum ?? 0 < $1.trackNum ?? 0}
+                        }
+                        else{
+                            print(albumMeta!)
+                            //Initalize Songs array of album
+                            var albumSongs = [Song]()
+                            newSong.trackNum = albumSongs.count + 1
+                            albumSongs.append(newSong)
+                            var newAlbum = Album(name: albumMeta, artist: artistMeta, art: artMeta, albumSongs: albumSongs)
+                            
+                            //Add New album to dictionary
+                            albums[albumMeta!] = newAlbum
+                        }
                     }
                     
-                    if(!artists.contains(newSong.artistName!)){
-                        artists.append(newSong.artistName!)
+                    if(artistMeta != nil){
+                        if(!artists.contains(artistMeta!))
+                        {
+                            artists.append(artistMeta!)
+                        }
                     }
-//                    index += 1
-//                    if(albumMeta != nil){
-//                        if(albums.keys.contains(albumMeta!)){
-//                            newSong.trackNum = albums[albumMeta!]!.count + 1
-//                            albums[albumMeta!]!.append(newSong)
-//                            albums[albumMeta!]!.sort {$0.trackNum ?? 0 < $1.trackNum ?? 0}
-//                        }
-//                        else{
-//                            var albumSongs = [Song]()
-//                            newSong.trackNum = albumSongs.count + 1
-//                            albumSongs.append(newSong)
-//                            albums[albumMeta!] = albumSongs
-//                        }
-//                    }
                 }
             }
         }
@@ -132,8 +139,8 @@ class SongCollection{
             print("Could not import songs")
         }
         songs.sort{$0.trackName! < $1.trackName!}
-        albums.sort()
-        artists.sort()
+        print("Initialized songcollection")
+        print(albums)
     }
 }
 
