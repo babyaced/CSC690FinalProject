@@ -292,6 +292,52 @@
             </objects>
             <point key="canvasLocation" x="-302" y="868"/>
         </scene>
+        <!--Artists-->
+        <scene sceneID="6PB-oN-I7C">
+            <objects>
+                <tableViewController id="Vjg-l4-70r" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YIo-qV-wvh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Uqt-XT-bs3">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Uqt-XT-bs3" id="lEI-35-qSN">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Vjg-l4-70r" id="z7R-1S-4SW"/>
+                            <outlet property="delegate" destination="Vjg-l4-70r" id="MZy-LF-atz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Artists" id="zCu-Vh-bbq"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fer-hU-hVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="-788"/>
+        </scene>
+        <!--Artists-->
+        <scene sceneID="bk4-Ls-G7B">
+            <objects>
+                <navigationController id="BT8-oc-yN8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Artists" image="icons8-user-group-30" id="GJL-8R-nc3"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="a0U-Cx-U5C">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Vjg-l4-70r" kind="relationship" relationship="rootViewController" id="4rf-Mt-g0c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ixd-sb-kIT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-303" y="-788"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dfk-Xb-1wH">
             <objects>
@@ -306,6 +352,7 @@
                     <connections>
                         <segue destination="9gj-uq-Npr" kind="relationship" relationship="viewControllers" id="YcH-qY-0ow"/>
                         <segue destination="l7n-Ow-hsS" kind="relationship" relationship="viewControllers" id="A7m-MF-y9B"/>
+                        <segue destination="BT8-oc-yN8" kind="relationship" relationship="viewControllers" id="QnM-bO-fRO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tet-3a-FWA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -435,8 +482,8 @@
         <!--MiniPlayerViewController-->
         <scene sceneID="F6W-QT-YV2">
             <objects>
-                <viewControllerPlaceholder referencedIdentifier="MiniPlayerViewController" id="WMo-9e-bEB" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BnB-8D-gTL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder referencedIdentifier="MiniPlayerViewController" id="WMo-9e-bEB" sceneMemberID="viewController"/>
             </objects>
             <point key="canvasLocation" x="638" y="2017"/>
         </scene>
@@ -445,6 +492,7 @@
     <resources>
         <image name="icons8-music-album-30" width="30" height="30"/>
         <image name="icons8-music-library-30" width="30" height="30"/>
+        <image name="icons8-user-group-30" width="30" height="30"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
