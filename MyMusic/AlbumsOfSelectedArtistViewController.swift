@@ -9,7 +9,7 @@ import UIKit
 
 class AlbumsOfSelectedArtistViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var selectedArtistAlbums = [SongCollection.Album]()
-    
+    var selectedArtistNameLabelString: String?
     @IBOutlet var table: UITableView!
     
     override func viewDidLoad() {
@@ -17,6 +17,7 @@ class AlbumsOfSelectedArtistViewController: UIViewController, UITableViewDelegat
 //        print(selectedArtistAlbums)
         table.delegate = self
         table.dataSource = self
+        self.navigationItem.title = selectedArtistNameLabelString
 
         // Do any additional setup after loading the view.
     }

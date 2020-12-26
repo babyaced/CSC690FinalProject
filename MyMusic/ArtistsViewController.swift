@@ -42,6 +42,7 @@ class ArtistsViewController: UIViewController, UITableViewDelegate, UITableViewD
                 }
             }
             destVC.selectedArtistAlbums = albums
+            destVC.selectedArtistNameLabelString = SongCollection.shared.artists[(table.indexPathForSelectedRow?.row)!]
         }
     }
     
