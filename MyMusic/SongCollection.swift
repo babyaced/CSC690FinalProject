@@ -61,7 +61,7 @@ class SongCollection{
                 var albumMeta : String?
                 var artistMeta : String?
                 var artMeta: UIImage?
-                var tracknumMeta = 0
+                var tracknumMeta: Int?
                 var trackDur: String?
                
                 
@@ -87,8 +87,8 @@ class SongCollection{
                         guard let ckey = item.commonKey?.rawValue, let cvalue = item.value else{
                             continue
                         }
-//                        print("Key", ckey)
-//                        print("Value", cvalue)
+//                        print("CKey: ", ckey)
+//                        print("CValue: ", cvalue)
 
                        switch ckey {
                         case "title" : trackMeta = cvalue as? String
@@ -98,6 +98,36 @@ class SongCollection{
                         default:
                           continue
                        }
+                }
+                
+                for item in metadataList {
+                    guard let key = item.key, let value = item.value else{
+                        continue
+                    }
+                    
+//                    print("Key: ", key)
+//                    print("Value: ", value)
+                    
+
+                    if let  value = value as? NSString{
+                        let keyString = String(key as! Substring)
+                        let valueString = String(value as! Substring)
+//                        print("Key Type: ", type(of: key))
+//                        print("Value Type: ",type(of: value))
+
+                        
+                        switch keyString{
+                        case "TRCK":
+                            print("Track: ", trackMeta)
+                           let token = valueString.components(separatedBy: "/")
+                           tracknumMeta = Int(token[0])
+                           print("Track Num: ", tracknumMeta)
+                        default:
+                            continue
+                        }
+                    }
+
+
                 }
                 mp3Index = index
                 
@@ -109,17 +139,16 @@ class SongCollection{
                     index += 1
                     if(albumMeta != nil){
                         if(albums.keys.contains(albumMeta!)){
-                            newSong.trackNum = albums[albumMeta!]!.albumSongs.count + 1
                             albums[albumMeta!]!.albumSongs.append(newSong)
-                            albums[albumMeta!]!.albumSongs.sort {$0.trackNum ?? 0 < $1.trackNum ?? 0}
-                        }
-                        else{
+                            albums[albumMeta!]!.albumSongs.sort {$0.trackNum! < $1.trackNum!}
+                            print(albums[albumMeta!]?.albumSongs)
+                            
+                        }                        else{
                             print(albumMeta!)
                             //Initalize Songs array of album
                             var albumSongs = [Song]()
-                            newSong.trackNum = albumSongs.count + 1
                             albumSongs.append(newSong)
-                            var newAlbum = Album(name: albumMeta, artist: artistMeta, art: artMeta, albumSongs: albumSongs)
+                            let newAlbum = Album(name: albumMeta, artist: artistMeta, art: artMeta, albumSongs: albumSongs)
                             
                             //Add New album to dictionary
                             albums[albumMeta!] = newAlbum
@@ -140,7 +169,7 @@ class SongCollection{
         }
         songs.sort{$0.trackName! < $1.trackName!}
         print("Initialized songcollection")
-        print(albums)
+        //print(albums)
     }
 }
 
