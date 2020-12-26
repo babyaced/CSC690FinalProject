@@ -27,12 +27,14 @@ class SongCollection{
         let colors: UIImageColors?
         let path: String?
         let trackDuration: String?
+        let yearOfRelease: String?
     }
     
     struct Album{
         var name: String?
         var artist: String?
         var art: UIImage?
+        var year: String?
         var albumSongs = [Song]()
     }
     
@@ -63,6 +65,7 @@ class SongCollection{
                 var artMeta: UIImage?
                 var tracknumMeta: Int?
                 var trackDur: String?
+                var yearMeta: String?
                
                 
 //                print(pathString)
@@ -118,10 +121,14 @@ class SongCollection{
                         
                         switch keyString{
                         case "TRCK":
-                            print("Track: ", trackMeta)
+//                            print("Track: ", trackMeta)
                            let token = valueString.components(separatedBy: "/")
                            tracknumMeta = Int(token[0])
-                           print("Track Num: ", tracknumMeta)
+//                           print("Track Num: ", tracknumMeta)
+                        case "TYER":
+                            yearMeta = valueString
+                        case "TDRL":
+                            yearMeta = valueString
                         default:
                             continue
                         }
@@ -132,7 +139,7 @@ class SongCollection{
                 mp3Index = index
                 
                 trackDur = convertSecondsToTime(seconds: Int(Double(playerItem.asset.duration.value) / Double(playerItem.asset.duration.timescale)))
-                var newSong = Song(name: mp3Name, albumName: albumMeta, artistName: artistMeta, art: artMeta, trackName: trackMeta, trackNum: tracknumMeta , trackIndex: mp3Index,colors: (artMeta?.getColors(quality: preferredColorQuality)),path: pathString, trackDuration: trackDur)     
+                var newSong = Song(name: mp3Name, albumName: albumMeta, artistName: artistMeta, art: artMeta, trackName: trackMeta, trackNum: tracknumMeta , trackIndex: mp3Index,colors: (artMeta?.getColors(quality: preferredColorQuality)),path: pathString, trackDuration: trackDur, yearOfRelease: yearMeta)
                 
                 if(mp3Name != nil){
                     songs.append(newSong)
@@ -141,14 +148,14 @@ class SongCollection{
                         if(albums.keys.contains(albumMeta!)){
                             albums[albumMeta!]!.albumSongs.append(newSong)
                             albums[albumMeta!]!.albumSongs.sort {$0.trackNum! < $1.trackNum!}
-                            print(albums[albumMeta!]?.albumSongs)
+//                            print(albums[albumMeta!]?.albumSongs)
                             
                         }                        else{
                             print(albumMeta!)
                             //Initalize Songs array of album
                             var albumSongs = [Song]()
                             albumSongs.append(newSong)
-                            let newAlbum = Album(name: albumMeta, artist: artistMeta, art: artMeta, albumSongs: albumSongs)
+                            let newAlbum = Album(name: albumMeta, artist: artistMeta, art: artMeta, year: yearMeta, albumSongs: albumSongs)
                             
                             //Add New album to dictionary
                             albums[albumMeta!] = newAlbum

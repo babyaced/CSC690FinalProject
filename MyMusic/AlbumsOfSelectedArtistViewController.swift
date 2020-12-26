@@ -31,6 +31,8 @@ class AlbumsOfSelectedArtistViewController: UIViewController, UITableViewDelegat
         let cell = tableView.dequeueReusableCell(withIdentifier: "artistAlbumCell", for: indexPath)
         cell.textLabel?.text = selectedArtistAlbums[indexPath.row].name!
         cell.imageView?.image = selectedArtistAlbums[indexPath.row].art!
+        print(selectedArtistAlbums[indexPath.row].year!)
+        cell.detailTextLabel?.text = selectedArtistAlbums[indexPath.row].year!
         return cell
     }
     
