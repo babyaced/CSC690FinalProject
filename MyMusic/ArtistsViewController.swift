@@ -31,6 +31,7 @@ class ArtistsViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showSelectedArtist", sender: self)
+        table.deselectRow(at: table.indexPathForSelectedRow!, animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
