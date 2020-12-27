@@ -24,16 +24,7 @@ class MiniPlayerViewController: UIViewController {
         
         setupMiniPlayer()
         createObservers()
-        if traitCollection.userInterfaceStyle == .light{
-            self.view.layer.shadowColor = UIColor.black.cgColor
-        }
-        else{
-            self.view.layer.shadowColor = UIColor.white.cgColor
-        }
-        
-        self.view.layer.shadowOffset = CGSize(width: 0, height: 1.0)
-        self.view.layer.shadowOpacity = 0.5
-        self.view.layer.shadowRadius = 5.0
+
         
 //        if traitCollection.userInterfaceStyle == .light{
 //            self.view.layer.borderColor = UIColor.darkText.cgColor
@@ -59,6 +50,16 @@ class MiniPlayerViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         print("MiniPlayerViewController will appear")
+        if traitCollection.userInterfaceStyle == .light{
+            self.view.layer.shadowColor = UIColor.black.cgColor
+        }
+        else{
+            self.view.layer.shadowColor = UIColor.white.cgColor
+        }
+        
+        self.view.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        self.view.layer.shadowOpacity = 0.5
+        self.view.layer.shadowRadius = 5.0
         if(SongPlayer.shared.isPlaying())
         {
             self.view.isUserInteractionEnabled = true
@@ -219,7 +220,7 @@ class MiniPlayerViewController: UIViewController {
         }
         miniPlayerSongLabel.textColor = textColor
         miniPlayerArtistLabel.textColor = textColor
-        miniPlayerSongProgress.progressTintColor = song.colors?.secondary
+        miniPlayerSongProgress.progressTintColor = textColor
     }
     
     @objc

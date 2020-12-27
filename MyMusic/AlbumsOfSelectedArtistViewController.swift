@@ -11,6 +11,7 @@ class AlbumsOfSelectedArtistViewController: UIViewController, UITableViewDelegat
     var selectedArtistAlbums = [SongCollection.Album]()
     var selectedArtistNameLabelString: String?
     @IBOutlet var table: UITableView!
+    @IBOutlet var navigationItemBackgroundImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,8 +19,14 @@ class AlbumsOfSelectedArtistViewController: UIViewController, UITableViewDelegat
         table.delegate = self
         table.dataSource = self
         self.navigationItem.title = selectedArtistNameLabelString
-
+        navigationItemBackgroundImage.image = selectedArtistAlbums[Int.random(in: 0..<selectedArtistAlbums.count)].art
+        
+        
+        self.view.sendSubviewToBack(navigationItemBackgroundImage)
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidLayoutSubviews() {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

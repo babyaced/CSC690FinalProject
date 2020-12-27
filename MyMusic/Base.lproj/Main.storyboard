@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p5F-ng-lDR">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p5F-ng-lDR">
                                 <rect key="frame" x="0.0" y="88" width="414" height="635"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -306,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Jh-wk-WUX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2372" y="1057"/>
+            <point key="canvasLocation" x="2371.0144927536235" y="1056.0267857142858"/>
         </scene>
         <!--Songs-->
         <scene sceneID="tRm-yY-jzk">
@@ -536,19 +536,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bQE-df-Uie">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UhB-Hs-SYq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Uug-kW-CQA">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qse-rQ-lIY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bQE-df-Uie">
                                 <rect key="frame" x="0.0" y="140" width="414" height="583"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="artistAlbumCell" textLabel="d54-wf-pMN" detailTextLabel="pMt-Is-upX" style="IBUITableViewCellStyleSubtitle" id="mis-7P-3tf">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="55.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="55"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mis-7P-3tf" id="FOy-Tn-ixw">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d54-wf-pMN">
-                                                    <rect key="frame" x="20" y="8.9999999999999982" width="33" height="20.333333333333332"/>
+                                                    <rect key="frame" x="20" y="9.9999999999999982" width="33" height="20.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -577,17 +588,26 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="9xe-wy-eCP" secondAttribute="bottom" id="44u-Kz-D7f"/>
+                            <constraint firstItem="UhB-Hs-SYq" firstAttribute="leading" secondItem="6dm-Zp-hYM" secondAttribute="leading" id="5Cd-ct-dke"/>
+                            <constraint firstAttribute="trailing" secondItem="qse-rQ-lIY" secondAttribute="trailing" id="6I8-WE-knk"/>
                             <constraint firstItem="9xe-wy-eCP" firstAttribute="leading" secondItem="YNF-w7-Uwa" secondAttribute="leading" id="A73-AX-vw9"/>
                             <constraint firstItem="9xe-wy-eCP" firstAttribute="top" secondItem="bQE-df-Uie" secondAttribute="bottom" id="DVD-Es-Hg9"/>
                             <constraint firstItem="bQE-df-Uie" firstAttribute="leading" secondItem="YNF-w7-Uwa" secondAttribute="leading" id="NWn-JW-2np"/>
+                            <constraint firstItem="bQE-df-Uie" firstAttribute="top" secondItem="qse-rQ-lIY" secondAttribute="bottom" constant="5" id="QOD-Vn-5ul"/>
+                            <constraint firstItem="qse-rQ-lIY" firstAttribute="top" secondItem="6dm-Zp-hYM" secondAttribute="top" id="RDE-rr-EoY"/>
                             <constraint firstItem="YNF-w7-Uwa" firstAttribute="trailing" secondItem="bQE-df-Uie" secondAttribute="trailing" id="Rbq-ac-JkE"/>
                             <constraint firstItem="bQE-df-Uie" firstAttribute="top" secondItem="YNF-w7-Uwa" secondAttribute="top" id="Rt8-p3-eFn"/>
                             <constraint firstItem="YNF-w7-Uwa" firstAttribute="trailing" secondItem="9xe-wy-eCP" secondAttribute="trailing" id="TVn-6L-seV"/>
+                            <constraint firstAttribute="trailing" secondItem="UhB-Hs-SYq" secondAttribute="trailing" id="bzW-XF-ZrA"/>
+                            <constraint firstItem="bQE-df-Uie" firstAttribute="top" secondItem="UhB-Hs-SYq" secondAttribute="bottom" constant="5" id="eox-4a-hLy"/>
                             <constraint firstItem="YNF-w7-Uwa" firstAttribute="bottom" secondItem="bQE-df-Uie" secondAttribute="bottom" constant="90" id="iSB-Wa-s9O"/>
+                            <constraint firstItem="UhB-Hs-SYq" firstAttribute="top" secondItem="6dm-Zp-hYM" secondAttribute="top" id="nBH-CX-wyO"/>
+                            <constraint firstItem="qse-rQ-lIY" firstAttribute="leading" secondItem="6dm-Zp-hYM" secondAttribute="leading" id="nkY-Ee-5yD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="Z9h-j5-1e9"/>
                     <connections>
+                        <outlet property="navigationItemBackgroundImage" destination="qse-rQ-lIY" id="tJG-0r-DXY"/>
                         <outlet property="table" destination="bQE-df-Uie" id="Ols-dT-gpM"/>
                         <segue destination="jWd-Gg-GzF" kind="show" identifier="showSelectedAlbumOfArtist" id="FQD-aq-A73"/>
                     </connections>

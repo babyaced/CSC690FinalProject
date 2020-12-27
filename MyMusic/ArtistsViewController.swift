@@ -15,6 +15,7 @@ class ArtistsViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
+        table.tableFooterView = UIView()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,6 +25,7 @@ class ArtistsViewController: UIViewController, UITableViewDelegate, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "artistCell", for: indexPath)
         cell.textLabel?.text = SongCollection.shared.artists[indexPath.row]
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 20.0)
         return cell
     }
     

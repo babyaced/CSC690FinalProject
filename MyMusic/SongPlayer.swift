@@ -140,7 +140,8 @@ class SongPlayer : NSObject, AVAudioPlayerDelegate{
                startSong()
             }
             else if queueIndex! == songQueue.count - 1{
-                return
+                let currentSong = songQueue[queueIndex!]
+                NotificationCenter.default.post(name: Notification.Name(rawValue: updatePlayerViewsToPausedStatesKey), object: nil, userInfo: ["currentSong": currentSong])
             }
             else{
                 let currentSong = songQueue[queueIndex!]
