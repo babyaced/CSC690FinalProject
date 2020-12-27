@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B1915288DA13528647F7337 /* Pods_MyMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6155E6CFBC8410C32A871674 /* Pods_MyMusic.framework */; };
+		D30A17AB25995304004251A1 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30A17AA25995304004251A1 /* CustomSlider.swift */; };
 		D318C580259583FB0067B5D3 /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D318C576259583F40067B5D3 /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 */; };
 		D318C581259583FB0067B5D3 /* 02 - The Story of O.J. [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D318C577259583F50067B5D3 /* 02 - The Story of O.J. [Explicit].mp3 */; };
 		D318C582259583FB0067B5D3 /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D318C578259583F60067B5D3 /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 */; };
@@ -88,6 +89,7 @@
 		2BFCEC84A25AA755F8A27B34 /* Pods-MyMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMusic.debug.xcconfig"; path = "Target Support Files/Pods-MyMusic/Pods-MyMusic.debug.xcconfig"; sourceTree = "<group>"; };
 		6155E6CFBC8410C32A871674 /* Pods_MyMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F512FD159070C6E27905E63 /* Pods-MyMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMusic.release.xcconfig"; path = "Target Support Files/Pods-MyMusic/Pods-MyMusic.release.xcconfig"; sourceTree = "<group>"; };
+		D30A17AA25995304004251A1 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		D318C576259583F40067B5D3 /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 - Bam [feat. Damian Marley] [Explicit].mp3"; sourceTree = "<group>"; };
 		D318C577259583F50067B5D3 /* 02 - The Story of O.J. [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 - The Story of O.J. [Explicit].mp3"; sourceTree = "<group>"; };
 		D318C578259583F60067B5D3 /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03 - Smile [feat. Gloria Carter] [Explicit].mp3"; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 				D31CAA5E2581DBC900817AE0 /* SelectedAlbumViewController.swift */,
 				D39AE25F25958B45003F67FC /* ArtistsViewController.swift */,
 				D39AE264259590D0003F67FC /* AlbumsOfSelectedArtistViewController.swift */,
+				D30A17AA25995304004251A1 /* CustomSlider.swift */,
 			);
 			path = MyMusic;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 				D3EE322C256DC74000926074 /* SongsViewController.swift in Sources */,
 				D3EE3228256DC74000926074 /* AppDelegate.swift in Sources */,
 				D31CAA5F2581DBC900817AE0 /* SelectedAlbumViewController.swift in Sources */,
+				D30A17AB25995304004251A1 /* CustomSlider.swift in Sources */,
 				D349930A256EEE0B00FE14BA /* SongCollection.swift in Sources */,
 				D39AE265259590D0003F67FC /* AlbumsOfSelectedArtistViewController.swift in Sources */,
 				D3EE322A256DC74000926074 /* SceneDelegate.swift in Sources */,

@@ -245,7 +245,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KKQ-Hb-pgV">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KKQ-Hb-pgV" customClass="CustomSlider" customModule="MyMusic" customModuleProvider="target">
                                 <rect key="frame" x="13" y="817" width="388" height="31"/>
                                 <connections>
                                     <action selector="fullPlayerScrub:" destination="d0b-1C-pvw" eventType="valueChanged" id="csb-He-uB3"/>
