@@ -44,6 +44,7 @@ class ArtistsViewController: UIViewController, UITableViewDelegate, UITableViewD
                     albums.append(album.value)
                 }
             }
+            albums.sort{$0.year! > $1.year!}
             destVC.selectedArtistAlbums = albums
             destVC.selectedArtistNameLabelString = SongCollection.shared.artists[(table.indexPathForSelectedRow?.row)!]
         }
