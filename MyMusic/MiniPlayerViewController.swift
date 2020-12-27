@@ -157,7 +157,7 @@ class MiniPlayerViewController: UIViewController {
         miniPlayerSongLabel.text = song.trackName
         miniPlayerSongLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
         miniPlayerArtistLabel.text = song.artistName
-        miniPlayerArtistLabel.font = UIFont.systemFont(ofSize: 15.0)
+        miniPlayerArtistLabel.font = UIFont.boldSystemFont(ofSize: 15.0)
         miniPlayerSongLabel.textColor = song.colors?.primary
         miniPlayerArtistLabel.textColor = song.colors?.secondary
         miniPlayerSongProgress.progressTintColor = song.colors?.secondary
@@ -171,7 +171,7 @@ class MiniPlayerViewController: UIViewController {
         miniPlayerSongLabel.text = song.trackName
         miniPlayerSongLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
         miniPlayerArtistLabel.text = song.artistName
-        miniPlayerArtistLabel.font = UIFont.systemFont(ofSize: 15.0)
+        miniPlayerArtistLabel.font = UIFont.boldSystemFont(ofSize: 15.0)
         miniPlayerSongLabel.textColor = song.colors?.primary
         miniPlayerArtistLabel.textColor = song.colors?.secondary
         miniPlayerSongProgress.progressTintColor = song.colors?.secondary
@@ -188,7 +188,7 @@ class MiniPlayerViewController: UIViewController {
 
         miniPlayerSongLabel.text = song.trackName
         miniPlayerSongLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
-        miniPlayerArtistLabel.font = UIFont.systemFont(ofSize: 15.0)
+        miniPlayerArtistLabel.font = UIFont.boldSystemFont(ofSize: 15.0)
         miniPlayerArtistLabel.text = song.artistName
         
         if traitCollection.userInterfaceStyle == .light{
@@ -211,7 +211,7 @@ class MiniPlayerViewController: UIViewController {
         miniPlayerSongLabel.text = song.trackName
         miniPlayerSongLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
         miniPlayerArtistLabel.text = song.artistName
-        miniPlayerArtistLabel.font = UIFont.systemFont(ofSize: 15.0)
+        miniPlayerArtistLabel.font = UIFont.boldSystemFont(ofSize: 15.0)
         if traitCollection.userInterfaceStyle == .light{
             textColor = UIColor.darkText
         }
