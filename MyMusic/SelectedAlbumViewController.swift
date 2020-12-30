@@ -10,7 +10,7 @@ import AVFoundation
 
 class SelectedAlbumViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet var selectedAlbumImage: UIImageView!
+    @IBOutlet var selectedAlbumImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -18,17 +18,27 @@ class SelectedAlbumViewController: UIViewController, UITableViewDelegate, UITabl
         self.navigationController!.navigationBar.isTranslucent = true
         albumTracksTable.delegate = self
         albumTracksTable.dataSource = self
-        selectedAlbumImage.image = selectedAlbumSongs[0].art
+        selectedAlbumImageView.image = selectedAlbumSongs[0].art
         if traitCollection.userInterfaceStyle == .light{
-            selectedAlbumImage.layer.shadowColor = UIColor.black.cgColor
+            let gradientLayer = CAGradientLayer()
+            gradientLayer.frame = self.selectedAlbumImageView.bounds
+            gradientLayer.colors = [UIColor.white.cgColor, UIColor.clear.cgColor]
+            gradientLayer.locations = [0.075, 1]
+            selectedAlbumImageView.layer.insertSublayer(gradientLayer, at: 0)
+            selectedAlbumImageView.layer.shadowColor = UIColor.black.cgColor
         }
         else{
-            selectedAlbumImage.layer.shadowColor = UIColor.white.cgColor
+            let gradientLayer = CAGradientLayer()
+            gradientLayer.frame = self.selectedAlbumImageView.bounds
+            gradientLayer.colors = [UIColor.black.cgColor, UIColor.clear.cgColor]
+            gradientLayer.locations = [0.075, 1]
+            selectedAlbumImageView.layer.insertSublayer(gradientLayer, at: 0)
+            selectedAlbumImageView.layer.shadowColor = UIColor.white.cgColor
         }
         
-        selectedAlbumImage.layer.shadowOffset = CGSize(width: -10, height: -10)
-        selectedAlbumImage.layer.shadowOpacity = 1.0
-        selectedAlbumImage.layer.shadowRadius = 100.0
+        selectedAlbumImageView.layer.shadowOffset = CGSize(width: -10, height: -10)
+        selectedAlbumImageView.layer.shadowOpacity = 1.0
+        selectedAlbumImageView.layer.shadowRadius = 100.0
 
         
 //        print(selectedAlbumSongs)

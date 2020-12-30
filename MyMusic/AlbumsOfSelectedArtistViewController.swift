@@ -21,6 +21,18 @@ class AlbumsOfSelectedArtistViewController: UIViewController, UITableViewDelegat
         self.navigationItem.title = selectedArtistNameLabelString
         navigationItemBackgroundImage.image = selectedArtistAlbums[Int.random(in: 0..<selectedArtistAlbums.count)].art
         
+        if traitCollection.userInterfaceStyle == .light{
+            let blur = UIBlurEffect(style: .light)
+            let blurView = UIVisualEffectView(effect: blur)
+            blurView.frame = navigationItemBackgroundImage.bounds
+            navigationItemBackgroundImage.addSubview(blurView)
+        }
+        else{
+            let blur = UIBlurEffect(style: .dark)
+            let blurView = UIVisualEffectView(effect: blur)
+            blurView.frame = navigationItemBackgroundImage.bounds
+            navigationItemBackgroundImage.addSubview(blurView)
+        }
         
         self.view.sendSubviewToBack(navigationItemBackgroundImage)
         // Do any additional setup after loading the view.
@@ -37,7 +49,6 @@ class AlbumsOfSelectedArtistViewController: UIViewController, UITableViewDelegat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "artistAlbumCell", for: indexPath)
         cell.textLabel?.text = selectedArtistAlbums[indexPath.row].name!
-        cell.textLabel
         cell.imageView?.image = selectedArtistAlbums[indexPath.row].art!
         print(selectedArtistAlbums[indexPath.row].year!)
         cell.detailTextLabel?.text = selectedArtistAlbums[indexPath.row].year!

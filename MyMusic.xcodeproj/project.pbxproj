@@ -16,10 +16,39 @@
 		D318C584259583FB0067B5D3 /* 09 - Marcy Me [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D318C57A259583F70067B5D3 /* 09 - Marcy Me [Explicit].mp3 */; };
 		D318C585259583FB0067B5D3 /* 06 - Family Feud [feat. Beyoncé] [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D318C57B259583F80067B5D3 /* 06 - Family Feud [feat. Beyoncé] [Explicit].mp3 */; };
 		D318C586259583FB0067B5D3 /* 05 - 4_44 [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D318C57C259583F90067B5D3 /* 05 - 4_44 [Explicit].mp3 */; };
-		D318C587259583FB0067B5D3 /* 10 - Legacy [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D318C57D259583FA0067B5D3 /* 10 - Legacy [Explicit].mp3 */; };
 		D318C588259583FB0067B5D3 /* 08 - Moonlight [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D318C57E259583FB0067B5D3 /* 08 - Moonlight [Explicit].mp3 */; };
 		D318C589259583FB0067B5D3 /* 01 - Kill Jay-Z [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D318C57F259583FB0067B5D3 /* 01 - Kill Jay-Z [Explicit].mp3 */; };
 		D31CAA5F2581DBC900817AE0 /* SelectedAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31CAA5E2581DBC900817AE0 /* SelectedAlbumViewController.swift */; };
+		D346E7FF259C320000F5A1B0 /* 04 - - Blood Sweat And Gears feat Fiend.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E7F5259C31FD00F5A1B0 /* 04 - - Blood Sweat And Gears feat Fiend.mp3 */; };
+		D346E800259C320000F5A1B0 /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E7F6259C31FD00F5A1B0 /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 */; };
+		D346E801259C320000F5A1B0 /* 03 - - The Type feat Prodigy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E7F7259C31FE00F5A1B0 /* 03 - - The Type feat Prodigy.mp3 */; };
+		D346E802259C320000F5A1B0 /* 05 - - Life Instructions feat Smoke DZA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E7F8259C31FE00F5A1B0 /* 05 - - Life Instructions feat Smoke DZA.mp3 */; };
+		D346E803259C320000F5A1B0 /* 08 - - Ventilation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E7F9259C31FE00F5A1B0 /* 08 - - Ventilation.mp3 */; };
+		D346E804259C320000F5A1B0 /* 09 - - Double 07.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E7FA259C31FE00F5A1B0 /* 09 - - Double 07.mp3 */; };
+		D346E805259C320000F5A1B0 /* 06 - - Smoke Break.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E7FB259C31FF00F5A1B0 /* 06 - - Smoke Break.mp3 */; };
+		D346E806259C320000F5A1B0 /* 02 - - Full Metal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E7FC259C31FF00F5A1B0 /* 02 - - Full Metal.mp3 */; };
+		D346E807259C320000F5A1B0 /* 01 - - BBS.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E7FD259C320000F5A1B0 /* 01 - - BBS.mp3 */; };
+		D346E808259C320000F5A1B0 /* 10 - - Success Is My Cologne.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E7FE259C320000F5A1B0 /* 10 - - Success Is My Cologne.mp3 */; };
+		D346E80D259C320C00F5A1B0 /* 10 - Legacy [Explicit].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E80C259C320C00F5A1B0 /* 10 - Legacy [Explicit].mp3 */; };
+		D346E824259C33F600F5A1B0 /* 17 - - Fields.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E811259C33F200F5A1B0 /* 17 - - Fields.mp3 */; };
+		D346E825259C33F600F5A1B0 /* 08 - - Detroit 187 feat Chip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E812259C33F300F5A1B0 /* 08 - - Detroit 187 feat Chip.mp3 */; };
+		D346E826259C33F600F5A1B0 /* 03 - - Pac Blood.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E813259C33F300F5A1B0 /* 03 - - Pac Blood.mp3 */; };
+		D346E827259C33F600F5A1B0 /* 14 - - Nosebleeds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E814259C33F300F5A1B0 /* 14 - - Nosebleeds.mp3 */; };
+		D346E828259C33F600F5A1B0 /* 01 - - XXX.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E815259C33F300F5A1B0 /* 01 - - XXX.mp3 */; };
+		D346E829259C33F600F5A1B0 /* 05 - - Lie4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E816259C33F300F5A1B0 /* 05 - - Lie4.mp3 */; };
+		D346E82A259C33F600F5A1B0 /* 18 - - Scrap Or Die.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E817259C33F400F5A1B0 /* 18 - - Scrap Or Die.mp3 */; };
+		D346E82B259C33F600F5A1B0 /* 16 - - EWNESW.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E818259C33F400F5A1B0 /* 16 - - EWNESW.mp3 */; };
+		D346E82C259C33F600F5A1B0 /* 19 - - 30.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E819259C33F400F5A1B0 /* 19 - - 30.mp3 */; };
+		D346E82D259C33F600F5A1B0 /* 07 - - Bruiser Brigade feat Dopehead.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E81A259C33F400F5A1B0 /* 07 - - Bruiser Brigade feat Dopehead.mp3 */; };
+		D346E82E259C33F600F5A1B0 /* 04 - - Radio Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E81B259C33F400F5A1B0 /* 04 - - Radio Song.mp3 */; };
+		D346E82F259C33F600F5A1B0 /* 12 - - Adderall Admiral.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E81C259C33F400F5A1B0 /* 12 - - Adderall Admiral.mp3 */; };
+		D346E830259C33F600F5A1B0 /* 09 - - Monopoly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E81D259C33F500F5A1B0 /* 09 - - Monopoly.mp3 */; };
+		D346E831259C33F600F5A1B0 /* 15 - - Party All The Time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E81E259C33F500F5A1B0 /* 15 - - Party All The Time.mp3 */; };
+		D346E832259C33F600F5A1B0 /* 02 - - Die Like A Rockstar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E81F259C33F500F5A1B0 /* 02 - - Die Like A Rockstar.mp3 */; };
+		D346E833259C33F600F5A1B0 /* 06 - - I Will.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E820259C33F500F5A1B0 /* 06 - - I Will.mp3 */; };
+		D346E834259C33F600F5A1B0 /* 10 - - Blunt After Blunt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E821259C33F500F5A1B0 /* 10 - - Blunt After Blunt.mp3 */; };
+		D346E835259C33F600F5A1B0 /* 11 - - Outer Space.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E822259C33F600F5A1B0 /* 11 - - Outer Space.mp3 */; };
+		D346E836259C33F600F5A1B0 /* 13 - - DNA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D346E823259C33F600F5A1B0 /* 13 - - DNA.mp3 */; };
 		D349930A256EEE0B00FE14BA /* SongCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3499309256EEE0B00FE14BA /* SongCollection.swift */; };
 		D3499395256F3C1200FE14BA /* FullPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3499394256F3C1200FE14BA /* FullPlayerViewController.swift */; };
 		D39AE26025958B45003F67FC /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39AE25F25958B45003F67FC /* ArtistsViewController.swift */; };
@@ -97,10 +126,39 @@
 		D318C57A259583F70067B5D3 /* 09 - Marcy Me [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 - Marcy Me [Explicit].mp3"; sourceTree = "<group>"; };
 		D318C57B259583F80067B5D3 /* 06 - Family Feud [feat. Beyoncé] [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 - Family Feud [feat. Beyoncé] [Explicit].mp3"; sourceTree = "<group>"; };
 		D318C57C259583F90067B5D3 /* 05 - 4_44 [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 - 4_44 [Explicit].mp3"; sourceTree = "<group>"; };
-		D318C57D259583FA0067B5D3 /* 10 - Legacy [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 - Legacy [Explicit].mp3"; sourceTree = "<group>"; };
 		D318C57E259583FB0067B5D3 /* 08 - Moonlight [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 - Moonlight [Explicit].mp3"; sourceTree = "<group>"; };
 		D318C57F259583FB0067B5D3 /* 01 - Kill Jay-Z [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 - Kill Jay-Z [Explicit].mp3"; sourceTree = "<group>"; };
 		D31CAA5E2581DBC900817AE0 /* SelectedAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedAlbumViewController.swift; sourceTree = "<group>"; };
+		D346E7F5259C31FD00F5A1B0 /* 04 - - Blood Sweat And Gears feat Fiend.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 - - Blood Sweat And Gears feat Fiend.mp3"; sourceTree = "<group>"; };
+		D346E7F6259C31FD00F5A1B0 /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 - - Scottie Pippens feat Feddie Gibbs.mp3"; sourceTree = "<group>"; };
+		D346E7F7259C31FE00F5A1B0 /* 03 - - The Type feat Prodigy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03 - - The Type feat Prodigy.mp3"; sourceTree = "<group>"; };
+		D346E7F8259C31FE00F5A1B0 /* 05 - - Life Instructions feat Smoke DZA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 - - Life Instructions feat Smoke DZA.mp3"; sourceTree = "<group>"; };
+		D346E7F9259C31FE00F5A1B0 /* 08 - - Ventilation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 - - Ventilation.mp3"; sourceTree = "<group>"; };
+		D346E7FA259C31FE00F5A1B0 /* 09 - - Double 07.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 - - Double 07.mp3"; sourceTree = "<group>"; };
+		D346E7FB259C31FF00F5A1B0 /* 06 - - Smoke Break.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 - - Smoke Break.mp3"; sourceTree = "<group>"; };
+		D346E7FC259C31FF00F5A1B0 /* 02 - - Full Metal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 - - Full Metal.mp3"; sourceTree = "<group>"; };
+		D346E7FD259C320000F5A1B0 /* 01 - - BBS.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 - - BBS.mp3"; sourceTree = "<group>"; };
+		D346E7FE259C320000F5A1B0 /* 10 - - Success Is My Cologne.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 - - Success Is My Cologne.mp3"; sourceTree = "<group>"; };
+		D346E80C259C320C00F5A1B0 /* 10 - Legacy [Explicit].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 - Legacy [Explicit].mp3"; sourceTree = "<group>"; };
+		D346E811259C33F200F5A1B0 /* 17 - - Fields.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "17 - - Fields.mp3"; sourceTree = "<group>"; };
+		D346E812259C33F300F5A1B0 /* 08 - - Detroit 187 feat Chip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "08 - - Detroit 187 feat Chip.mp3"; sourceTree = "<group>"; };
+		D346E813259C33F300F5A1B0 /* 03 - - Pac Blood.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "03 - - Pac Blood.mp3"; sourceTree = "<group>"; };
+		D346E814259C33F300F5A1B0 /* 14 - - Nosebleeds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "14 - - Nosebleeds.mp3"; sourceTree = "<group>"; };
+		D346E815259C33F300F5A1B0 /* 01 - - XXX.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 - - XXX.mp3"; sourceTree = "<group>"; };
+		D346E816259C33F300F5A1B0 /* 05 - - Lie4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "05 - - Lie4.mp3"; sourceTree = "<group>"; };
+		D346E817259C33F400F5A1B0 /* 18 - - Scrap Or Die.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "18 - - Scrap Or Die.mp3"; sourceTree = "<group>"; };
+		D346E818259C33F400F5A1B0 /* 16 - - EWNESW.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "16 - - EWNESW.mp3"; sourceTree = "<group>"; };
+		D346E819259C33F400F5A1B0 /* 19 - - 30.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "19 - - 30.mp3"; sourceTree = "<group>"; };
+		D346E81A259C33F400F5A1B0 /* 07 - - Bruiser Brigade feat Dopehead.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "07 - - Bruiser Brigade feat Dopehead.mp3"; sourceTree = "<group>"; };
+		D346E81B259C33F400F5A1B0 /* 04 - - Radio Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "04 - - Radio Song.mp3"; sourceTree = "<group>"; };
+		D346E81C259C33F400F5A1B0 /* 12 - - Adderall Admiral.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "12 - - Adderall Admiral.mp3"; sourceTree = "<group>"; };
+		D346E81D259C33F500F5A1B0 /* 09 - - Monopoly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "09 - - Monopoly.mp3"; sourceTree = "<group>"; };
+		D346E81E259C33F500F5A1B0 /* 15 - - Party All The Time.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "15 - - Party All The Time.mp3"; sourceTree = "<group>"; };
+		D346E81F259C33F500F5A1B0 /* 02 - - Die Like A Rockstar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 - - Die Like A Rockstar.mp3"; sourceTree = "<group>"; };
+		D346E820259C33F500F5A1B0 /* 06 - - I Will.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "06 - - I Will.mp3"; sourceTree = "<group>"; };
+		D346E821259C33F500F5A1B0 /* 10 - - Blunt After Blunt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "10 - - Blunt After Blunt.mp3"; sourceTree = "<group>"; };
+		D346E822259C33F600F5A1B0 /* 11 - - Outer Space.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "11 - - Outer Space.mp3"; sourceTree = "<group>"; };
+		D346E823259C33F600F5A1B0 /* 13 - - DNA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "13 - - DNA.mp3"; sourceTree = "<group>"; };
 		D3499309256EEE0B00FE14BA /* SongCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCollection.swift; sourceTree = "<group>"; };
 		D3499394256F3C1200FE14BA /* FullPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullPlayerViewController.swift; sourceTree = "<group>"; };
 		D39AE25F25958B45003F67FC /* ArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsViewController.swift; sourceTree = "<group>"; };
@@ -274,12 +332,41 @@
 				D318C576259583F40067B5D3 /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 */,
 				D318C57E259583FB0067B5D3 /* 08 - Moonlight [Explicit].mp3 */,
 				D318C57A259583F70067B5D3 /* 09 - Marcy Me [Explicit].mp3 */,
-				D318C57D259583FA0067B5D3 /* 10 - Legacy [Explicit].mp3 */,
 				D3D5D480259692A400312DD9 /* 01 - Big KRIT-Purpose Prod By Big KRIT.mp3 */,
 				D3D5D4AA2596AC8700312DD9 /* 01 - Intro (DatPiff Exclusive).mp3 */,
+				D346E815259C33F300F5A1B0 /* 01 - - XXX.mp3 */,
+				D346E81F259C33F500F5A1B0 /* 02 - - Die Like A Rockstar.mp3 */,
+				D346E813259C33F300F5A1B0 /* 03 - - Pac Blood.mp3 */,
+				D346E81B259C33F400F5A1B0 /* 04 - - Radio Song.mp3 */,
+				D346E816259C33F300F5A1B0 /* 05 - - Lie4.mp3 */,
+				D346E820259C33F500F5A1B0 /* 06 - - I Will.mp3 */,
+				D346E81A259C33F400F5A1B0 /* 07 - - Bruiser Brigade feat Dopehead.mp3 */,
+				D346E812259C33F300F5A1B0 /* 08 - - Detroit 187 feat Chip.mp3 */,
+				D346E81D259C33F500F5A1B0 /* 09 - - Monopoly.mp3 */,
+				D346E821259C33F500F5A1B0 /* 10 - - Blunt After Blunt.mp3 */,
+				D346E822259C33F600F5A1B0 /* 11 - - Outer Space.mp3 */,
+				D346E81C259C33F400F5A1B0 /* 12 - - Adderall Admiral.mp3 */,
+				D346E823259C33F600F5A1B0 /* 13 - - DNA.mp3 */,
+				D346E814259C33F300F5A1B0 /* 14 - - Nosebleeds.mp3 */,
+				D346E81E259C33F500F5A1B0 /* 15 - - Party All The Time.mp3 */,
+				D346E818259C33F400F5A1B0 /* 16 - - EWNESW.mp3 */,
+				D346E811259C33F200F5A1B0 /* 17 - - Fields.mp3 */,
+				D346E817259C33F400F5A1B0 /* 18 - - Scrap Or Die.mp3 */,
+				D346E819259C33F400F5A1B0 /* 19 - - 30.mp3 */,
 				D3D5D4A62596AC8600312DD9 /* 02 - King Pt 4 (Produced by Kenneth Whalum) (DatPiff Exclusive).mp3 */,
+				D346E7FD259C320000F5A1B0 /* 01 - - BBS.mp3 */,
+				D346E7FC259C31FF00F5A1B0 /* 02 - - Full Metal.mp3 */,
+				D346E7F7259C31FE00F5A1B0 /* 03 - - The Type feat Prodigy.mp3 */,
+				D346E7F5259C31FD00F5A1B0 /* 04 - - Blood Sweat And Gears feat Fiend.mp3 */,
+				D346E7F8259C31FE00F5A1B0 /* 05 - - Life Instructions feat Smoke DZA.mp3 */,
+				D346E7FB259C31FF00F5A1B0 /* 06 - - Smoke Break.mp3 */,
+				D346E7F6259C31FD00F5A1B0 /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 */,
+				D346E7F9259C31FE00F5A1B0 /* 08 - - Ventilation.mp3 */,
+				D346E7FA259C31FE00F5A1B0 /* 09 - - Double 07.mp3 */,
+				D346E7FE259C320000F5A1B0 /* 10 - - Success Is My Cologne.mp3 */,
 				D3D5D4B12596AC8800312DD9 /* 03 - 86  (Produced by Big KRIT) (DatPiff Exclusive).mp3 */,
 				D3D5D4AC2596AC8700312DD9 /* 04 - No Static ft Warren G  (Produced by Big KRIT) (DatPiff Exclusive).mp3 */,
+				D346E80C259C320C00F5A1B0 /* 10 - Legacy [Explicit].mp3 */,
 				D3D5D4AB2596AC8700312DD9 /* 05 - Piece On Chain (Produced by Big KRIT) (DatPiff Exclusive).mp3 */,
 				D3D5D4AE2596AC8700312DD9 /* 06 - Shakem Off Feat Ludacis  K Camp (Produced by WOLFE de MCHLS) (DatPiff Exclusive).mp3 */,
 				D3D5D4A72596AC8600312DD9 /* 07 - How Bout That Money Feat Young Dolph (Produced by Big KRIT) (DatPiff Exclusive).mp3 */,
@@ -415,14 +502,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D346E82E259C33F600F5A1B0 /* 04 - - Radio Song.mp3 in Resources */,
 				D3D5D4B42596AC8800312DD9 /* 02 - King Pt 4 (Produced by Kenneth Whalum) (DatPiff Exclusive).mp3 in Resources */,
+				D346E824259C33F600F5A1B0 /* 17 - - Fields.mp3 in Resources */,
 				D318C585259583FB0067B5D3 /* 06 - Family Feud [feat. Beyoncé] [Explicit].mp3 in Resources */,
+				D346E807259C320000F5A1B0 /* 01 - - BBS.mp3 in Resources */,
 				D3D5D4B22596AC8800312DD9 /* 11 - Cant Be Stll Feat BJ The Chicago Kid (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
 				D3D5D4B82596AC8800312DD9 /* 01 - Intro (DatPiff Exclusive).mp3 in Resources */,
+				D346E829259C33F600F5A1B0 /* 05 - - Lie4.mp3 in Resources */,
+				D346E828259C33F600F5A1B0 /* 01 - - XXX.mp3 in Resources */,
 				D3D5D493259692A700312DD9 /* 02 - Big KRIT-Shine On Feat Bun B Prod By Big KRIT.mp3 in Resources */,
 				D3D5D4B62596AC8800312DD9 /* 08 - In The Darkness Feat Wolfe de MCHLS (Produced by WOLFE de MCHLS) (DatPiff Exclusive).mp3 in Resources */,
+				D346E80D259C320C00F5A1B0 /* 10 - Legacy [Explicit].mp3 in Resources */,
+				D346E836259C33F600F5A1B0 /* 13 - - DNA.mp3 in Resources */,
 				D3D5D497259692A700312DD9 /* 05 - Big KRIT-REM Prod By Big KRIT.mp3 in Resources */,
 				D3D5D49C259692A700312DD9 /* 03 - Big KRIT-Talkin Bout Nothing Prod By Big KRIT.mp3 in Resources */,
+				D346E833259C33F600F5A1B0 /* 06 - - I Will.mp3 in Resources */,
+				D346E826259C33F600F5A1B0 /* 03 - - Pac Blood.mp3 in Resources */,
+				D346E801259C320000F5A1B0 /* 03 - - The Type feat Prodigy.mp3 in Resources */,
+				D346E804259C320000F5A1B0 /* 09 - - Double 07.mp3 in Resources */,
+				D346E802259C320000F5A1B0 /* 05 - - Life Instructions feat Smoke DZA.mp3 in Resources */,
 				D3D5D4BD2596AC8800312DD9 /* 13 - Party Tonight (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
 				D3D5D490259692A700312DD9 /* 13 - Big KRIT-Banana Clip Theory Prod By Big KRIT.mp3 in Resources */,
 				D3D5D4B32596AC8800312DD9 /* 09 - Vanilla Sky (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
@@ -430,35 +529,52 @@
 				D3D5D49E259692A700312DD9 /* 04 - Big KRIT-King Without A Crown Prod By Big KRIT.mp3 in Resources */,
 				D3D5D4BE2596AC8800312DD9 /* 10 - Got Me Thru Feat DeLorean Big SANT  Scar (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
 				D3D5D49A259692A700312DD9 /* 12 - Big KRIT-Only One Feat Wiz Khalifa Smoke DZA Prod By Big KRIT.mp3 in Resources */,
+				D346E805259C320000F5A1B0 /* 06 - - Smoke Break.mp3 in Resources */,
+				D346E825259C33F600F5A1B0 /* 08 - - Detroit 187 feat Chip.mp3 in Resources */,
 				D3D5D4B92596AC8800312DD9 /* 05 - Piece On Chain (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
 				D318C584259583FB0067B5D3 /* 09 - Marcy Me [Explicit].mp3 in Resources */,
+				D346E808259C320000F5A1B0 /* 10 - - Success Is My Cologne.mp3 in Resources */,
+				D346E803259C320000F5A1B0 /* 08 - - Ventilation.mp3 in Resources */,
 				D3D5D4BC2596AC8800312DD9 /* 06 - Shakem Off Feat Ludacis  K Camp (Produced by WOLFE de MCHLS) (DatPiff Exclusive).mp3 in Resources */,
 				D3D5D491259692A700312DD9 /* 01 - Big KRIT-Purpose Prod By Big KRIT.mp3 in Resources */,
 				D3D5D498259692A700312DD9 /* 07 - Big KRIT-Serve This Royalty Prod By Big KRIT.mp3 in Resources */,
-				D318C587259583FB0067B5D3 /* 10 - Legacy [Explicit].mp3 in Resources */,
+				D346E806259C320000F5A1B0 /* 02 - - Full Metal.mp3 in Resources */,
 				D318C589259583FB0067B5D3 /* 01 - Kill Jay-Z [Explicit].mp3 in Resources */,
 				D3D5D499259692A700312DD9 /* 09 - Big KRIT-Just Last Week Feat Future Snippet Prod By Big KRIT.mp3 in Resources */,
 				D3D5D4B52596AC8800312DD9 /* 07 - How Bout That Money Feat Young Dolph (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
 				D3D5D496259692A700312DD9 /* 11 - Big KRIT-How U Luv That Feat Big SANT Prod By Big KRIT.mp3 in Resources */,
+				D346E830259C33F600F5A1B0 /* 09 - - Monopoly.mp3 in Resources */,
 				D3D5D4BA2596AC8800312DD9 /* 04 - No Static ft Warren G  (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
 				D318C588259583FB0067B5D3 /* 08 - Moonlight [Explicit].mp3 in Resources */,
+				D346E7FF259C320000F5A1B0 /* 04 - - Blood Sweat And Gears feat Fiend.mp3 in Resources */,
 				D318C581259583FB0067B5D3 /* 02 - The Story of O.J. [Explicit].mp3 in Resources */,
 				D3D5D494259692A700312DD9 /* 06 - Big KRIT-Meditate Prod By Big KRIT.mp3 in Resources */,
+				D346E82D259C33F600F5A1B0 /* 07 - - Bruiser Brigade feat Dopehead.mp3 in Resources */,
 				D318C583259583FB0067B5D3 /* 04 - Caught Their Eyes [feat. Frank Ocean] [Explicit].mp3 in Resources */,
 				D3EE3234256DC74300926074 /* LaunchScreen.storyboard in Resources */,
+				D346E834259C33F600F5A1B0 /* 10 - - Blunt After Blunt.mp3 in Resources */,
+				D346E831259C33F600F5A1B0 /* 15 - - Party All The Time.mp3 in Resources */,
 				D3EE3231256DC74300926074 /* Assets.xcassets in Resources */,
 				D3EE322F256DC74000926074 /* Main.storyboard in Resources */,
 				D318C586259583FB0067B5D3 /* 05 - 4_44 [Explicit].mp3 in Resources */,
+				D346E827259C33F600F5A1B0 /* 14 - - Nosebleeds.mp3 in Resources */,
 				D3D5D4BB2596AC8800312DD9 /* 12 - Keep It Boomin (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
 				D3D5D495259692A700312DD9 /* 17 - Big KRIT-Multi Til The Sun Die Prod By Big KRIT.mp3 in Resources */,
 				D3D5D49B259692A700312DD9 /* 08 - Big KRIT-Good 2getha Feat Ashton Jones Prod By Big KRIT.mp3 in Resources */,
+				D346E82C259C33F600F5A1B0 /* 19 - - 30.mp3 in Resources */,
 				D3D5D49D259692A700312DD9 /* 10 - Big KRIT-My Trunk Feat Trinidad Jame Prod By Big KRIT.mp3 in Resources */,
 				D3D5D4B72596AC8800312DD9 /* 14 - Its Better This Way (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
+				D346E832259C33F600F5A1B0 /* 02 - - Die Like A Rockstar.mp3 in Resources */,
 				D318C582259583FB0067B5D3 /* 03 - Smile [feat. Gloria Carter] [Explicit].mp3 in Resources */,
+				D346E800259C320000F5A1B0 /* 07 - - Scottie Pippens feat Feddie Gibbs.mp3 in Resources */,
+				D346E82A259C33F600F5A1B0 /* 18 - - Scrap Or Die.mp3 in Resources */,
 				D3D5D4BF2596AC8800312DD9 /* 03 - 86  (Produced by Big KRIT) (DatPiff Exclusive).mp3 in Resources */,
 				D3D5D49F259692A700312DD9 /* 16 - Big KRIT-Bigger Picture Prod By Big KRIT.mp3 in Resources */,
+				D346E835259C33F600F5A1B0 /* 11 - - Outer Space.mp3 in Resources */,
 				D318C580259583FB0067B5D3 /* 07 - Bam [feat. Damian Marley] [Explicit].mp3 in Resources */,
 				D3D5D4A0259692A700312DD9 /* 15 - Big KRIT-WTF Prod By Big KRIT.mp3 in Resources */,
+				D346E82B259C33F600F5A1B0 /* 16 - - EWNESW.mp3 in Resources */,
+				D346E82F259C33F600F5A1B0 /* 12 - - Adderall Admiral.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
